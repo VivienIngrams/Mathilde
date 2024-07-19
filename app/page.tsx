@@ -30,9 +30,9 @@ export default async function Home() {
   return (
     <div className="h-full">
       <NavMenu />
-      <div>
+      <div className="">
         {data.map((project: projectType) => (
-          <div key={project.slug}>
+          <div className="min-h-screen w-full" key={project.slug}>
             <h2>{project.title}</h2>
             {project.images1.map((image, index) => (
               <Image
