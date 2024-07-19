@@ -15,7 +15,7 @@ const NavMenu = () => {
       <div className="flex items-center justify-between h-16">
       <Link
         href="/"
-        className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+        className="hover:bg-black/10 px-3 py-2 rounded-md text-sm font-medium"
       >
         Mathilde Cudeville
       </Link>
@@ -23,7 +23,7 @@ const NavMenu = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <Menu as="div" className="relative">
-                <MenuButton className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+                <MenuButton className="hover:bg-black/10 px-3 py-2 rounded-md text-sm font-medium">
                   Projects
                 </MenuButton>
                 <MenuItems className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
@@ -117,25 +117,25 @@ const NavMenu = () => {
               </Menu>
               <Link
                 href="/voyages"
-                className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                className="hover:bg-black/10 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Voyages
               </Link>
               <Link
                 href="/quotidien"
-                className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                className="hover:bg-black/10 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Quotidien
               </Link>
               <Link
                 href="/info"
-                className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                className="hover:bg-black/10 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Info
               </Link>
               <Link
                 href="/education"
-                className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                className="hover:bg-black/10 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Education
               </Link>
@@ -168,7 +168,7 @@ const NavMenu = () => {
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         <Menu as="div" className="relative">
-            <MenuButton className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">
+            <MenuButton className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-medium">
               Projects
             </MenuButton>
             <MenuItems className="origin-top-right absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
