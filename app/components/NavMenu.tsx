@@ -31,7 +31,7 @@ const NavMenu = () => {
                     <MenuItem>
                       {({ active }) => (
                         <Link
-                          href="/projects/au-cafe"
+                          href="/project/au-cafe"
                           className={`block px-4 py-2 text-sm ${
                             active ? "bg-gray-100" : ""
                           }`}
@@ -43,7 +43,7 @@ const NavMenu = () => {
                     <MenuItem>
                       {({ active }) => (
                         <Link
-                          href="/projects/la-passagere"
+                          href="/project/la-passagere"
                           className={`block px-4 py-2 text-sm ${
                             active ? "bg-gray-100" : ""
                           }`}
@@ -55,7 +55,7 @@ const NavMenu = () => {
                     <MenuItem>
                       {({ active }) => (
                         <Link
-                          href="/projects/interieur"
+                          href="/project/interieur"
                           className={`block px-4 py-2 text-sm ${
                             active ? "bg-gray-100" : ""
                           }`}
@@ -67,7 +67,7 @@ const NavMenu = () => {
                     <MenuItem>
                       {({ active }) => (
                         <Link
-                          href="/projects/sentiment-oceanique"
+                          href="/project/sentiment-oceanique"
                           className={`block px-4 py-2 text-sm ${
                             active ? "bg-gray-100" : ""
                           }`}
@@ -79,7 +79,7 @@ const NavMenu = () => {
                     <MenuItem>
                       {({ active }) => (
                         <Link
-                          href="/projects/photo-texte"
+                          href="/project/photo-texte"
                           className={`block px-4 py-2 text-sm ${
                             active ? "bg-gray-100" : ""
                           }`}
@@ -91,7 +91,7 @@ const NavMenu = () => {
                     <MenuItem>
                       {({ active }) => (
                         <Link
-                          href="/projects/en-suspension"
+                          href="/project/en-suspension"
                           className={`block px-4 py-2 text-sm ${
                             active ? "bg-gray-100" : ""
                           }`}
@@ -103,7 +103,7 @@ const NavMenu = () => {
                     <MenuItem>
                       {({ active }) => (
                         <Link
-                          href="/projects/joel"
+                          href="/project/joel"
                           className={`block px-4 py-2 text-sm ${
                             active ? "bg-gray-100" : ""
                           }`}
@@ -176,7 +176,7 @@ const NavMenu = () => {
                 <MenuItem>
                   {({ active }) => (
                     <Link
-                      href="/projects/au-cafe"
+                      href="/project/au-cafe"
                       className={`block px-4 py-2 text-base ${
                         active ? "bg-gray-100" : ""
                       }`}
@@ -188,7 +188,7 @@ const NavMenu = () => {
                 <MenuItem>
                   {({ active }) => (
                     <Link
-                      href="/projects/la-passagere"
+                      href="/project/la-passagere"
                       className={`block px-4 py-2 text-base ${
                         active ? "bg-gray-100" : ""
                       }`}
@@ -200,7 +200,7 @@ const NavMenu = () => {
                 <MenuItem>
                   {({ active }) => (
                     <Link
-                      href="/projects/interieur"
+                      href="/project/interieur"
                       className={`block px-4 py-2 text-base ${
                         active ? "bg-gray-100" : ""
                       }`}
@@ -212,7 +212,7 @@ const NavMenu = () => {
                 <MenuItem>
                   {({ active }) => (
                     <Link
-                      href="/projects/sentiment-oceanique"
+                      href="/project/sentiment-oceanique"
                       className={`block px-4 py-2 text-base ${
                         active ? "bg-gray-100" : ""
                       }`}
@@ -224,7 +224,7 @@ const NavMenu = () => {
                 <MenuItem>
                   {({ active }) => (
                     <Link
-                      href="/projects/photo-texte"
+                      href="/project/photo-texte"
                       className={`block px-4 py-2 text-base ${
                         active ? "bg-gray-100" : ""
                       }`}
@@ -236,7 +236,7 @@ const NavMenu = () => {
                 <MenuItem>
                   {({ active }) => (
                     <Link
-                      href="/projects/en-suspension"
+                      href="/project/en-suspension"
                       className={`block px-4 py-2 text-base ${
                         active ? "bg-gray-100" : ""
                       }`}
@@ -248,7 +248,7 @@ const NavMenu = () => {
                 <MenuItem>
                   {({ active }) => (
                     <Link
-                      href="/projects/joel"
+                      href="/project/joel"
                       className={`block px-4 py-2 text-base ${
                         active ? "bg-gray-100" : ""
                       }`}
