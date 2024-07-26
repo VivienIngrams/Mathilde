@@ -26,7 +26,7 @@ const NavMenu = () => {
                 <MenuButton className="hover:bg-black/10 px-3 py-2 rounded-md text-sm font-medium">
                   Projects
                 </MenuButton>
-                <MenuItems className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <MenuItems className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-orange-50 ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <div className="py-1">
                     <MenuItem>
                       {({ active }) => (
