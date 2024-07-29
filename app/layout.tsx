@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${cormorant.className} h-full bg-[rgb(163,163,152)]`}
+      <body className={`${cormorant.className} h-full `}
     >{children}</body>
     </html>
   );

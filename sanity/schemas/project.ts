@@ -108,8 +108,8 @@ const project = {
       title: "Section 1 - fond de couleur?",
       options: {
         list: [
-          { title: "light", value: "bg-orange-50" }, //define values here !!
-          { title: "dark", value: "bg-[#B8B09F] " },
+          { title: "light", value: " bg-[rgba(228,221,214,0.85)] " }, 
+          { title: "dark", value: " bg-[rgb(194 183 169 0.85)]  " },
         ],
         layout: "radio",
         initialValue: "bg-orange-50",
