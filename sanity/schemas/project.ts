@@ -32,7 +32,7 @@ const project = {
       options: {
         list: [
           { title: "light", value: "bg-orange-50" }, //define values here !!
-          { title: "dark", value: "bg-yellow-600 " },
+          { title: "dark", value: "bg-[#B8B09F]" },
         ],
         layout: "radio",
         initialValue: "bg-orange-50",
@@ -109,7 +109,7 @@ const project = {
       options: {
         list: [
           { title: "light", value: "bg-orange-50" }, //define values here !!
-          { title: "dark", value: "bg-yellow-600 " },
+          { title: "dark", value: "bg-[#B8B09F] " },
         ],
         layout: "radio",
         initialValue: "bg-orange-50",
@@ -186,7 +186,7 @@ const project = {
       options: {
         list: [
           { title: "light", value: "bg-orange-50" }, //define values here !!
-          { title: "dark", value: "bg-yellow-600 " },
+          { title: "dark", value: "bg-[#B8B09F] " },
         ],
         layout: "radio",
         initialValue: "bg-orange-50",
@@ -263,7 +263,7 @@ const project = {
       options: {
         list: [
           { title: "light", value: "bg-orange-50" }, //define values here !!
-          { title: "dark", value: "bg-yellow-600 " },
+          { title: "dark", value: "bg-[#B8B09F] " },
         ],
         layout: "radio",
         initialValue: "bg-orange-50",
@@ -341,7 +341,7 @@ const project = {
       options: {
         list: [
           { title: "light", value: "bg-orange-50" }, //define values here !!
-          { title: "dark", value: "bg-yellow-600 " },
+          { title: "dark", value: "bg-[#B8B09F] " },
         ],
         layout: "radio",
         initialValue: "bg-orange-50",
@@ -418,7 +418,7 @@ const project = {
       options: {
         list: [
           { title: "light", value: "bg-orange-50" }, //define values here !!
-          { title: "dark", value: "bg-yellow-600 " },
+          { title: "dark", value: "bg-[#B8B09F] " },
         ],
         layout: "radio",
         initialValue: "bg-orange-50",
@@ -495,7 +495,7 @@ const project = {
       options: {
         list: [
           { title: "light", value: "bg-orange-60" }, //define values here !!
-          { title: "dark", value: "bg-yellow-600 " },
+          { title: "dark", value: "bg-[#B8B09F] " },
         ],
         layout: "radio",
         initialValue: "bg-orange-60",

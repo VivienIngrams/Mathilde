@@ -11,11 +11,11 @@ const NavMenu = () => {
   };
 
   return (
-    <nav className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 bg-[rgba(228,221,214,0.85)]">
       <div className="flex items-center justify-between h-16">
       <Link
         href="/"
-        className="hover:bg-black/10 px-3 py-2 rounded-md text-sm font-medium"
+        className="hover:bg-black/10 px-3 py-2 rounded-md text-3xl tracking-[-0.12rem] font-light"
       >
         Mathilde Cudeville
       </Link>
@@ -23,8 +23,8 @@ const NavMenu = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <Menu as="div" className="relative">
-                <MenuButton className="hover:bg-black/10 px-3 py-2 rounded-md text-sm font-medium">
-                  Projects
+                <MenuButton className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold">
+                  projects
                 </MenuButton>
                 <MenuItems className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-orange-50 ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <div className="py-1">
@@ -32,7 +32,7 @@ const NavMenu = () => {
                       {({ active }) => (
                         <Link
                           href="/project/au-cafe"
-                          className={`block px-4 py-2 text-sm ${
+                          className={`block px-4 py-2 text-md ${
                             active ? "bg-gray-100" : ""
                           }`}
                         >
@@ -44,7 +44,7 @@ const NavMenu = () => {
                       {({ active }) => (
                         <Link
                           href="/project/la-passagere"
-                          className={`block px-4 py-2 text-sm ${
+                          className={`block px-4 py-2 text-md ${
                             active ? "bg-gray-100" : ""
                           }`}
                         >
@@ -56,7 +56,7 @@ const NavMenu = () => {
                       {({ active }) => (
                         <Link
                           href="/project/interieur"
-                          className={`block px-4 py-2 text-sm ${
+                          className={`block px-4 py-2 text-md ${
                             active ? "bg-gray-100" : ""
                           }`}
                         >
@@ -68,7 +68,7 @@ const NavMenu = () => {
                       {({ active }) => (
                         <Link
                           href="/project/sentiment-oceanique"
-                          className={`block px-4 py-2 text-sm ${
+                          className={`block px-4 py-2 text-md ${
                             active ? "bg-gray-100" : ""
                           }`}
                         >
@@ -80,7 +80,7 @@ const NavMenu = () => {
                       {({ active }) => (
                         <Link
                           href="/project/photo-texte"
-                          className={`block px-4 py-2 text-sm ${
+                          className={`block px-4 py-2 text-md ${
                             active ? "bg-gray-100" : ""
                           }`}
                         >
@@ -92,7 +92,7 @@ const NavMenu = () => {
                       {({ active }) => (
                         <Link
                           href="/project/en-suspension"
-                          className={`block px-4 py-2 text-sm ${
+                          className={`block px-4 py-2 text-md ${
                             active ? "bg-gray-100" : ""
                           }`}
                         >
@@ -104,7 +104,7 @@ const NavMenu = () => {
                       {({ active }) => (
                         <Link
                           href="/project/joel"
-                          className={`block px-4 py-2 text-sm ${
+                          className={`block px-4 py-2 text-md ${
                             active ? "bg-gray-100" : ""
                           }`}
                         >
@@ -117,27 +117,27 @@ const NavMenu = () => {
               </Menu>
               <Link
                 href="/voyages"
-                className="hover:bg-black/10 px-3 py-2 rounded-md text-sm font-medium"
+                className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
               >
-                Voyages
+                voyages
               </Link>
               <Link
                 href="/quotidien"
-                className="hover:bg-black/10 px-3 py-2 rounded-md text-sm font-medium"
+                className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
               >
-                Quotidien
+                quotidien
               </Link>
               <Link
                 href="/info"
-                className="hover:bg-black/10 px-3 py-2 rounded-md text-sm font-medium"
+                className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
               >
-                Info
+                info
               </Link>
               <Link
                 href="/education"
-                className="hover:bg-black/10 px-3 py-2 rounded-md text-sm font-medium"
+                className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
               >
-                Education
+                éducation
               </Link>
             </div>
           </div>
@@ -168,7 +168,7 @@ const NavMenu = () => {
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         <Menu as="div" className="relative">
-            <MenuButton className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-medium">
+            <MenuButton className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold">
               Projects
             </MenuButton>
             <MenuItems className="origin-top-right absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
@@ -262,25 +262,25 @@ const NavMenu = () => {
           </Menu>
           <Link
             href="/voyages"
-            className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+            className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-semibold"
           >
             Voyages
           </Link>
           <Link
             href="/quotidien"
-            className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+            className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-semibold"
           >
             Quotidien
           </Link>
           <Link
             href="/info"
-            className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+            className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-semibold"
           >
             Info
           </Link>
           <Link
             href="/education"
-            className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+            className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-semibold"
           >
             Education
           </Link>

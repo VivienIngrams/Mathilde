@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { client } from "../../../sanity/lib/client";
 import { Project, Section } from "../../interface";
 import NavMenu from "@/app/components/NavMenu";
@@ -85,29 +85,34 @@ export default async function ProjectPage() {
       <NavMenu />
       <div className="">
         <div
-          className={`${project.sections[0].background} min-h-screen w-full`}
+          className={`${project.sections[0].background} min-h-screen w-full bg-[rgba(228,221,214,0.85)]`}
         >
           <div
-            className={`${project.sections[0].font} ${project.sections[0].layout}`}
+            className={`${project.sections[0].font} md:grid md:grid-cols-2 ${project.sections[0].layout} `}
           >
-            {project.sections[0].text && <p>{project.sections[0].text[0]}</p>}
-            <Image
-              src={urlFor(project.sections[0].images[0]).url() as string}
-              alt={project.sections[0].subtitle}
-              width={200}
-              height={200}
-            />
-
+            <div className="flex flex-col justify-end items-end h-[85vh] w-[50vw]  ">
+            <div className="relative h-full w-[60%]">
+              <Image
+                src={urlFor(project.sections[0].images[0]).url() as string}
+                alt={project.sections[0].subtitle}
+                fill
+                
+              className="object-contain"
+              />
+              </div>
+            </div>
             {project.sections[0].text && (
-              <div>
-                <h1>{project.title}</h1>
-                <p>{project.sections[0].text[1]}</p>
+              <div className="flex flex-col justify-center pl-20">
+                <div className="w-[50%]">
+                  <h1 className="py-4">{project.title}</h1>
+                  <p className="">{project.sections[0].text[0]}</p>
+                </div>
               </div>
             )}
           </div>
         </div>
         <div
-          className={`${project.sections[1].background} min-h-screen w-full`}
+          className={` ${project.sections[1].background} min-h-screen w-full`}
         >
           <div
             className={`${project.sections[1].font} ${project.sections[1].layout}`}
@@ -240,19 +245,13 @@ export default async function ProjectPage() {
   );
 }
 
-const ProjectSection = ({ projectSection }: { projectSection: Section }) => {
-  console.log(projectSection);
-  return (
-    <div className={`${projectSection.background} min-h-screen w-full`}>
-      <div className={`${projectSection.font} ${projectSection.layout}`}>
-        <Image
-          src={urlFor(projectSection.images[0]).url() as string}
-          alt={projectSection.subtitle}
-          width={200}
-          height={200}
-        />
-        {projectSection.text && <p>{projectSection.text[0]}</p>}
-      </div>
-    </div>
-  );
-};
+// const ProjectSection = ({ projectSection, children }: { projectSection: Section, children: ReactNode }) => {
+//   console.log(projectSection);
+//   return (
+//     <div className={`${projectSection.background} min-h-screen w-full`}>
+//       <div className={`${projectSection.font} ${projectSection.layout}`}>
+//         {children}
+//               </div>
+//     </div>
+//   );
+// };

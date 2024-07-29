@@ -8,12 +8,12 @@ const ProjectSection = ({ projectSection }: { projectSection: Section }) => {
   return (
     <div className={`${projectSection.background} min-h-screen w-full`}>
       <div className={`${projectSection.font} ${projectSection.layout}`}>
-        <Image
+        {/* <Image
           src={urlFor(projectSection.images[0]).url() as string}
           alt={projectSection.subtitle}
           width={200}
           height={200}
-        />
+        /> */}
      {projectSection.text && (
       <p>{projectSection.text[0]}</p>)}
              
