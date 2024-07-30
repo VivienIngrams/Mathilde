@@ -12,10 +12,10 @@ const NavMenu = () => {
 
   return (
     <nav className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 bg-[rgba(228,221,214,0.85)]">
-      <div className="flex items-center justify-between h-16">
+      <div className="flex items-center justify-between h-16 md:h-20">
       <Link
         href="/"
-        className="hover:bg-black/10 px-3 py-2 rounded-md text-3xl tracking-[-0.12rem] font-light"
+        className="hover:bg-black/10 md:px-3 py-2 rounded-md text-[1.3rem] md:text-[1.8rem] light"
       >
         Mathilde Cudeville
       </Link>
