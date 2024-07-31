@@ -41,8 +41,9 @@ p {
 
 h3 {
   font-size: 1rem; /* Default size for small screens */
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2;
+  
   
   @screen md {
     font-size: 1.2rem; /* Medium screens */
@@ -50,5 +51,20 @@ h3 {
   
   @screen lg {
     font-size: 1.3rem; /* Large screens */
+  }
+}
+
+h2 {
+  font-size: 1.5rem; /* Default size for small screens */
+  font-weight: 600;
+  line-height: 1.2;
+  font-variant-caps: small-caps;
+  
+  @screen md {
+    font-size: 1.7rem; /* Medium screens */
+  }
+  
+  @screen lg {
+    font-size: 1.9rem; /* Large screens */
   }
 }

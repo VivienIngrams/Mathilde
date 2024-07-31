@@ -31,8 +31,8 @@ const project = {
       title: "Section Home page - fond de couleur?",
       options: {
         list: [
-          { title: "light", value: "bg-orange-50" }, //define values here !!
-          { title: "dark", value: "bg-[#B8B09F]" },
+          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
+          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
         ],
         layout: "radio",
         initialValue: "bg-orange-50",
@@ -41,9 +41,9 @@ const project = {
     {
       name: "mainLayout",
       type: "number",
-      title: "Section Home page - nombre de colonnes",
+      title: "Section Home page - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,
@@ -71,45 +71,15 @@ const project = {
         },
       ],
     },
-    {
-      name: "mainFont",
-      type: "string",
-      title: "Texte(s) Home Page - Police",
-      options: {
-        list: [
-          { title: "H1", value: "text-4xl " }, //define values here !!
-          { title: "H2", value: "text-3xl " },
-          { title: "H3", value: "text-2xl " },
-          { title: "H4", value: "text-xl " },
-          { title: "p", value: "text-base font-normal" },
-        ],
-        layout: "radio",
-        initialValue: "text-base",
-      },
-    },
-    {
-      name: "mainAlignment",
-      type: "string",
-      title: "Texte(s) Home Page - Alignement",
-      options: {
-        list: [
-          { title: "gauche", value: "text-left" }, //check values CSS !!!
-          { title: "centre", value: "text-center" },
-          { title: "droite", value: "text-right" },
-          { title: "justifié", value: "text-justify" },
-        ],
-        layout: "radio",
-        initialValue: "text-left",
-      },
-    },
+
     {
       name: "background1",
       type: "string",
       title: "Section 1 - fond de couleur?",
       options: {
         list: [
-          { title: "light", value: " bg-[rgba(228,221,214,0.85)] " }, 
-          { title: "dark", value: " bg-[rgb(194 183 169 0.85)]  " },
+          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
+          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
         ],
         layout: "radio",
         initialValue: "bg-orange-50",
@@ -118,9 +88,9 @@ const project = {
     {
       name: "layout1",
       type: "number",
-      title: "Section 1 - nombre de colonnes",
+      title: "Section 1 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,
@@ -148,45 +118,15 @@ const project = {
         },
       ],
     },
-    {
-      name: "font1",
-      type: "string",
-      title: "Texte(s) 1 - Police",
-      options: {
-        list: [
-          { title: "H1", value: "text-4xl " }, //define values here !!
-          { title: "H2", value: "text-3xl " },
-          { title: "H3", value: "text-2xl " },
-          { title: "H4", value: "text-xl " },
-          { title: "p", value: "text-base font-normal" },
-        ],
-        layout: "radio",
-        initialValue: "text-base",
-      },
-    },
-    {
-      name: "alignment1",
-      type: "string",
-      title: "Texte(s) 1 - Alignement",
-      options: {
-        list: [
-          { title: "gauche", value: "text-left" }, //check values CSS !!!
-          { title: "centre", value: "text-center" },
-          { title: "droite", value: "text-right" },
-          { title: "justifié", value: "text-justify" },
-        ],
-        layout: "radio",
-        initialValue: "text-left",
-      },
-    },
+
     {
       name: "background2",
       type: "string",
       title: "Section 2 - fond de couleur?",
       options: {
         list: [
-          { title: "light", value: "bg-orange-50" }, //define values here !!
-          { title: "dark", value: "bg-[#B8B09F] " },
+          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
+          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
         ],
         layout: "radio",
         initialValue: "bg-orange-50",
@@ -195,9 +135,9 @@ const project = {
     {
       name: "layout2",
       type: "number",
-      title: "Section 2 - nombre de colonnes",
+      title: "Section 2 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,
@@ -225,56 +165,13 @@ const project = {
         },
       ],
     },
-    {
-      name: "font2",
-      type: "string",
-      title: "Texte(s) 2 - Police",
-      options: {
-        list: [
-          { title: "H1", value: "text-4xl " }, //define values here !!
-          { title: "H2", value: "text-3xl " },
-          { title: "H3", value: "text-2xl " },
-          { title: "H4", value: "text-xl " },
-          { title: "p", value: "text-base font-normal" },
-        ],
-        layout: "radio",
-        initialValue: "text-base",
-      },
-    },
-    {
-      name: "alignment2",
-      type: "string",
-      title: "Texte(s) 2 - Alignement",
-      options: {
-        list: [
-          { title: "gauche", value: "text-left" }, //check values CSS !!!
-          { title: "centre", value: "text-center" },
-          { title: "droite", value: "text-right" },
-          { title: "justifié", value: "text-justify" },
-        ],
-        layout: "radio",
-        initialValue: "text-left",
-      },
-    },
-    {
-      name: "background3",
-      type: "string",
-      title: "Section 3 - fond de couleur?",
-      options: {
-        list: [
-          { title: "light", value: "bg-orange-50" }, //define values here !!
-          { title: "dark", value: "bg-[#B8B09F] " },
-        ],
-        layout: "radio",
-        initialValue: "bg-orange-50",
-      },
-    },
+
     {
       name: "layout3",
       type: "number",
-      title: "Section 3 - nombre de colonnes",
+      title: "Section 3 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,
@@ -304,44 +201,13 @@ const project = {
       ],
     },
     {
-      name: "font3",
-      type: "string",
-      title: "Texte(s) 3 - Police",
-      options: {
-        list: [
-          { title: "H1", value: "text-4xl " }, //define values here !!
-          { title: "H2", value: "text-3xl " },
-          { title: "H3", value: "text-2xl " },
-          { title: "H4", value: "text-xl " },
-          { title: "p", value: "text-base font-normal" },
-        ],
-        layout: "radio",
-        initialValue: "text-base",
-      },
-    },
-    {
-      name: "alignment3",
-      type: "string",
-      title: "Texte(s) 3 - Alignement",
-      options: {
-        list: [
-          { title: "gauche", value: "text-left" }, //check values CSS !!!
-          { title: "centre", value: "text-center" },
-          { title: "droite", value: "text-right" },
-          { title: "justifié", value: "text-justify" },
-        ],
-        layout: "radio",
-        initialValue: "text-left",
-      },
-    },
-    {
       name: "background4",
       type: "string",
       title: "Section 4 - fond de couleur?",
       options: {
         list: [
-          { title: "light", value: "bg-orange-50" }, //define values here !!
-          { title: "dark", value: "bg-[#B8B09F] " },
+          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
+          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
         ],
         layout: "radio",
         initialValue: "bg-orange-50",
@@ -350,9 +216,9 @@ const project = {
     {
       name: "layout4",
       type: "number",
-      title: "Section 4 - nombre de colonnes",
+      title: "Section 4 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,
@@ -381,44 +247,13 @@ const project = {
       ],
     },
     {
-      name: "font4",
-      type: "string",
-      title: "Texte(s) 4 - Police",
-      options: {
-        list: [
-          { title: "H1", value: "text-4xl " }, //define values here !!
-          { title: "H2", value: "text-3xl " },
-          { title: "H3", value: "text-2xl " },
-          { title: "H4", value: "text-xl " },
-          { title: "p", value: "text-base font-normal" },
-        ],
-        layout: "radio",
-        initialValue: "text-base",
-      },
-    },
-    {
-      name: "alignment4",
-      type: "string",
-      title: "Texte(s) 4 - Alignement",
-      options: {
-        list: [
-          { title: "gauche", value: "text-left" }, //check values CSS !!!
-          { title: "centre", value: "text-center" },
-          { title: "droite", value: "text-right" },
-          { title: "justifié", value: "text-justify" },
-        ],
-        layout: "radio",
-        initialValue: "text-left",
-      },
-    },
-    {
       name: "background5",
       type: "string",
       title: "Section 5 - fond de couleur?",
       options: {
         list: [
-          { title: "light", value: "bg-orange-50" }, //define values here !!
-          { title: "dark", value: "bg-[#B8B09F] " },
+          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
+          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
         ],
         layout: "radio",
         initialValue: "bg-orange-50",
@@ -427,9 +262,9 @@ const project = {
     {
       name: "layout5",
       type: "number",
-      title: "Section 5 - nombre de colonnes",
+      title: "Section 5 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,
@@ -458,44 +293,13 @@ const project = {
       ],
     },
     {
-      name: "font5",
-      type: "string",
-      title: "Texte(s) 5 - Police",
-      options: {
-        list: [
-          { title: "H1", value: "text-5xl " }, //define values here !!
-          { title: "H2", value: "text-3xl " },
-          { title: "H3", value: "text-2xl " },
-          { title: "H4", value: "text-xl " },
-          { title: "p", value: "text-base font-normal" },
-        ],
-        layout: "radio",
-        initialValue: "text-base",
-      },
-    },
-    {
-      name: "alignment5",
-      type: "string",
-      title: "Texte(s) 5 - Alignement",
-      options: {
-        list: [
-          { title: "gauche", value: "text-left" }, //check values CSS !!!
-          { title: "centre", value: "text-center" },
-          { title: "droite", value: "text-right" },
-          { title: "justifié", value: "text-justify" },
-        ],
-        layout: "radio",
-        initialValue: "text-left",
-      },
-    },
-    {
       name: "background6",
       type: "string",
       title: "Section 6 - fond de couleur?",
       options: {
         list: [
-          { title: "light", value: "bg-orange-60" }, //define values here !!
-          { title: "dark", value: "bg-[#B8B09F] " },
+          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
+          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
         ],
         layout: "radio",
         initialValue: "bg-orange-60",
@@ -504,9 +308,9 @@ const project = {
     {
       name: "layout6",
       type: "number",
-      title: "Section 6 - nombre de colonnes",
+      title: "Section 6 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,
@@ -533,37 +337,6 @@ const project = {
           type: "string",
         },
       ],
-    },
-    {
-      name: "font6",
-      type: "string",
-      title: "Texte(s) 6 - Police",
-      options: {
-        list: [
-          { title: "H1", value: "text-6xl " }, //define values here !!
-          { title: "H2", value: "text-3xl " },
-          { title: "H3", value: "text-2xl " },
-          { title: "H4", value: "text-xl " },
-          { title: "p", value: "text-base font-normal" },
-        ],
-        layout: "radio",
-        initialValue: "text-base",
-      },
-    },
-    {
-      name: "alignment6",
-      type: "string",
-      title: "Texte(s) 6 - Alignement",
-      options: {
-        list: [
-          { title: "gauche", value: "text-left" }, //check values CSS !!!
-          { title: "centre", value: "text-center" },
-          { title: "droite", value: "text-right" },
-          { title: "justifié", value: "text-justify" },
-        ],
-        layout: "radio",
-        initialValue: "text-left",
-      },
     },
   ],
 };

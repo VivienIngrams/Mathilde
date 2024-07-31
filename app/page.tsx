@@ -2,21 +2,21 @@ import Image from "next/image";
 import NavMenu from "./components/NavMenu";
 import Footer from "./components/Footer";
 import { client } from "../sanity/lib/client";
-import { Project , Section } from "../app/interface";
-import ProjectSection from "./components/ProjectSection";
+import { Project } from "../app/interface";
 import Link from "next/link";
+import { ProjectSection1 } from "./components/ProjectSection";
 
 async function getData() {
   const data = await client.fetch(
     `
     *[_type == 'project'] | order(date desc) {
     title,
+    date,
     "slug": slug.current,
-      subtitle1,
-      images1[],
-      layout1,
-      font1,
-      background1,
+       mainImages[],
+      mainLayout,
+      mainBackground,
+      mainText
   }
   `,
     {},
@@ -30,34 +30,34 @@ async function getData() {
 }
 
 function transformData(data: any[]): Project[] {
-  return data.map(item => ({
+  return data.map((item) => ({
     title: item.title,
     slug: item.slug,
+    date: item.date,
     section: {
-      images: item.images1,
-      subtitle: item.subtitle1,
-      layout: item.layout1,
-      font: item.font1,
-      background: item.background1,
-      
+      images: item.mainImages,
+      layout: item.mainLayout,
+      background: item.mainBackground,
+      text: item.mainText,
     },
   }));
 }
 
-
 export default async function Home() {
   const data = await getData();
   const transformedData = transformData(data);
-  console.log(transformedData[0].section);
+  console.log(transformedData[1].section);
   return (
     <div className="h-full">
       <NavMenu />
       <div className="">
         {transformedData.map((project: Project) => (
-          <div className={`${project.section.background} min-h-screen w-full`} key={project.slug}>
-            <h1>{project.title}</h1>
-          <ProjectSection projectSection={project.section as Section} />
-          <Link href={`/project/${project.slug}`}>Read more</Link>
+          <div key={project.slug}>
+            <ProjectSection1
+              projectSection={project.section}
+              title={project.title}
+              slug={project.slug}
+            />
           </div>
         ))}
       </div>

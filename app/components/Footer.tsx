@@ -24,9 +24,9 @@ const Footer = () => {
           <div className="flex gap-x-2">
             <Socials />
           </div>
-          <p className="">
+          <Link href="mailto:mathilde@2regards.com" target="_blank"  className="">
           mathilde@2regards.com
-          </p>
+          </Link>
           <p className=" ">
           +33 6 79 76 14 88
           </p>
