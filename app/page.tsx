@@ -1,4 +1,3 @@
-import Image from "next/image";
 import NavMenu from "./components/NavMenu";
 import Footer from "./components/Footer";
 import { client } from "../sanity/lib/client";
@@ -56,8 +55,13 @@ export default async function Home() {
             <ProjectSection1
               projectSection={project.section}
               title={project.title}
-              slug={project.slug}
             />
+            <Link
+              href={`/project/${project.slug}`}
+              className={`${project.section.background}`}
+            >
+              Read more
+            </Link>
           </div>
         ))}
       </div>
