@@ -55,13 +55,15 @@ export default async function Home() {
             <ProjectSection1
               projectSection={project.section}
               title={project.title}
+              
             />
+            <div className={`-mt-12 `} >
             <Link
               href={`/project/${project.slug}`}
-              className={`${project.section.background}`}
+           
             >
               Read more
-            </Link>
+            </Link></div>
           </div>
         ))}
       </div>

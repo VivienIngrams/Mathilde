@@ -5,7 +5,7 @@ import Socials from "./Socials";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col relative justify-center items-center py-12 bg-[rgba(228,221,214,0.85)] ">
+    <div className="flex flex-col relative justify-center items-center py-12 bg-[rgba(227,224,220,0.85)] ">
       <Link href="/">
         <div className="rounded-full shadow-sm shadow-[#78350f] p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
           <HiOutlineChevronDoubleUp />

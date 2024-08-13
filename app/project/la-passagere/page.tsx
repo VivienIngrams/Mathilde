@@ -8,6 +8,12 @@ import {
   ProjectSection4,
   ProjectSection5,
   ProjectSection6,
+  ProjectSection7,
+  ProjectSection8,
+  ProjectSection9,
+  ProjectSection10,
+  ProjectSection11,
+  ProjectSection12
 } from "@/app/components/ProjectSection";
 import { Section } from "@/app/interface";
 
@@ -21,37 +27,37 @@ async function getProjectData(slug: string) {
         "sections": [
           {
             "images": images1,
-            "layout": 1,
+            "layout": layout1,
             "background": background1,
             "text": text1
           },
           {
             "images": images2,
-            "layout": 2,
+            "layout": layout2,
             "background": background2,
             "text": text2
           },
           {
             "images": images3,
-            "layout": 3,
+            "layout": layout3,
             "background": background3,
             "text": text3
           },
           {
             "images": images4,
-            "layout": 4,
+            "layout": layout4,
             "background": background4,
             "text": text4
           },
           {
             "images": images5,
-            "layout": 5,
+            "layout": layout5,
             "background": background5,
             "text": text5
           },
           {
             "images": images6,
-            "layout": 6,
+            "layout": layout6,
             "background": background6,
             "text": text6
           },
@@ -75,6 +81,11 @@ const sectionComponents: { [key: number]: React.ComponentType<{ projectSection: 
   4: ProjectSection4,
   5: ProjectSection5,
   6: ProjectSection6,
+  7: ProjectSection7,
+  8: ProjectSection8,
+  9: ProjectSection9,
+  10: ProjectSection10,
+  11: ProjectSection11,
 };
 
 export default async function LaPassagerePage() {

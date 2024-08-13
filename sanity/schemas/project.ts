@@ -43,7 +43,7 @@ const project = {
       type: "number",
       title: "Section Home page - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         layout: "radio",
       },
       initialValue: 1,
@@ -90,7 +90,7 @@ const project = {
       type: "number",
       title: "Section 1 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         layout: "radio",
       },
       initialValue: 1,
@@ -137,7 +137,7 @@ const project = {
       type: "number",
       title: "Section 2 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         layout: "radio",
       },
       initialValue: 1,
@@ -171,7 +171,7 @@ const project = {
       type: "number",
       title: "Section 3 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         layout: "radio",
       },
       initialValue: 1,
@@ -218,7 +218,7 @@ const project = {
       type: "number",
       title: "Section 4 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         layout: "radio",
       },
       initialValue: 1,
@@ -264,7 +264,7 @@ const project = {
       type: "number",
       title: "Section 5 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         layout: "radio",
       },
       initialValue: 1,
@@ -310,7 +310,7 @@ const project = {
       type: "number",
       title: "Section 6 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         layout: "radio",
       },
       initialValue: 1,
@@ -338,6 +338,89 @@ const project = {
         },
       ],
     },
+    {
+      name: "background7",
+      type: "string",
+      title: "Section 7 - fond de couleur?",
+      options: {
+        list: [
+          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
+          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
+        ],
+        layout: "radio",
+        initialValue: "bg-orange-50",
+      },
+    },
+    {
+      name: "layout7",
+      type: "number",
+      title: "Section 7 - mise en page",
+      options: {
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        layout: "radio",
+      },
+      initialValue: 1,
+    },
+    {
+      name: "images7",
+      type: "array",
+      title: "Image(s) 7",
+      of: [
+        {
+          type: "image",
+          options: {
+            hotspot: true,
+          },
+        },
+      ],
+    },
+    {
+      name: "text7",
+      type: "array",
+      title: "Texte(s) 7",
+      of: [
+        {
+          type: "string",
+        },
+      ],
+    },
+    {
+      name: "background8",
+      type: "string",
+      title: "Section 8 - fond de couleur?",
+      options: {
+        list: [
+          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
+          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
+        ],
+        layout: "radio",
+        initialValue: "bg-orange-50",
+      },
+    },
+    {
+      name: "layout8",
+      type: "number",
+      title: "Section 8 - mise en page",
+      options: {
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        layout: "radio",
+      },
+      initialValue: 1,
+    },
+    {
+      name: "images8",
+      type: "array",
+      title: "Image(s) 8",
+      of: [
+        {
+          type: "image",
+          options: {
+            hotspot: true,
+          },
+        },
+      ],
+    },
+
   ],
 };
 
