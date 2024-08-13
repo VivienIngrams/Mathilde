@@ -264,7 +264,7 @@ export const ProjectSection5 = ({
               </div>
             )}
           </div>
-          <div className="relative w-[140%] md:w-[90%] h-[100%] ">
+          <div className="relative w-[100%] md:w-[90%] h-[100%] ">
             {projectSection.images && (
               <Image
                 src={urlFor(projectSection.images[3]).url() as string}
@@ -315,8 +315,8 @@ export const ProjectSection6 = ({
             <h3>{projectSection.text[2]}</h3>
           </div>
         )}
-        <div className="flex flex-col justify-center items-start h-[60vh] md:h-[100vh] w-[100vw] md:w-[70vw]  ">
-          <div className="relative h-[95%] w-[100%] md:w-[60%]">
+        <div className="flex flex-col justify-center items-start h-[60vh] md:h-[100vh] w-[100vw] md:w-[100%]  ">
+          <div className="relative h-[95%] w-[100%] md:w-[90%]">
             {projectSection.images && (
               <Image
                 src={urlFor(projectSection.images[0]).url() as string}
