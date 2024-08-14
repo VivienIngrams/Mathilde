@@ -420,7 +420,16 @@ const project = {
         },
       ],
     },
-
+    {
+      name: "text8",
+      type: "array",
+      title: "Texte(s) 8",
+      of: [
+        {
+          type: "string",
+        },
+      ],
+    },
   ],
 };
 

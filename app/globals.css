@@ -27,7 +27,7 @@ h1 {
 
 p {
   font-size: 0.8rem; /* Default size for small screens */
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   
   @screen md {

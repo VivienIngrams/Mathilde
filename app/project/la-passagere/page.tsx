@@ -61,6 +61,19 @@ async function getProjectData(slug: string) {
             "background": background6,
             "text": text6
           },
+          {
+            "images": images7,
+            "layout": layout7,
+            "background": background7,
+            "text": text7
+            },
+           
+          {
+            "images": images8,
+            "layout": layout8,
+            "background": background8,
+            "text": text8
+  },
         ]
       }[0]
       `,
@@ -92,7 +105,7 @@ export default async function LaPassagerePage() {
   const project = await getProjectData("la-passagere");
   console.log(project.sections);
   return (
-    <div className="h-full">
+    <div className="min-h-full">
       <NavMenu />
       <div>
         {project.sections.map((section: Section, index: number) => {

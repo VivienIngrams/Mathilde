@@ -26,14 +26,14 @@ const NavMenu = () => {
                 <MenuButton className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold">
                   projects
                 </MenuButton>
-                <MenuItems className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-[#cec7c1] ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <MenuItems className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-[rgba(227,224,220)] ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <div className="py-1">
                     <MenuItem>
                       {({ active }) => (
                         <Link
                           href="/project/au-cafe"
                           className={`block px-4 py-2 text-md ${
-                            active ? "bg-gray-100" : ""
+                            active ?  "bg-[#cbc7c2] " : ""
                           }`}
                         >
                           Au café
@@ -45,7 +45,7 @@ const NavMenu = () => {
                         <Link
                           href="/project/la-passagere"
                           className={`block px-4 py-2 text-md ${
-                            active ? "bg-gray-100" : ""
+                             active ?  "bg-[#cbc7c2] " : ""
                           }`}
                         >
                           La Passagère
@@ -57,7 +57,7 @@ const NavMenu = () => {
                         <Link
                           href="/project/interieur"
                           className={`block px-4 py-2 text-md ${
-                            active ? "bg-gray-100" : ""
+                          active ?  "bg-[#cbc7c2] " : ""
                           }`}
                         >
                           Intérieur
@@ -69,7 +69,7 @@ const NavMenu = () => {
                         <Link
                           href="/project/sentiment-oceanique"
                           className={`block px-4 py-2 text-md ${
-                            active ? "bg-gray-100" : ""
+                             active ?  "bg-[#cbc7c2] " : ""
                           }`}
                         >
                           Sentiment océanique
@@ -81,7 +81,7 @@ const NavMenu = () => {
                         <Link
                           href="/project/photo-texte"
                           className={`block px-4 py-2 text-md ${
-                            active ? "bg-gray-100" : ""
+                             active ?  "bg-[#cbc7c2] " : ""
                           }`}
                         >
                           Photo texte
@@ -93,7 +93,7 @@ const NavMenu = () => {
                         <Link
                           href="/project/en-suspension"
                           className={`block px-4 py-2 text-md ${
-                            active ? "bg-gray-100" : ""
+                             active ?  "bg-[#cbc7c2] " : ""
                           }`}
                         >
                           En suspension
@@ -105,7 +105,7 @@ const NavMenu = () => {
                         <Link
                           href="/project/joel"
                           className={`block px-4 py-2 text-md ${
-                            active ? "bg-gray-100" : ""
+                             active ?  "bg-[#cbc7c2] " : ""
                           }`}
                         >
                           Joël
@@ -178,7 +178,7 @@ const NavMenu = () => {
                     <Link
                       href="/project/au-cafe"
                       className={`block px-4 py-2 text-base ${
-                        active ? "bg-gray-100" : ""
+                        active ?  "bg-[#cbc7c2] " : ""
                       }`}
                     >
                       Au café
@@ -190,7 +190,7 @@ const NavMenu = () => {
                     <Link
                       href="/project/la-passagere"
                       className={`block px-4 py-2 text-base ${
-                        active ? "bg-gray-100" : ""
+                         active ?  "bg-[#cbc7c2] " : ""
                       }`}
                     >
                       La Passagère
@@ -202,7 +202,7 @@ const NavMenu = () => {
                     <Link
                       href="/project/interieur"
                       className={`block px-4 py-2 text-base ${
-                        active ? "bg-gray-100" : ""
+                       active ?  "bg-[#cbc7c2] " : ""
                       }`}
                     >
                       Intérieur
@@ -214,7 +214,7 @@ const NavMenu = () => {
                     <Link
                       href="/project/sentiment-oceanique"
                       className={`block px-4 py-2 text-base ${
-                        active ? "bg-gray-100" : ""
+                         active ?  "bg-[#cbc7c2] " : ""
                       }`}
                     >
                       Sentiment océanique
@@ -226,7 +226,7 @@ const NavMenu = () => {
                     <Link
                       href="/project/photo-texte"
                       className={`block px-4 py-2 text-base ${
-                        active ? "bg-gray-100" : ""
+                         active ?  "bg-[#cbc7c2] " : ""
                       }`}
                     >
                       Photo texte
@@ -238,7 +238,7 @@ const NavMenu = () => {
                     <Link
                       href="/project/en-suspension"
                       className={`block px-4 py-2 text-base ${
-                        active ? "bg-gray-100" : ""
+                         active ?  "bg-[#cbc7c2] " : ""
                       }`}
                     >
                       En suspension
@@ -250,7 +250,7 @@ const NavMenu = () => {
                     <Link
                       href="/project/joel"
                       className={`block px-4 py-2 text-base ${
-                        active ? "bg-gray-100" : ""
+                         active ?  "bg-[#cbc7c2] " : ""
                       }`}
                     >
                       Joël
