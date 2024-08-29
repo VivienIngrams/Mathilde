@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { urlFor } from "../../sanity/lib/client";
 import { Section } from "../interface";
-import exp from "constants";
-import project from "@/sanity/schemas/project";
 
 export const ProjectSection1 = ({
   projectSection,
@@ -18,6 +16,16 @@ export const ProjectSection1 = ({
           <div className="md:hidden text-right ">
             <div className="px-4">
               <h1 className="py-2">{title}</h1>
+              {projectSection.images && projectSection.images[1] && (
+              <div className="relative h-[40vh] w-[100%]">
+                <Image
+                  src={urlFor(projectSection.images[1]).url() as string}
+                  alt={`${title} - additional`}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            )}
               <p className="">{projectSection.text[0]}</p>
             </div>
           </div>
@@ -413,7 +421,7 @@ export const ProjectSection8 = ({
 }) => {
   return (
     <div className={` min-h-screen w-full bg-[rgba(227,224,220,0.85)]`}>
-      <div className="flex justify-center items-center h-[60vh]  w-[100vw] px-[10vw] ">
+      <div className="flex justify-center items-center h-[40vh] md:h-[60vh]  w-[100vw] md:px-[10vw] ">
         {projectSection.images &&
           projectSection.images.map((image, index) => (
             <div className="relative h-[95%] w-[100%] " key={index}>
@@ -427,8 +435,8 @@ export const ProjectSection8 = ({
           ))}
       </div>
       {projectSection.text && (
-        <div className="h-[30vh] flex flex-col items-center justify-center">
-          <div className="px-4 text-center max-w-[50vw]">
+        <div className="h-[20vh] md:h-[30vh] flex flex-col items-center justify-center">
+          <div className="px-4 text-center md:max-w-[50vw]">
             <p className="">{projectSection.text[0]}</p>
           </div>
         </div>
@@ -488,77 +496,77 @@ export const ProjectSection10 = ({
   );
 };
 
-export const ProjectSection11 = ({
-  projectSection,
-  title,
-}: {
-  projectSection: Section;
-  title: string;
-}) => {
-  return (
-    <div className={` min-h-screen w-full bg-[rgba(227,224,220,0.85)]`}>
-      <h1 className="py-2 text-center">{title}</h1>
-      <div className={` md:grid md:grid-cols-2  `}>
-        {projectSection.text && (
-          <div className="hidden md:flex flex-col justify-end items-center pl-20">
-            {projectSection.images && projectSection.images[1] && (
-              <div className="relative h-[40vh] w-[70%] ">
-                <Image
-                  src={urlFor(projectSection.images[1]).url() as string}
-                  alt={`${title} - additional`}
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            )}
-            <div className="w-[90%] h-[40%] flex flex-col justify-around ">
-              <div className="py-2">
-                <p>{projectSection.text[0]}</p>
-              </div>
-              <div className="py-2">
-                <p>{projectSection.text[1]}</p>
-              </div>
-              <div className="py-2">
-                <p>{projectSection.text[2]}</p>
-              </div>
-              <div className="py-2">
-                <p>{projectSection.text[3]}</p>
-              </div>
-            </div>
-          </div>
-        )}
-        <div className="flex flex-col md:justify-center md:items-center h-[75vh] md:h-[75vh] w-[85vw] md:w-[50vw]  ">
-          <div className="relative h-full w-full md:w-[60%]">
-            {projectSection.images && (
-              <Image
-                src={urlFor(projectSection.images[0]).url() as string}
-                alt={title}
-                fill
-                className="object-contain"
-              />
-            )}
-          </div>
-        </div>
-        {projectSection.text && (
-          <div className="md:hidden text-right ">
-            <div className="px-4">
-              <p className="">{projectSection.text[0]}</p>
-            </div>
-            <div>
-              <p>{projectSection.text[1]}</p>
-            </div>
-            <div>
-              <p>{projectSection.text[2]}</p>
-            </div>
-            <div>
-              <p>{projectSection.text[3]}</p>
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
+// export const ProjectSection11 = ({
+//   projectSection,
+//   title,
+// }: {
+//   projectSection: Section;
+//   title: string;
+// }) => {
+//   return (
+//     <div className={` min-h-screen w-full bg-[rgba(227,224,220,0.85)]`}>
+//       <h1 className="py-2 text-center">{title}</h1>
+//       <div className={` md:grid md:grid-cols-2  `}>
+//         {projectSection.text && (
+//           <div className="md:flex flex-col justify-end items-center pl-20">
+//             {projectSection.images && projectSection.images[1] && (
+//               <div className="relative h-[40vh] w-[70%] ">
+//                 <Image
+//                   src={urlFor(projectSection.images[1]).url() as string}
+//                   alt={`${title} - additional`}
+//                   fill
+//                   className="object-contain"
+//                 />
+//               </div>
+//             )}
+//             <div className="w-[90%] h-[40%] flex flex-col justify-around ">
+//               <div className="py-2">
+//                 <p>{projectSection.text[0]}</p>
+//               </div>
+//               <div className="py-2">
+//                 <p>{projectSection.text[1]}</p>
+//               </div>
+//               <div className="py-2">
+//                 <p>{projectSection.text[2]}</p>
+//               </div>
+//               <div className="py-2">
+//                 <p>{projectSection.text[3]}</p>
+//               </div>
+//             </div>
+//           </div>
+//         )}
+//         <div className="flex flex-col md:justify-center md:items-center h-[75vh] md:h-[75vh] w-[85vw] md:w-[50vw]  ">
+//           <div className="relative h-full w-full md:w-[60%]">
+//             {projectSection.images && (
+//               <Image
+//                 src={urlFor(projectSection.images[0]).url() as string}
+//                 alt={title}
+//                 fill
+//                 className="object-contain"
+//               />
+//             )}
+//           </div>
+//         </div>
+//         {projectSection.text && (
+//           <div className="hidden text-right ">
+//             <div className="px-4">
+//               <p className="">{projectSection.text[0]}</p>
+//             </div>
+//             <div>
+//               <p>{projectSection.text[1]}</p>
+//             </div>
+//             <div>
+//               <p>{projectSection.text[2]}</p>
+//             </div>
+//             <div>
+//               <p>{projectSection.text[3]}</p>
+//             </div>
+//           </div>
+//         )}
+//       </div>
+//     </div>
+//   );
+// };
 
 export const ProjectSection12 = ({
   projectSection,
