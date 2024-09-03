@@ -12,7 +12,6 @@ import {
   ProjectSection8,
   ProjectSection9,
   ProjectSection10,
-
 } from "@/app/components/ProjectSection";
 import { Section } from "@/app/interface";
 
@@ -66,13 +65,6 @@ async function getProjectData(slug: string) {
             "background": background7,
             "text": text7
             },
-           
-          {
-            "images": images8,
-            "layout": layout8,
-            "background": background8,
-            "text": text8
-  },
         ]
       }[0]
       `,
@@ -86,7 +78,13 @@ async function getProjectData(slug: string) {
   return data;
 }
 
-const sectionComponents: { [key: number]: React.ComponentType<{ projectSection: Section, title: string, slug: string }> } = {
+const sectionComponents: {
+  [key: number]: React.ComponentType<{
+    projectSection: Section;
+    title: string;
+    slug: string;
+  }>;
+} = {
   1: ProjectSection1,
   2: ProjectSection2,
   3: ProjectSection3,
@@ -97,14 +95,13 @@ const sectionComponents: { [key: number]: React.ComponentType<{ projectSection: 
   8: ProjectSection8,
   9: ProjectSection9,
   10: ProjectSection10,
-  
 };
 
-export default async function LaPassagerePage() {
-  const project = await getProjectData("la-passagere");
+export default async function SentimentOceaniquePage() {
+  const project = await getProjectData("sentiment-oceanique");
   console.log(project.sections);
   return (
-    <div className="min-h-full">
+    <div className="h-full">
       <NavMenu />
       <div>
         {project.sections.map((section: Section, index: number) => {

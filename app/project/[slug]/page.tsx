@@ -1,6 +1,7 @@
 import { client } from "../../../sanity/lib/client";
 import NavMenu from "@/app/components/NavMenu";
 import Footer from "@/app/components/Footer";
+import { notFound } from "next/navigation";
 import {
   ProjectSection1,
   ProjectSection2,
@@ -100,26 +101,38 @@ const sectionComponents: { [key: number]: React.ComponentType<{ projectSection: 
   
 };
 
-export default async function LaPassagerePage() {
-  const project = await getProjectData("la-passagere");
-  console.log(project.sections);
-  return (
-    <div className="min-h-full">
-      <NavMenu />
-      <div>
-        {project.sections.map((section: Section, index: number) => {
-          const SectionComponent = sectionComponents[section.layout];
-          return (
-            <SectionComponent
-              key={index}
-              projectSection={section}
-              title={project.title}
-              slug={project.slug}
-            />
-          );
-        })}
+
+type Props = {
+    params: {
+      slug: string;
+    };
+  };
+  
+  export default async function ProjectPage({ params }: Props) {
+    const { slug } = params;  
+    const project = await getProjectData(slug);
+  
+    if (!project) {
+      return notFound();
+    }
+  
+    return (
+      <div className="min-h-full">
+        <NavMenu />
+        <div>
+          {project.sections.map((section: Section, index: number) => {
+            const SectionComponent = sectionComponents[section.layout];
+            return SectionComponent ? (
+              <SectionComponent
+                key={index}
+                projectSection={section}
+                title={project.title}
+                slug={project.slug}
+              />
+            ) : null;  
+          })}
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  );
-}
+    );
+  }
