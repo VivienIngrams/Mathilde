@@ -11,21 +11,21 @@ export const ProjectSection1 = ({
 }) => {
   return (
     <div className={` min-h-screen w-full bg-[rgba(227,224,220,0.85)]`}>
-      <div className={` md:grid md:grid-cols-2 `}>
+      <div className={` md:grid md:grid-cols-2 pt-8`}>
         {projectSection.text && (
           <div className="md:hidden text-right ">
             <div className="px-4">
               <h1 className="py-2">{title}</h1>
               {projectSection.images && projectSection.images[1] && (
-              <div className="relative  h-[40vh] w-[100%]">
-                <Image
-                  src={urlFor(projectSection.images[1]).url() as string}
-                  alt={`${title} - additional`}
-                  fill
-                  className="object-contain z-10"
-                />
-              </div>
-            )}
+                <div className="relative  h-[40vh] w-[100%]">
+                  <Image
+                    src={urlFor(projectSection.images[1]).url() as string}
+                    alt={`${title} - additional`}
+                    fill
+                    className="object-contain z-10"
+                  />
+                </div>
+              )}
               <p className="py-2">{projectSection.text[0]}</p>
             </div>
           </div>
@@ -75,13 +75,15 @@ export const ProjectSection2 = ({
 }) => {
   return (
     <div
-      className={` ${projectSection.background} bg-[rgba(227,224,220,0.85)] w-full -mt-[35vh] pt-60`}
+      className={` ${projectSection.background} bg-[rgba(227,224,220,0.85)] w-full `}
     >
       <div className={`  p-8 md:p-32`}>
         {projectSection.text && (
-          <div className={` md:text-right md:max-w-[50vw] mx-auto`}>
+          <div className={`md:text-right md:max-w-[50vw] mx-auto`}>
             <h3>{projectSection.text[0]}</h3>
             <h3>{projectSection.text[1]}</h3>
+            {projectSection.text[2] && <p>{projectSection.text[2]}</p>}
+            {projectSection.text[3] && <p>{projectSection.text[3]}</p>}
           </div>
         )}
       </div>
@@ -102,11 +104,11 @@ export const ProjectSection3 = ({
         className={` md:grid md:grid-cols-5 min-h-full md:h-[95vh] w-full  `}
       >
         <div className="m-auto h-full w-[70%]">
-          {projectSection.text && (
+          {/* {projectSection.text && (
             <div>
               <p>{projectSection.text[0]}</p>
             </div>
-          )}
+          )} */}
         </div>
         <div className="h-[80vh] md:h-full w-full flex flex-row items-center">
           <div className="relative w-[110%] h-[80%] -mr-24">
@@ -120,7 +122,7 @@ export const ProjectSection3 = ({
             )}
           </div>
         </div>
-        <div className="h-[60vh] md:h-full w-full flex flex-row justify-end md:items-start">
+        <div className="h-[60vh] md:h-full w-full flex flex-row justify-end md:items-end">
           <div className="relative w-[70%] h-[90%] md:h-[60%] mt-4 ">
             {projectSection.images && projectSection.images[1] && (
               <Image
@@ -132,7 +134,7 @@ export const ProjectSection3 = ({
             )}
           </div>
         </div>
-        <div className="h-[70vh] md:h-full w-full flex flex-row justify-start md:items-end ">
+        <div className="h-[70vh] md:h-full w-full flex flex-row justify-start md:items-start ">
           <div className="relative w-[90%] md:w-[130%] h-[100%] md:h-[80%] ml-4 -mr-10 -mb-16">
             {projectSection.images && projectSection.images[2] && (
               <Image
@@ -144,7 +146,7 @@ export const ProjectSection3 = ({
             )}
           </div>
         </div>
-        <div className="h-[50vh] md:h-full w-full flex items-center md:items-start justify-end">
+        <div className="h-[50vh] md:h-full w-full flex items-center md:items-end justify-end">
           <div className="relative w-[100%] md:w-[70%] h-[80%] md:h-[50%] mr-4 ">
             {projectSection.images && projectSection.images[3] && (
               <Image
@@ -168,77 +170,7 @@ export const ProjectSection4 = ({
   title: string;
 }) => {
   return (
-    <div
-      className={`${projectSection.background} bg-[rgba(227,224,220,0.85)] min-h-screen w-full`}
-    >
-      <div className={` md:grid md:grid-cols-5 md:h-[95vh] w-full  `}>
-        <div className="h-[60vh] md:h-full w-full flex flex-row items-start">
-          <div className="relative w-[80%] h-[90%] md:h-[50%] md:-mt-24 ">
-            {projectSection.images && (
-              <Image
-                src={urlFor(projectSection.images[0]).url() as string}
-                alt={title}
-                fill
-                className="absolute object-contain"
-              />
-            )}
-          </div>
-        </div>
-        <div className="h-[50vh] md:h-full w-full flex flex-row md:items-end">
-          <div className="relative w-[110%] md:w-[120%] h-[100%] md:h-[70%] -ml-8 ">
-            {projectSection.images && (
-              <Image
-                src={urlFor(projectSection.images[1]).url() as string}
-                alt={title}
-                fill
-                className="object-contain"
-              />
-            )}
-          </div>
-        </div>
-        <div className="h-[25vh] md:h-full w-full flex items-center justify-center md:flex-row md:items-start">
-          <div className="relative w-[85%] md:w-[90%] h-[70%] mt-4 md:-ml-20">
-            {projectSection.text && (
-              <div>
-                <p>{projectSection.text[0]}</p>
-              </div>
-            )}
-          </div>
-        </div>
-        <div className="h-[60vh] md:h-full w-full flex flex-row items-center ">
-          <div className="relative w-[110%] h-[100%] md:h-[80%] mr-6">
-            {projectSection.images && (
-              <Image
-                src={urlFor(projectSection.images[2]).url() as string}
-                alt={title}
-                fill
-                className="object-contain"
-              />
-            )}
-          </div>
-        </div>
-        <div className="h-[30vh] md:h-full w-full flex justify-center items-center md:items-end">
-          <div className="relative w-[85%] h-[60%] mr-4 ">
-            {projectSection.text && (
-              <div>
-                <p>{projectSection.text[1]}</p>
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-export const ProjectSection5 = ({
-  projectSection,
-  title,
-}: {
-  projectSection: Section;
-  title: string;
-}) => {
-  return (
-    <div className={` bg-[rgba(227,224,220,0.85)] min-h-screen  w-full`}>
+    <div className={` bg-[rgba(227,224,220,0.85)] min-h-screen -mt-12 w-full`}>
       <div className={` md:grid md:grid-cols-5 md:h-[95vh] w-full `}>
         <div className="h-[50vh] md:h-full w-full flex md:flex-row justify-end md:justify-start md:items-start">
           <div className="relative w-[80%] h-[90%] md:h-[50%] md:-mt-32 ">
@@ -276,14 +208,15 @@ export const ProjectSection5 = ({
             )}
           </div>
         </div>
-        <div className="h-[80vh] md:h-full w-full flex flex-col md:items-start items-center md:justify-end">
-            {projectSection.text && (
-          <div className="relative w-[80%] h-[30%] md:h-[100%] mr-4 pt-16 md:-mt-12 ">
-              <div>
-                <p>{projectSection.text[0]}</p>
-              </div>
-          </div>
-            )}
+        <div>
+          {/* <div className="h-[80vh] md:h-full w-full flex flex-col md:items-start items-center md:justify-end"> */}
+          {/* {projectSection.text && (
+        <div className="relative w-[80%] h-[30%] md:h-[100%] mr-4 md:pt-16 md:-mt-12 ">
+            <div>
+              <p>{projectSection.text[0]}</p>
+            </div>
+        </div>
+          )} */}
           <div className="relative w-[100%] md:w-[90%] h-[100%] ">
             {projectSection.images && projectSection.images[3] && (
               <Image
@@ -296,8 +229,8 @@ export const ProjectSection5 = ({
           </div>
         </div>
         <div className="h-[80vh] md:h-full w-full flex items-center md:justify-end">
-          <div className="relative w-[100%] h-[90%] md:h-[70%]">
-            {projectSection.images && projectSection.images[4]  && (
+          <div className="relative w-[100%] h-[90%] md:h-[70%] md:mt-[75%]">
+            {projectSection.images && projectSection.images[4] && (
               <Image
                 src={urlFor(projectSection.images[4]).url() as string}
                 alt={title}
@@ -306,6 +239,79 @@ export const ProjectSection5 = ({
               />
             )}
           </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+export const ProjectSection5 = ({
+  projectSection,
+  title,
+}: {
+  projectSection: Section;
+  title: string;
+}) => {
+  return (
+    <div
+      className={`${projectSection.background} bg-[rgba(227,224,220,0.85)] min-h-screen -mt-12 w-full`}
+    >
+      <div className={` md:grid md:grid-cols-5 md:h-[95vh] w-full  `}>
+        <div className="h-[60vh] md:h-full w-full flex flex-row items-start">
+          <div className="relative w-[80%] h-[90%] md:h-[50%] md:-mt-24 ">
+            {projectSection.images && (
+              <Image
+                src={urlFor(projectSection.images[0]).url() as string}
+                alt={title}
+                fill
+                className="absolute object-contain"
+              />
+            )}
+          </div>
+        </div>
+        <div className="h-[50vh] md:h-full w-full flex flex-row md:items-start">
+          <div className="relative w-[110%] md:w-[130%] h-[100%] md:h-[90%] -ml-8 -mr-24 -mt-40">
+            {projectSection.images && (
+              <Image
+                src={urlFor(projectSection.images[1]).url() as string}
+                alt={title}
+                fill
+                className="object-contain"
+              />
+            )}
+          </div>
+        </div>
+        <div>
+          {/* <div className="h-[25vh] md:h-full w-full flex items-center justify-center md:flex-row md:items-start"> */}
+          {/* <div className="relative w-[85%] md:w-[90%] h-[70%] mt-4 md:-ml-20"> */}
+          {/* {projectSection.text && (
+            <div>
+              <p>{projectSection.text[0]}</p>
+            </div>
+          )} */}
+          {/* </div> */}
+        </div>
+        <div className="h-[60vh] md:h-full w-full flex flex-row md:items-start ">
+          <div className="relative w-[110%] h-[100%] -ml-24 -mt-24 mr-6">
+            {projectSection.images && (
+              <Image
+                src={urlFor(projectSection.images[2]).url() as string}
+                alt={title}
+                fill
+                className="object-contain"
+              />
+            )}
+          </div>
+        </div>
+        <div>
+          {/* <div className="h-[30vh] md:h-full w-full flex justify-center items-center md:items-end"> */}
+
+          {/* <div className="relative w-[85%] h-[60%] mr-4 ">
+          {projectSection.text && (
+            <div>
+              <p>{projectSection.text[1]}</p>
+            </div>
+          )}
+        </div> */}
         </div>
       </div>
     </div>
@@ -326,7 +332,7 @@ export const ProjectSection6 = ({
         {projectSection.text && (
           <div className="flex flex-col justify-center py-16 pl-20 text-right mr-8 md:ml-[40%]">
             <p>
-              <span className="text-5xl italic font-light tracking-tighter">
+              <span className="text-5xl font-serif  font-light tracking-tighter leading-[0.8]">
                 {projectSection.text[0]}
               </span>{" "}
               {projectSection.text[1]}
@@ -438,7 +444,7 @@ export const ProjectSection8 = ({
       {projectSection.text && (
         <div className="h-[30vh] flex flex-col items-center justify-center">
           <div className="px-4 text-center md:max-w-[50vw]">
-            <p className="">{projectSection.text[0]}</p>
+            <h3 className="">{projectSection.text[0]}</h3>
           </div>
         </div>
       )}
@@ -454,7 +460,9 @@ export const ProjectSection9 = ({
   title: string;
 }) => {
   return (
-    <div className={`h-[50vh] md:min-h-screen min-w-screen md:-pb-[25vh] md:h-[120vh] relative`}>
+    <div
+      className={`h-[50vh] md:min-h-screen min-w-screen md:-pb-[25vh] md:h-[120vh] relative`}
+    >
       {projectSection.images && (
         <Image
           src={urlFor(projectSection.images[0]).url() as string}
@@ -492,6 +500,29 @@ export const ProjectSection10 = ({
             <h3> {projectSection.text[3]}</h3>
           </div>
         </div>
+      )}
+    </div>
+  );
+};
+
+export const ProjectSection11 = ({
+  projectSection,
+  title,
+}: {
+  projectSection: Section;
+  title: string;
+}) => {
+  return (
+    <div
+      className={`h-[50vh] md:min-h-screen min-w-screen md:-pb-[25vh] md:h-[120vh] relative bg-[rgba(227,224,220,0.85)]`}
+    >
+      {projectSection.images && (
+        <Image
+          src={urlFor(projectSection.images[0]).url() as string}
+          alt={title}
+          fill
+          className="object-cover p-16"
+        />
       )}
     </div>
   );

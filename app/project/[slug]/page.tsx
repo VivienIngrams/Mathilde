@@ -13,7 +13,7 @@ import {
   ProjectSection8,
   ProjectSection9,
   ProjectSection10,
-
+  ProjectSection11,
 } from "@/app/components/ProjectSection";
 import { Section } from "@/app/interface";
 
@@ -74,6 +74,19 @@ async function getProjectData(slug: string) {
             "background": background8,
             "text": text8
   },
+  {
+    "images": images9,
+    "layout": layout9,
+    "background": background9,
+    "text": text9
+    },
+    {
+
+      "images": images10,
+      "layout": layout10,
+      "background": background10,
+      "text": text10
+      }
         ]
       }[0]
       `,
@@ -87,7 +100,13 @@ async function getProjectData(slug: string) {
   return data;
 }
 
-const sectionComponents: { [key: number]: React.ComponentType<{ projectSection: Section, title: string, slug: string }> } = {
+const sectionComponents: {
+  [key: number]: React.ComponentType<{
+    projectSection: Section;
+    title: string;
+    slug: string;
+  }>;
+} = {
   1: ProjectSection1,
   2: ProjectSection2,
   3: ProjectSection3,
@@ -98,41 +117,40 @@ const sectionComponents: { [key: number]: React.ComponentType<{ projectSection: 
   8: ProjectSection8,
   9: ProjectSection9,
   10: ProjectSection10,
-  
+  11: ProjectSection11,
 };
 
-
 type Props = {
-    params: {
-      slug: string;
-    };
+  params: {
+    slug: string;
   };
-  
-  export default async function ProjectPage({ params }: Props) {
-    const { slug } = params;  
-    const project = await getProjectData(slug);
-  
-    if (!project) {
-      return notFound();
-    }
-  
-    return (
-      <div className="min-h-full">
-        <NavMenu />
-        <div>
-          {project.sections.map((section: Section, index: number) => {
-            const SectionComponent = sectionComponents[section.layout];
-            return SectionComponent ? (
-              <SectionComponent
-                key={index}
-                projectSection={section}
-                title={project.title}
-                slug={project.slug}
-              />
-            ) : null;  
-          })}
-        </div>
-        <Footer />
-      </div>
-    );
+};
+
+export default async function ProjectPage({ params }: Props) {
+  const { slug } = params;
+  const project = await getProjectData(slug);
+
+  if (!project) {
+    return notFound();
   }
+
+  return (
+    <div className="min-h-full">
+      <NavMenu />
+      <div className="">
+        {project.sections.map((section: Section, index: number) => {
+          const SectionComponent = sectionComponents[section.layout];
+          return SectionComponent ? (
+            <SectionComponent
+              key={index}
+              projectSection={section}
+              title={project.title}
+              slug={project.slug}
+            />
+          ) : null;
+        })}
+      </div>
+      <Footer />
+    </div>
+  );
+}

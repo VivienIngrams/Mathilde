@@ -11,7 +11,7 @@ const NavMenu = () => {
   };
 
   return (
-    <nav className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 bg-[rgba(227,224,220,0.85)]">
+    <nav className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 bg-[rgba(227,224,220,0.85)] font-serif">
       <div className="flex items-center justify-between h-16 md:h-20">
       <Link
         href="/"
@@ -79,12 +79,12 @@ const NavMenu = () => {
                     <MenuItem>
                       {({ active }) => (
                         <Link
-                          href="/project/photo-texte"
+                          href="/project/mirante"
                           className={`block px-4 py-2 text-md ${
                              active ?  "bg-[#cbc7c2] " : ""
                           }`}
                         >
-                          Photo texte
+                          Mirante
                         </Link>
                       )}
                     </MenuItem>
@@ -224,12 +224,12 @@ const NavMenu = () => {
                 <MenuItem>
                   {({ active }) => (
                     <Link
-                      href="/project/photo-texte"
+                      href="/project/mirante"
                       className={`block px-4 py-2 text-base ${
                          active ?  "bg-[#cbc7c2] " : ""
                       }`}
                     >
-                      Photo texte
+                      Mirante
                     </Link>
                   )}
                 </MenuItem>
