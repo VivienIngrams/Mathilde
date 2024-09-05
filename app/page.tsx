@@ -49,7 +49,7 @@ export default async function Home() {
   return (
     <div className="h-full">
       <NavMenu />
-      <div className="">
+      <div className=" bg-[rgba(227,224,220,0.85)] ">
         {transformedData.map((project: Project) => (
           <div key={project.slug}>
             <ProjectSection1

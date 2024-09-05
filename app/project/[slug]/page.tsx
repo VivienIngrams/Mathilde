@@ -137,7 +137,7 @@ export default async function ProjectPage({ params }: Props) {
   return (
     <div className="min-h-full">
       <NavMenu />
-      <div className="">
+      <div className=" bg-[rgba(227,224,220,0.85)] ">
         {project.sections.map((section: Section, index: number) => {
           const SectionComponent = sectionComponents[section.layout];
           return SectionComponent ? (

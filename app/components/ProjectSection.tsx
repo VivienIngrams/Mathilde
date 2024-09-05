@@ -10,7 +10,7 @@ export const ProjectSection1 = ({
   title: string;
 }) => {
   return (
-    <div className={` min-h-screen w-full bg-[rgba(227,224,220,0.85)]`}>
+    <div className={`min-h-[70vh] md:min-h-screen w-full `}>
       <div className={` md:grid md:grid-cols-2 pt-8`}>
         {projectSection.text && (
           <div className="md:hidden text-right ">
@@ -23,6 +23,7 @@ export const ProjectSection1 = ({
                     alt={`${title} - additional`}
                     fill
                     className="object-contain z-10"
+                    style={{ objectPosition: "right" }}
                   />
                 </div>
               )}
@@ -30,7 +31,7 @@ export const ProjectSection1 = ({
             </div>
           </div>
         )}
-        <div className="flex flex-col md:justify-end md:items-end h-[75vh] md:h-[80vh] w-[85vw] md:w-[50vw]  ">
+        <div className="hidden md:flex md:flex-col md:justify-end md:items-end h-[75vh] md:h-[80vh] w-[85vw] md:w-[70vw] lg:w-[50vw]  ">
           <div className="relative h-full w-full md:w-[85%]">
             {projectSection.images && projectSection.images[0] && (
               <Image
@@ -87,7 +88,7 @@ export const ProjectSection2 = ({
 }) => {
   return (
     <div
-      className={` ${projectSection.background} bg-[rgba(227,224,220,0.85)] w-full `}
+      className={` ${projectSection.background}  w-full `}
     >
       <div className={`  p-8 md:p-32`}>
         {projectSection.text && (
@@ -111,7 +112,7 @@ export const ProjectSection3 = ({
   title: string;
 }) => {
   return (
-    <div className={` bg-[rgba(227,224,220,0.85)] min-h-screen  w-full`}>
+    <div className={`  min-h-screen  w-full`}>
       <div
         className={` md:grid md:grid-cols-5 min-h-full md:h-[95vh] w-full  `}
       >
@@ -176,7 +177,7 @@ export const ProjectSection4 = ({
   title: string;
 }) => {
   return (
-    <div className={` bg-[rgba(227,224,220,0.85)] min-h-screen -mt-12 w-full`}>
+    <div className={`  min-h-screen -mt-12 w-full`}>
       <div className={` md:grid md:grid-cols-5 md:h-[95vh] w-full `}>
         <div className="h-[50vh] md:h-full w-full flex md:flex-row justify-end md:justify-start md:items-start">
           <div className="relative w-[80%] h-[90%] md:h-[50%] md:-mt-32 ">
@@ -251,7 +252,7 @@ export const ProjectSection5 = ({
 }) => {
   return (
     <div
-      className={`${projectSection.background} bg-[rgba(227,224,220,0.85)] h-[80vh] -mt-12 w-full`}
+      className={`${projectSection.background}  h-[80vh] -mt-12 w-full`}
     >
       <div className={` md:grid md:grid-cols-5 md:h-[95vh] w-full  `}>
         <div className="h-[60vh] md:h-full w-full flex flex-row items-start">
@@ -305,13 +306,13 @@ export const ProjectSection6 = ({
 }) => {
   return (
     <div
-      className={`${projectSection.background} bg-[rgba(227,224,220,0.85)] min-h-[50vh] w-full`}
+      className={`${projectSection.background} min-h-[50vh] w-full`}
     >
       <div className={`  md:grid md:grid-cols-2`}>
         {projectSection.text && (
-          <div className="flex flex-col justify-center py-20 pl-20 text-right mr-8 md:ml-[40%]">
+          <div className="flex flex-col justify-center py-20  text-right mr-8 md:ml-[45%]">
             <p>
-              <span className="text-5xl font-serif  font-light tracking-tighter leading-[0.8]">
+              <span className="text-3xl lg:text-5xl font-serif  font-light tracking-tighter leading-[0.8]">
                 {projectSection.text[0]}
               </span>
               {projectSection.text[1]}
@@ -338,8 +339,8 @@ export const ProjectSection6 = ({
           {!projectSection.images &&
             projectSection.text &&
             projectSection.text[4] && (
-              <div className="flex flex-col justify-center items-start min-h-[80vh] w-[100vw] md:w-[100%]  ">
-                <div className="flex flex-col justify-center py-20 pl-20  mr-8 md:mr-[40%]">
+              <div className="flex flex-col justify-center items-start min-h-[50vh] md:min-h-[80vh] w-[100vw] md:w-[100%]  ">
+                <div className="flex flex-col justify-center py-20 ml-8  md:mr-[45%]">
                   {projectSection.text[4] && (
                     <p className="py-2"> {projectSection.text[4]}</p>
                   )}
@@ -366,7 +367,7 @@ export const ProjectSection7 = ({
   title: string;
 }) => {
   return (
-    <div className={` min-h-screen w-full bg-[rgba(227,224,220,0.85)]`}>
+    <div className={` min-h-screen w-full `}>
       <div className={`  md:grid md:grid-cols-3 h-full `}>
         <div className="h-[100%] flex flex-col items-center justify-center">
           {projectSection.images && projectSection.images[0] && (
@@ -427,7 +428,7 @@ export const ProjectSection8 = ({
   title: string;
 }) => {
   return (
-    <div className={` md:min-h-[60vh] w-full bg-[rgba(227,224,220,0.85)]`}>
+    <div className={` md:min-h-[60vh] w-full `}>
       <div className="flex justify-center items-end h-[40vh] md:h-[60vh]  w-[100%] md:px-[10vw] ">
         {projectSection.images &&
           projectSection.images.map((image, index) => (
@@ -442,7 +443,7 @@ export const ProjectSection8 = ({
           ))}
       </div>
       {projectSection.text && projectSection.text[0] && (
-        <div className="h-[30vh] flex flex-col items-center justify-center">
+        <div className="h-[30vh] flex flex-col items-center justify-start">
           <div className="px-4 text-center md:max-w-[50vw]">
             <h3 className="">{projectSection.text[0]}</h3>
           </div>
@@ -484,7 +485,7 @@ export const ProjectSection10 = ({
 }) => {
   return (
     <div
-      className={` md:min-h-screen w-full text-justify bg-[rgba(227,224,220,0.85)]`}
+      className={` md:min-h-screen w-full text-justify `}
     >
       {/* <h1>{title}</h1> */}
       {projectSection.text && (
@@ -505,25 +506,25 @@ export const ProjectSection10 = ({
   );
 };
 
-export const ProjectSection11 = ({
-  projectSection,
-  title,
-}: {
-  projectSection: Section;
-  title: string;
-}) => {
-  return (
-    <div
-      className={`h-[50vh] md:min-h-screen min-w-screen md:-pb-[25vh] md:h-[120vh] relative bg-[rgba(227,224,220,0.85)]`}
-    >
-      {projectSection.images && (
-        <Image
-          src={urlFor(projectSection.images[0]).url() as string}
-          alt={title}
-          fill
-          className="object-cover p-[10vh]"
-        />
-      )}
-    </div>
-  );
-};
+// export const ProjectSection11 = ({
+//   projectSection,
+//   title,
+// }: {
+//   projectSection: Section;
+//   title: string;
+// }) => {
+//   return (
+//     <div
+//       className={`h-[50vh] md:min-h-screen min-w-screen md:-pb-[25vh] md:h-[120vh] relative `}
+//     >
+//       {projectSection.images && (
+//         <Image
+//           src={urlFor(projectSection.images[0]).url() as string}
+//           alt={title}
+//           fill
+//           className="object-cover p-[10vh]"
+//         />
+//       )}
+//     </div>
+//   );
+// };
