@@ -11,7 +11,7 @@ const NavMenu = () => {
   };
 
   return (
-    <nav className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 bg-[rgba(227,224,220,0.85)] font-serif">
+    <nav className="sticky top-0 w-full z-50 mx-auto px-4 sm:px-6 lg:px-8 bg-[rgba(227,224,220,0.85)] font-serif">
       <div className="flex items-center justify-between h-16 md:h-20">
       <Link
         href="/"
