@@ -25,20 +25,7 @@ const project = {
       type: "date",
       title: "Date du fin de projet",
     },
-    {
-      name: "mainBackground",
-      type: "string",
-      title: "Section Home page - fond de couleur?",
-      options: {
-        list: [
-          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
-          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
-        ],
-        layout: "radio",
-        initialValue: "bg-orange-50",
-      },
-    },
-    {
+       {
       name: "mainLayout",
       type: "number",
       title: "Section Home page - mise en page",
@@ -73,19 +60,6 @@ const project = {
     },
 
     {
-      name: "background1",
-      type: "string",
-      title: "Section 1 - fond de couleur?",
-      options: {
-        list: [
-          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
-          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
-        ],
-        layout: "radio",
-        initialValue: "bg-orange-50",
-      },
-    },
-    {
       name: "layout1",
       type: "number",
       title: "Section 1 - mise en page",
@@ -119,19 +93,6 @@ const project = {
       ],
     },
 
-    {
-      name: "background2",
-      type: "string",
-      title: "Section 2 - fond de couleur?",
-      options: {
-        list: [
-          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
-          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
-        ],
-        layout: "radio",
-        initialValue: "bg-orange-50",
-      },
-    },
     {
       name: "layout2",
       type: "number",
@@ -200,19 +161,7 @@ const project = {
         },
       ],
     },
-    {
-      name: "background4",
-      type: "string",
-      title: "Section 4 - fond de couleur?",
-      options: {
-        list: [
-          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
-          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
-        ],
-        layout: "radio",
-        initialValue: "bg-orange-50",
-      },
-    },
+   
     {
       name: "layout4",
       type: "number",
@@ -246,19 +195,7 @@ const project = {
         },
       ],
     },
-    {
-      name: "background5",
-      type: "string",
-      title: "Section 5 - fond de couleur?",
-      options: {
-        list: [
-          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
-          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
-        ],
-        layout: "radio",
-        initialValue: "bg-orange-50",
-      },
-    },
+    
     {
       name: "layout5",
       type: "number",
@@ -292,19 +229,7 @@ const project = {
         },
       ],
     },
-    {
-      name: "background6",
-      type: "string",
-      title: "Section 6 - fond de couleur?",
-      options: {
-        list: [
-          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
-          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
-        ],
-        layout: "radio",
-        initialValue: "bg-orange-60",
-      },
-    },
+    
     {
       name: "layout6",
       type: "number",
@@ -338,19 +263,7 @@ const project = {
         },
       ],
     },
-    {
-      name: "background7",
-      type: "string",
-      title: "Section 7 - fond de couleur?",
-      options: {
-        list: [
-          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
-          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
-        ],
-        layout: "radio",
-        initialValue: "bg-orange-50",
-      },
-    },
+    
     {
       name: "layout7",
       type: "number",
@@ -384,19 +297,7 @@ const project = {
         },
       ],
     },
-    {
-      name: "background8",
-      type: "string",
-      title: "Section 8 - fond de couleur?",
-      options: {
-        list: [
-          { title: "light", value: "bg-[rgba(228,221,214,0.85)]" }, //define values here !!
-          { title: "dark", value: "bg-[rgb(194,183,169,0.85)]" },
-        ],
-        layout: "radio",
-        initialValue: "bg-orange-50",
-      },
-    },
+    
     {
       name: "layout8",
       type: "number",
