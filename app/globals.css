@@ -43,14 +43,14 @@ p {
 }
 
 h3 {
-  font-size: 1.2rem; /* Default size for small screens */
+  font-size: 1.3rem; /* Default size for small screens */
   font-weight: 500;
   line-height: 1.1;
   font-family: var(--font-cormorant);
   
   
   @screen md {
-    font-size: 1.3rem; /* Medium screens */
+    font-size: 1.4rem; /* Medium screens */
   }
   
   @screen lg {
