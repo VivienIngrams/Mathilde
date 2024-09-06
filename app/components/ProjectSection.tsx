@@ -102,9 +102,9 @@ export const ProjectSection2 = ({
     <div
       className={` ${projectSection.background}  w-full `}
     >
-      <div className={`  p-8 md:p-32`}>
+      <div className={`my-12  p-4 md:p-32`}>
         {projectSection.text && (
-          <div className={`md:text-right md:max-w-[50vw] mx-auto`}>
+          <div className={`text-right md:max-w-[50vw] mx-auto`}>
             <h3>{projectSection.text[0]}</h3>
             <h3>{projectSection.text[1]}</h3>
             {projectSection.text[2] && <p>{projectSection.text[2]}</p>}
@@ -128,9 +128,9 @@ export const ProjectSection3 = ({
       <div
         className={` md:grid md:grid-cols-5 min-h-full md:h-[95vh] w-full  `}
       >
-        <div className="m-auto h-full w-[70%]"></div>
-        <div className="h-[80vh] md:h-full w-full flex flex-row items-center">
-          <div className="relative w-[110%] h-[80%] -mr-24">
+        <div className="m-auto md:h-full md:w-[70%]"></div>
+        <div className="h-[80vh] md:h-full w-full flex flex-row items-center md:items-end">
+          <div className="relative w-[100%] h-[80%] md:-mr-24">
             {projectSection.images && (
               <Image
                 src={urlFor(projectSection.images[0]).url() as string}
@@ -141,8 +141,8 @@ export const ProjectSection3 = ({
             )}
           </div>
         </div>
-        <div className="h-[60vh] md:h-full w-full flex flex-row justify-end md:items-end">
-          <div className="relative w-[70%] h-[90%] md:h-[60%] mt-4 ">
+        <div className="h-[60vh] md:h-full w-full md:flex md:flex-row md:justify-end md:items-end">
+          <div className="relative w-full md:w-[70%] h-[90%] md:h-[60%] md:mt-4 ">
             {projectSection.images && projectSection.images[1] && (
               <Image
                 src={urlFor(projectSection.images[1]).url() as string}
@@ -153,8 +153,8 @@ export const ProjectSection3 = ({
             )}
           </div>
         </div>
-        <div className="h-[70vh] md:h-full w-full flex flex-row justify-start md:items-start ">
-          <div className="relative w-[90%] md:w-[130%] h-[100%] md:h-[80%] ml-4 -mr-10 -mb-16">
+        <div className="h-[70vh] md:h-full w-full md:flex md:flex-row md:justify-start md:items-center ">
+          <div className="relative w-[100%] md:w-[130%] h-[100%] md:h-[80%] md:ml-4 md:-mr-10 md:-mb-16">
             {projectSection.images && projectSection.images[2] && (
               <Image
                 src={urlFor(projectSection.images[2]).url() as string}
@@ -165,8 +165,8 @@ export const ProjectSection3 = ({
             )}
           </div>
         </div>
-        <div className="h-[50vh] md:h-full w-full flex items-center md:items-end justify-end">
-          <div className="relative w-[100%] md:w-[70%] h-[80%] md:h-[50%] mr-4 ">
+        <div className="h-[50vh] md:h-full w-full flex md:items-end md:justify-end">
+          <div className="relative w-[100%] md:w-[70%] h-[80%] md:h-[50%] mt-8 md:mt-24 md:mr-4 ">
             {projectSection.images && projectSection.images[3] && (
               <Image
                 src={urlFor(projectSection.images[3]).url() as string}
@@ -189,10 +189,10 @@ export const ProjectSection4 = ({
   title: string;
 }) => {
   return (
-    <div className={`  min-h-screen -mt-12 w-full`}>
+    <div className={`  min-h-[70vh] mt-6 md:-mt-12 w-full`}>
     <div className={` md:grid md:grid-cols-5 md:h-[95vh] w-full `}>
-      <div className="h-[50vh] md:h-full w-full flex md:flex-row justify-end md:justify-start md:items-start">
-        <div className="relative w-[80%] h-[90%] md:h-[50%] md:-mt-32 ">
+      <div className="h-[60vh] md:h-full w-full md:flex flex-row  md:justify-start md:items-start">
+        <div className="relative w-full md:w-[80%] h-[90%] md:h-[50%] md:-mt-32 ">
           {projectSection.images && (
             <Image
               src={urlFor(projectSection.images[0]).url() as string}
@@ -203,8 +203,8 @@ export const ProjectSection4 = ({
           )}
         </div>
       </div>
-      <div className="h-[80vh] md:h-full w-full flex flex-row items-center">
-        <div className="relative w-[110%] h-[100%] md:-ml-12">
+      <div className="h-[60vh] w-full  md:-mt-12">
+        <div className="relative w-[100%] md:w-[110%] h-[100%] md:-ml-12">
           {projectSection.images && projectSection.images[1] && (
             <Image
               src={urlFor(projectSection.images[1]).url() as string}
@@ -216,7 +216,7 @@ export const ProjectSection4 = ({
         </div>
       </div>
       <div className="h-[60vh] md:h-full w-full flex flex-row items-center md:items-start">
-        <div className="relative w-[90%] h-[70%] md:h-[50%] ">
+        <div className="relative w-full md:w-[90%] h-[70%] md:h-[50%] ">
           {projectSection.images && projectSection.images[2] && (
             <Image
               src={urlFor(projectSection.images[2]).url() as string}
@@ -264,11 +264,11 @@ export const ProjectSection5 = ({
 }) => {
   return (
     <div
-      className={`${projectSection.background} min-h-screen md:h-[80vh] -mt-12 w-full`}
+      className={`${projectSection.background} min-h-[70vh] md:-mt-12 w-full`}
     >
       <div className={` md:grid md:grid-cols-5 md:h-[95vh] w-full  `}>
-        <div className="h-[60vh] md:h-full w-full flex flex-row items-start">
-          <div className="relative w-[80%] h-[90%] md:h-[50%] md:-mt-24 ">
+        <div className="h-[60vh] md:h-full w-full md:flex flex-row items-start">
+          <div className="relative w-full md:w-[80%] h-[90%] md:h-[50%] md:-mt-24 ">
             {projectSection.images && (
               <Image
                 src={urlFor(projectSection.images[0]).url() as string}
@@ -279,8 +279,8 @@ export const ProjectSection5 = ({
             )}
           </div>
         </div>
-        <div className="h-[50vh] md:h-full w-full flex flex-row md:items-start">
-          <div className="relative w-[110%] md:w-[130%] h-[100%] md:h-[90%] -ml-8 -mr-24 -mt-40">
+        <div className="h-[50vh] md:h-full w-full md:flex flex-row md:items-start">
+          <div className="relative w-[100%] md:w-[130%] h-[100%] md:h-[90%] md:-ml-8 md:-mr-24 md:-mt-40">
             {projectSection.images && (
               <Image
                 src={urlFor(projectSection.images[1]).url() as string}
@@ -292,8 +292,8 @@ export const ProjectSection5 = ({
           </div>
         </div>
         <div></div>
-        <div className="h-[60vh] md:h-full w-full flex flex-row md:items-start ">
-          <div className="relative w-[110%] h-[100%] -ml-24 -mt-24 mr-6">
+        <div className="h-[80vh] md:h-full w-full flex flex-row items-end md:items-start ">
+          <div className="relative w-full md:w-[110%] h-[90%] md:h-[100%] md:-ml-24 md:-mt-24 md:mr-6">
             {projectSection.images && (
               <Image
                 src={urlFor(projectSection.images[2]).url() as string}
@@ -441,10 +441,10 @@ export const ProjectSection8 = ({
 }) => {
   return (
     <div className={` md:min-h-[60vh] w-full `}>
-      <div className="flex justify-center items-end h-[40vh] md:h-[60vh]  w-[100%] md:px-[10vw] ">
+      <div className="flex flex-col md:flex-row md:justify-center md:items-end h-[150vh] md:h-[60vh]  w-[100%] md:px-[10vw] ">
         {projectSection.images &&
           projectSection.images.map((image, index) => (
-            <div className="relative h-[95%] w-[100%] md:mx-2 " key={index}>
+            <div className="relative h-[95%] w-[100%] my-2 md:mx-2 " key={index}>
               <Image
                 src={urlFor(image).url() as string}
                 alt={title}

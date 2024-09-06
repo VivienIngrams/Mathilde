@@ -171,7 +171,7 @@ const NavMenu = () => {
             <MenuButton className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold">
               Projects
             </MenuButton>
-            <MenuItems className="origin-top-right absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <MenuItems className="origin-top-right absolute right-0 mt-2 bg-[rgba(227,224,220)] w-full rounded-md shadow-lg  ring-1 ring-black ring-opacity-5 focus:outline-none">
               <div className="py-1">
                 <MenuItem>
                   {({ active }) => (
