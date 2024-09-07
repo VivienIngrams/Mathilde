@@ -17,7 +17,7 @@ export const ProjectSection1 = ({
             <div className="px-4">
               <h1 className="py-2">{title}</h1>
               {projectSection.images && projectSection.images[0] && (
-                <div className="relative  h-[40vh] w-[100%]">
+                <div className="relative  h-[55vh] w-[100%]">
                   <Image
                     src={urlFor(projectSection.images[0]).url() as string}
                     alt={`${title} - additional`}
@@ -102,7 +102,7 @@ export const ProjectSection2 = ({
     <div className={` ${projectSection.background}  w-full `}>
       <div className={`my-12  p-4 md:p-32`}>
         {projectSection.text && (
-          <div className={`text-right md:max-w-[50vw] mx-auto`}>
+          <div className={`text-right md:max-w-[60vw] mx-auto`}>
             <h3>{projectSection.text[0]}</h3>
             <h3>{projectSection.text[1]}</h3>
             {projectSection.text[2] && <p>{projectSection.text[2]}</p>}
@@ -213,7 +213,7 @@ export const ProjectSection4 = ({
             )}
           </div>
         </div>
-        <div className="h-[60vh] md:h-full w-full flex flex-row items-center md:items-start md:mt-12">
+        <div className="h-[60vh] md:h-full w-full flex flex-row items-center md:items-start md:mt-6">
           <div className="relative w-full md:w-[90%] h-[70%] md:h-[50%] ">
             {projectSection.images && projectSection.images[2] && (
               <Image
@@ -315,12 +315,12 @@ export const ProjectSection6 = ({
   title: string;
 }) => {
   return (
-    <div className={`${projectSection.background} min-h-[50vh] w-full`}>
+    <div className={`${projectSection.background}  w-full`}>
       <div className={`  md:grid md:grid-cols-2`}>
         {projectSection.text && (
           <div className="flex flex-col justify-center py-20  text-right ml-8 mr-8 md:ml-[45%]">
             <p>
-              <span className="text-3xl lg:text-5xl font-serif  font-light tracking-tighter leading-[0.8]">
+              <span className="text-3xl lg:text-5xl font-serif  font-light tracking-tighter leading-[">
                 {projectSection.text[0]}
               </span>
               {projectSection.text[1]}
@@ -347,7 +347,7 @@ export const ProjectSection6 = ({
           {!projectSection.images &&
             projectSection.text &&
             projectSection.text[4] && (
-              <div className="flex flex-col justify-center items-start min-h-[50vh] md:min-h-[80vh] w-[100vw] md:w-[100%]  ">
+              <div className="flex flex-col justify-center items-start md:min-h-[80vh] w-[100vw] md:w-[100%]  ">
                 <div className="flex flex-col justify-center py-20 ml-8  md:mr-[45%]">
                   {projectSection.text[4] && (
                     <p className="py-2"> {projectSection.text[4]}</p>
@@ -454,8 +454,8 @@ export const ProjectSection8 = ({
           ))}
       </div>
       {projectSection.text && projectSection.text[0] && (
-        <div className="h-[30vh] flex flex-col items-center justify-start">
-          <div className="px-4 text-center md:max-w-[50vw]">
+        <div className="h-[30vh] flex flex-col items-center justify-center">
+          <div className="px-4 text-center md:max-w-[60vw]">
             <h3 className="">{projectSection.text[0]}</h3>
           </div>
         </div>
