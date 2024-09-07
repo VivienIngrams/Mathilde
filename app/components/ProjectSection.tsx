@@ -319,8 +319,8 @@ export const ProjectSection6 = ({
       <div className={`  md:grid md:grid-cols-2`}>
         {projectSection.text && (
           <div className="flex flex-col justify-center py-8 md:py-20  text-right ml-8 mr-8 md:ml-[45%]">
-            <p>
-              <span className="text-3xl lg:text-5xl font-serif  font-light tracking-tighter leading-[">
+            <p className="">
+                          <span className="text-3xl lg:text-4xl leading-[1] font-serif tracking-tighter">
                 {projectSection.text[0]}
               </span>
               {projectSection.text[1]}
