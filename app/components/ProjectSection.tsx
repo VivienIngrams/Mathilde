@@ -350,7 +350,7 @@ export const ProjectSection6 = ({
             projectSection.text &&
             projectSection.text[4] && (
               <div className="flex flex-col justify-center items-start md:min-h-[80vh] w-[100vw] md:w-[100%]  ">
-                <div className="flex flex-col justify-center py-8 md:py-20 mx-8  md:mr-[45%]">
+                <div className="flex flex-col justify-center py-8 md:py-20 mx-4  md:mr-[45%]">
                   {projectSection.text[4] && (
                     <p className="py-2"> {projectSection.text[4]}</p>
                   )}
@@ -527,14 +527,14 @@ export const ProjectSection11 = ({
   return (
     <div className={`  md:grid md:grid-cols-2`}>
       {projectSection.text && (
-        <div className="flex flex-col justify-center py-8 md:py-20  text-right ml-8 mr-8 md:ml-[45%]">
+        <div className="flex flex-col justify-center py-8 md:py-20  text-right ml-4 mr-4 md:mr-8 md:ml-[45%]">
           <h1 className="">
             {projectSection.text[0]}
           </h1>
           <p className="">{projectSection.text[1]}</p>
-          <p className="py-2">{projectSection.text[2]}</p>
+          <p className="=">{projectSection.text[2]}</p>
           {projectSection.text[3] && (
-            <p className="py-2">{projectSection.text[3]}</p>
+            <p className="">{projectSection.text[3]}</p>
           )}
           {projectSection.text[4] && (
             <p className=""> {projectSection.text[4]}</p>
@@ -557,6 +557,16 @@ export const ProjectSection11 = ({
           {projectSection.text[10] && (
             <p className=""> {projectSection.text[10]}</p>
           )}
+          {projectSection.text[11] && (
+            <p className=""> {projectSection.text[11]}</p>
+          )}
+          {projectSection.text[12] && (
+            <p className=""> {projectSection.text[12]}</p>
+          )}
+          {projectSection.text[13] && (
+            <p className=""> {projectSection.text[13]}</p>
+          )}
+          
         </div>
       )}
       <div>
