@@ -13,8 +13,9 @@ export const ProjectSection1 = ({
     <div className={`min-h-[70vh] md:min-h-screen w-full `}>
       <div className={` md:grid md:grid-cols-2 pt-8`}>
         {projectSection.text && (
+          // Mobile
           <div className="md:hidden text-right ">
-            <div className="px-4">
+            <div className="px-4 pb-12">
               <h1 className="py-2">{title}</h1>
               {projectSection.images && projectSection.images[0] && (
                 <div className="relative  h-[55vh] w-[100%]">
@@ -43,6 +44,7 @@ export const ProjectSection1 = ({
             </div>
           </div>
         )}
+        {/* Desktop */}
         <div className="hidden md:flex md:flex-col md:justify-end md:items-end h-[75vh] md:h-[80vh] w-[85vw] md:w-[70vw] lg:w-[50vw]  ">
           <div className="relative h-full w-full md:w-[85%]">
             {projectSection.images && projectSection.images[0] && (
@@ -100,7 +102,7 @@ export const ProjectSection2 = ({
 }) => {
   return (
     <div className={` ${projectSection.background}  w-full `}>
-      <div className={`my-12  p-4 md:p-32`}>
+      <div className={`my-20  p-4 md:p-32`}>
         {projectSection.text && (
           <div className={`text-right md:max-w-[60vw] mx-auto`}>
             <h3>{projectSection.text[0]}</h3>
@@ -318,7 +320,7 @@ export const ProjectSection6 = ({
     <div className={`${projectSection.background}  w-full`}>
       <div className={`  md:grid md:grid-cols-2`}>
         {projectSection.text && (
-          <div className="flex flex-col justify-center py-8 md:py-20  text-right ml-8 mr-8 md:ml-[45%]">
+          <div className="flex flex-col justify-center py-8 md:py-20  text-right ml-4 mr-4 md:mr-8 md:ml-[45%]">
             <p className="">
               <span className="text-3xl lg:text-4xl leading-[1] font-serif tracking-tighter">
                 {projectSection.text[0]}
@@ -333,7 +335,7 @@ export const ProjectSection6 = ({
         )}
         <div>
           {projectSection.images && (
-            <div className="flex flex-col justify-center items-start h-[60vh] md:min-h-[100vh] w-[100vw] md:w-[100%]  ">
+            <div className="flex flex-col justify-center items-start h-[45vh] md:min-h-[100vh] w-[100vw] md:w-[100%]  ">
               <div className="relative h-[95%] w-[100%] md:w-[90%]">
                 <Image
                   src={urlFor(projectSection.images[0]).url() as string}
@@ -436,7 +438,7 @@ export const ProjectSection8 = ({
   title: string;
 }) => {
   return (
-    <div className={` md:min-h-[60vh] w-full `}>
+    <div className={` md:min-h-[60vh] w-full pt-8`}>
       <div className="flex flex-col md:flex-row md:justify-center md:items-end h-[200vh] md:h-[60vh]  w-[100%] md:px-[10vw] ">
         {projectSection.images &&
           projectSection.images.map((image, index) => (
@@ -473,7 +475,7 @@ export const ProjectSection9 = ({
 }) => {
   return (
     <div
-      className={`h-[50vh] md:min-h-screen min-w-screen md:-pb-[25vh] md:h-[120vh] relative`}
+      className={`h-[45vh] md:min-h-screen min-w-screen md:-pb-[25vh] md:h-[120vh] relative`}
     >
       {projectSection.images && (
         <Image

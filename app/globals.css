@@ -44,7 +44,7 @@ p {
 }
 
 h3 {
-  font-size: 1rem; /* Default size for small screens */
+  font-size: 1.1rem; /* Default size for small screens */
   font-weight: 300;
   line-height: 1.1;
   /* font-family: var(--font-cormorant); */
