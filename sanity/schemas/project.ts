@@ -1,5 +1,3 @@
-import { init } from "next/dist/compiled/webpack/webpack";
-
 const project = {
   name: "project",
   type: "document",

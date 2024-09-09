@@ -1,13 +1,11 @@
 import { client } from "../../../sanity/lib/client";
 import NavMenu from "@/app/components/NavMenu";
 import Footer from "@/app/components/Footer";
-import { notFound } from "next/navigation";
-import { Section } from "@/app/interface";
 
 async function getProjectData() {
   const data = await client.fetch(
     `
-      *[_type == 'project' {
+      *[_type == 'mirante'] {
         title,
         "slug": slug.current,
   }
@@ -24,15 +22,15 @@ async function getProjectData() {
 
 export default async function Mirante() {
   const projectMirante = await getProjectData();
-
+console.log(projectMirante)
   return (
     <div className="min-h-full">
       <NavMenu />
       <div className=" bg-[rgba(227,224,220,0.85)] ">
-        {/* {projectMirante.map((section: Section, index: number) => {
- 
-          
-        } */}
+        {/* {projectMirante.map((section: Section, index: number) => { */}
+        
+          {/* {projectMirante} */}
+        
       </div>
       <Footer />
     </div>

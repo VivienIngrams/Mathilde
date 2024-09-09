@@ -1,4 +1,6 @@
-const mirante = {
+import { defineType } from "sanity";
+
+const mirante = defineType ({
   name: "mirante",
   type: "document",
   title: "Mirante",
@@ -36,6 +38,6 @@ const mirante = {
       ],
     },
   ],
-};
+});
 
 export default mirante;
