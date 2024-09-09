@@ -49,65 +49,81 @@ export default async function MirantePage() {
   console.log(projectMirante);
   return (
     <div className="min-h-full">
-      <NavMenu />
-      <div className=" bg-[rgba(227,224,220,0.85)] ">
-        <ProjectSection6
-          projectSection={projectMirante.project.sections[0]}
-          title={projectMirante.project.title}
-        />
+  <NavMenu />
+  <div className="bg-[rgba(227,224,220,0.85)]">
+    <ProjectSection6
+      projectSection={projectMirante.project.sections[0]}
+      title={projectMirante.project.title}
+    />
 
-        <ProjectSection2
-          projectSection={projectMirante.project.sections[1]}
-          title={projectMirante.project.title}
-        />
-        {/* Saline */}
-        <div className={`  md:grid md:grid-cols-3`}>
-          <div className="flex flex-col justify-center items-start h-[55vh] md:min-h-[100vh] w-[100vw] md:w-[100%] md:pl-12 col-span-2 ">
-            <h1 className="">{projectMirante.mirante[0].title}</h1>
-
-            <div className="relative h-[75%] w-[100%]">
-              <Image
-                src={urlFor(projectMirante.mirante[0].image).url() as string}
-                alt={projectMirante.mirante.title}
-                fill
-                className="object-contain md:pl-4"
-                style={{ objectPosition: "left" }}
-              />
-            </div>
-          </div>
-          <div className="flex flex-col justify-center py-8 md:py-20  text-right md:text-left md:mr-8 col-span-1">
-            <PortableText
-              value={projectMirante.mirante[0].content}
-            ></PortableText>
-          </div>
-        </div>
-
-        {/* Affranchie */}
-        <div className={`  md:grid md:grid-cols-3`}>
-        <div className="flex flex-col justify-center items-start md:items-center h-[55vh] md:min-h-[100vh] w-[100vw] md:w-[100%]  ">
-
-            <h1 className="">{projectMirante.mirante[1].title}</h1>
-            </div>
-          <div className="flex flex-col justify-center items-start h-[55vh] md:min-h-[100vh] w-[100vw] md:w-[110%]  ">
-
-            <div className="relative h-[95%] w-[100%]">
-              <Image
-                src={urlFor(projectMirante.mirante[1].image).url() as string}
-                alt={projectMirante.mirante.title}
-                fill
-                className="object-contain md:-ml-24"
-                style={{ objectPosition: "left" }}
-              />
-            </div>
-          </div>
-          <div className="flex flex-col justify-center py-8 md:py-20  text-right md:text-left md:mr-8 ">
-            <PortableText
-              value={projectMirante.mirante[1].content}
-            ></PortableText>
-          </div>
+    <ProjectSection2
+      projectSection={projectMirante.project.sections[1]}
+      title={projectMirante.project.title}
+    />
+    {/* Saline */}
+    <div className="md:grid md:grid-cols-3">
+      <div className="flex flex-col justify-center items-start h-[55vh] md:min-h-[100vh] w-full md:w-full md:pl-12 col-span-2">
+        <h1>{projectMirante.mirante[0].title}</h1>
+        <div className="relative h-[75%] w-full">
+          <Image
+            src={urlFor(projectMirante.mirante[0].image).url() as string}
+            alt={projectMirante.mirante.title}
+            fill
+            className="object-contain md:pl-4"
+            style={{ objectPosition: "left" }}
+          />
         </div>
       </div>
-      <Footer />
+      <div className="flex flex-col justify-center py-8 md:py-20 text-right md:text-left md:mr-8 col-span-1">
+        <PortableText value={projectMirante.mirante[0].content} />
+      </div>
     </div>
+
+    {/* Affranchie */}
+    <div className="md:grid md:grid-cols-3">
+      <div className="flex flex-col justify-center items-start md:items-center h-[15vh] md:min-h-[100vh] w-full md:w-full">
+        <h1>{projectMirante.mirante[1].title}</h1>
+      </div>
+      <div className="flex flex-col justify-center items-start h-[55vh] md:min-h-[100vh] w-full">
+        <div className="relative h-[95%] w-full">
+          <Image
+            src={urlFor(projectMirante.mirante[1].image).url() as string}
+            alt={projectMirante.mirante.title}
+            fill
+            className="object-contain"
+            style={{ objectPosition: "left" }}
+          />
+        </div>
+      </div>
+      <div className="flex flex-col justify-center py-8 md:py-20 text-right md:text-left md:mr-8">
+        <PortableText value={projectMirante.mirante[1].content} />
+      </div>
+    </div>
+
+    {/* Luxuriance */}
+    <div className="h-[45vh] md:min-h-screen w-full relative">
+      {projectMirante.mirante[2].image && (
+        <Image
+          src={urlFor(projectMirante.mirante[2].image).url() as string}
+          alt={projectMirante.mirante[2].title}
+          fill
+          className="object-contain"
+        />
+      )}
+    </div>
+    <div className="md:grid md:grid-cols-3">
+      <div className="flex flex-col justify-center items-start md:items-center h-[15vh] md:min-h-[30vh] w-full">
+        <h1>{projectMirante.mirante[2].title}</h1>
+      </div>
+      <div className="flex flex-col justify-center items-start md:items-center h-[55vh] md:h-[30vh] w-full col-span-2">
+        <div className="md:columns-2 gap-8">
+          <PortableText value={projectMirante.mirante[2].content} />
+        </div>
+      </div>
+    </div>
+  </div>
+  <Footer />
+</div>
+
   );
 }
