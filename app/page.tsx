@@ -75,7 +75,6 @@ const sectionComponents: {
 export default async function Home() {
   const data = await getData();
   const transformedData = transformData(data);
-  console.log(transformedData);
 
   return (
     <div className="h-full">
