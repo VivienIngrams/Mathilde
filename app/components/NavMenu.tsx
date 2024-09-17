@@ -91,12 +91,12 @@ const NavMenu = () => {
                     <MenuItem>
                       {({ active }) => (
                         <Link
-                          href="/project/en-suspension"
+                          href="/project/en-suspension-s"
                           className={`block px-4 py-2 text-md ${
                              active ?  "bg-[#cbc7c2] " : ""
                           }`}
                         >
-                          En suspension
+                          En Suspension-(S)
                         </Link>
                       )}
                     </MenuItem>
@@ -236,12 +236,12 @@ const NavMenu = () => {
                 <MenuItem>
                   {({ active }) => (
                     <Link
-                      href="/project/en-suspension"
+                      href="/project/en-suspension-s"
                       className={`block px-4 py-2 text-base ${
                          active ?  "bg-[#cbc7c2] " : ""
                       }`}
                     >
-                      En suspension
+                      En Suspension-(S)
                     </Link>
                   )}
                 </MenuItem>

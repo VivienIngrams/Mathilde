@@ -13,8 +13,6 @@ import {
   ProjectSection8,
   ProjectSection9,
   ProjectSection10,
-  ProjectSection11,
-  ProjectSection12,
 
 } from "@/app/components/ProjectSection";
 import { Section } from "@/app/interface";
@@ -95,7 +93,7 @@ async function getProjectData(slug: string) {
     { slug },
     {
       next: {
-        revalidate: 10,
+        revalidate: 3,
       },
     }
   );
@@ -119,8 +117,7 @@ const sectionComponents: {
   8: ProjectSection8,
   9: ProjectSection9,
   10: ProjectSection10,
-  11: ProjectSection11,
-  12: ProjectSection12,
+ 
 };
 
 type Props = {

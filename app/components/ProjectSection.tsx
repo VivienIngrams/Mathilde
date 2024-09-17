@@ -15,7 +15,7 @@ export const ProjectSection1 = ({
         {projectSection.text && (
           // Mobile
           <div className="md:hidden text-right ">
-            <div className="px-4 pb-12">
+            <div className=" pb-12">
               <h1 className="py-2">{title}</h1>
               {projectSection.images && projectSection.images[0] && (
                 <div className="relative  h-[55vh] w-[100%]">
