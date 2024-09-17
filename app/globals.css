@@ -40,7 +40,7 @@ p {
     font-size: 1rem; /* Medium screens */
   }
   
-  @screen lg {
+  @screen xl {
     font-size: 1.1rem; /* Large screens */
   }
 }

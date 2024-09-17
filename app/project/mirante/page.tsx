@@ -78,7 +78,19 @@ export default async function MirantePage() {
         <Mirante3 projectSection={mirante[5]} />
 
         {/* Touareg */}
-        <Mirante3 projectSection={mirante[6]} />
+        <Mirante1 projectSection={mirante[6]} />
+
+        {/* L'écorcé vif */}
+        <Mirante3 projectSection={mirante[8]} />
+
+        {/* Bleu gris */}
+        <Mirante1 projectSection={mirante[7]} />
+
+        {/* Le bateau ébloui */}
+        <Mirante2 projectSection={mirante[9]} />
+
+        {/* L'Afrique */}
+        <Mirante3 projectSection={mirante[10]} />
 
       </div>
       <Footer />

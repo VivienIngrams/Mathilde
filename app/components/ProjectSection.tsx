@@ -70,8 +70,8 @@ export const ProjectSection1 = ({
                 />
               </div>
             )}
-            <div className="w-[50%]">
-              <h1 className="pt-2">{title}</h1>
+            <div className="w-[50%] pt-2">
+              <h1 className="">{title}</h1>
               <p className="py-2">{projectSection.text[0]}</p>
               {projectSection.text[1] && (
                 <p className="py-2">{projectSection.text[1]}</p>
