@@ -1,12 +1,11 @@
 import { client } from "../../../sanity/lib/client";
 import NavMenu from "@/app/components/NavMenu";
 import Footer from "@/app/components/Footer";
-import {
-  ProjectSection6,
-  ProjectSection2,
-} from "@/app/components/Sections/ProjectSection";
+import HalfHalfSection from "@/app/components/Sections/6HalfHalfSection";
+
 import { Mirante1, Mirante2, Mirante3 } from "@/app/components/Sections/MiranteSections";
 import { Mirante } from "@/app/interface";
+import OnlyH3Section from "@/app/components/Sections/2OnlyH3Section";
 
 
 async function getProjectData() {
@@ -50,15 +49,16 @@ export default async function MirantePage() {
     <div className="min-h-full">
       <NavMenu />
       <div className="bg-[rgba(227,224,220,0.85)]">
-        <ProjectSection6
+        <HalfHalfSection
           projectSection={project.sections[0]}
           title={project.title}
         />
 
-        <ProjectSection2
+        <OnlyH3Section
           projectSection={project.sections[1]}
           title={project.title}
         />
+        
         {/* Saline */}
         <Mirante1 projectSection={mirante[0]}/>
 
