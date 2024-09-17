@@ -13,6 +13,7 @@ export interface Section {
   text?: string[];
 }
 
+
 export interface ProjectPage {
   title: string;
   slug: string;
