@@ -305,7 +305,18 @@ export const ProjectSection5 = ({
             )}
           </div>
         </div>
-        <div></div>
+        <div className="h-[80vh] md:h-full w-full flex flex-row items-end md:items-start ">
+          <div className="relative w-full md:w-[110%] h-[90%] md:h-[100%] md:-ml-4 md:-mt-24 md:mr-4">
+            {projectSection.images && projectSection.images[3] && (
+              <Image
+                src={urlFor(projectSection.images[3]).url() as string}
+                alt={title}
+                fill
+                className="object-contain"
+              />
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -321,7 +332,7 @@ export const ProjectSection6 = ({
     <div className={` w-full`}>
       <div className={`  md:grid md:grid-cols-2`}>
         {projectSection.text && (
-          <div className="flex flex-col justify-center py-8 md:py-20  text-right  md:mr-8 md:ml-[45%]">
+          <div className="flex flex-col leading-normal justify-center py-8 md:py-20  text-right  md:mr-8 md:ml-[45%]">
             <p className="">
               <span className="text-3xl lg:text-4xl leading-[1] font-serif tracking-tighter">
                 {projectSection.text[0]}
