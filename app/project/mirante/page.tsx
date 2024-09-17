@@ -2,7 +2,6 @@ import { client } from "../../../sanity/lib/client";
 import NavMenu from "@/app/components/NavMenu";
 import Footer from "@/app/components/Footer";
 import HalfHalfSection from "@/app/components/Sections/6HalfHalfSection";
-
 import { Mirante1, Mirante2, Mirante3 } from "@/app/components/Sections/MiranteSections";
 import { Mirante } from "@/app/interface";
 import OnlyH3Section from "@/app/components/Sections/2OnlyH3Section";
