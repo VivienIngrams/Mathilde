@@ -93,7 +93,7 @@ async function getProjectData(slug: string) {
     { slug },
     {
       next: {
-        revalidate: 3,
+        revalidate: 10,
       },
     }
   );

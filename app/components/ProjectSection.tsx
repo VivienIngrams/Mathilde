@@ -10,7 +10,7 @@ export const ProjectSection1 = ({
   title: string;
 }) => {
   return (
-    <div className={`min-h-[70vh] md:min-h-screen w-full `}>
+    <div className={` md:min-h-screen w-full `}>
       <div className={` md:grid md:grid-cols-2 pt-8`}>
         {projectSection.text && (
           // Mobile
