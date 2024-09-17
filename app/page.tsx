@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import { client } from "../sanity/lib/client";
 import { Project } from "../app/interface";
 import Link from "next/link";
-import { ProjectSection1 } from "./components/ProjectSection";
+
 
 async function getData() {
   const data = await client.fetch(
@@ -42,10 +42,30 @@ function transformData(data: any[]): Project[] {
   }));
 }
 
+const sectionComponents: {
+  [key: number]: React.ComponentType<{
+    projectSection: Section;
+    title: string;
+    slug: string;
+  }>;
+} = {
+  1: ProjectSection1,
+  2: ProjectSection2,
+  3: ProjectSection3,
+  4: ProjectSection4,
+  5: ProjectSection5,
+  6: ProjectSection6,
+  7: ProjectSection7,
+  8: ProjectSection8,
+  9: ProjectSection9,
+  10: ProjectSection10,
+ 
+};
+
 export default async function Home() {
   const data = await getData();
   const transformedData = transformData(data);
-  console.log(transformedData[1].section);
+  console.log(transformedData);
   return (
     <div className="h-full">
       <NavMenu />

@@ -4,8 +4,8 @@ import Footer from "@/app/components/Footer";
 import {
   ProjectSection6,
   ProjectSection2,
-} from "@/app/components/ProjectSection";
-import { Mirante1, Mirante2, Mirante3 } from "@/app/components/MiranteSections";
+} from "@/app/components/Sections/ProjectSection";
+import { Mirante1, Mirante2, Mirante3 } from "@/app/components/Sections/MiranteSections";
 import { Mirante } from "@/app/interface";
 
 
