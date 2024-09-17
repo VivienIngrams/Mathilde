@@ -28,7 +28,7 @@ const project = {
       type: "number",
       title: "Section Home page - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,
@@ -62,7 +62,7 @@ const project = {
       type: "number",
       title: "Section 1 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,
@@ -96,7 +96,7 @@ const project = {
       type: "number",
       title: "Section 2 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,
@@ -130,7 +130,7 @@ const project = {
       type: "number",
       title: "Section 3 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,
@@ -165,7 +165,7 @@ const project = {
       type: "number",
       title: "Section 4 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,
@@ -199,7 +199,7 @@ const project = {
       type: "number",
       title: "Section 5 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,
@@ -233,7 +233,7 @@ const project = {
       type: "number",
       title: "Section 6 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,
@@ -267,7 +267,7 @@ const project = {
       type: "number",
       title: "Section 7 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,
@@ -301,7 +301,7 @@ const project = {
       type: "number",
       title: "Section 8 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         layout: "radio",
       },
       initialValue: 1,

@@ -188,6 +188,7 @@ export const ProjectSection4 = ({
   projectSection: Section;
   title: string;
 }) => {
+  console.log(projectSection)
   return (
     <div className={`  min-h-[70vh] mt-6 md:-mt-12 w-full`}>
       <div className={` md:grid md:grid-cols-5 md:h-[95vh] w-full `}>
@@ -498,7 +499,6 @@ export const ProjectSection10 = ({
 }) => {
   return (
     <div className={` md:min-h-screen w-full text-justify `}>
-      {/* <h1>{title}</h1> */}
       {projectSection.text && (
         <div className={`px-4 md:p-12  md:grid md:grid-cols-3 h-full gap-10`}>
           <div className="md:h-[80vh] pt-12 flex flex-col  justify-start">
@@ -517,132 +517,3 @@ export const ProjectSection10 = ({
   );
 };
 
-export const ProjectSection11 = ({
-  projectSection,
-  title,
-}: {
-  projectSection: Section;
-  title: string;
-}) => {
-  return (
-    <div className={`  md:grid md:grid-cols-2`}>
-      {projectSection.text && (
-        <div className="flex flex-col justify-center py-8 md:py-20  text-right  md:mr-8 md:ml-[45%]">
-          <h1 className="">
-            {projectSection.text[0]}
-          </h1>
-          <p className="">{projectSection.text[1]}</p>
-          <p className="=">{projectSection.text[2]}</p>
-          {projectSection.text[3] && (
-            <p className="">{projectSection.text[3]}</p>
-          )}
-          {projectSection.text[4] && (
-            <p className=""> {projectSection.text[4]}</p>
-          )}
-          {projectSection.text[5] && (
-            <p className=""> {projectSection.text[5]}</p>
-          )}
-          {projectSection.text[6] && (
-            <p className=""> {projectSection.text[6]}</p>
-          )}
-          {projectSection.text[7] && (
-            <p className=""> {projectSection.text[7]}</p>
-          )}
-          {projectSection.text[8] && (
-            <p className=""> {projectSection.text[8]}</p>
-          )}
-          {projectSection.text[9] && (
-            <p className=""> {projectSection.text[9]}</p>
-          )}
-          {projectSection.text[10] && (
-            <p className=""> {projectSection.text[10]}</p>
-          )}
-          {projectSection.text[11] && (
-            <p className=""> {projectSection.text[11]}</p>
-          )}
-          {projectSection.text[12] && (
-            <p className=""> {projectSection.text[12]}</p>
-          )}
-          {projectSection.text[13] && (
-            <p className=""> {projectSection.text[13]}</p>
-          )}
-          
-        </div>
-      )}
-      <div>
-        {projectSection.images && (
-          <div className="flex flex-col justify-center items-start h-[60vh] md:min-h-[100vh] w-[100vw] md:w-[100%]  ">
-            <div className="relative h-[95%] w-[100%] md:w-[90%]">
-              <Image
-                src={urlFor(projectSection.images[0]).url() as string}
-                alt={title}
-                fill
-                className="object-contain"
-              />
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
-
-export const ProjectSection12 = ({
-  projectSection,
-  title,
-}: {
-  projectSection: Section;
-  title: string;
-}) => {
-  return (
-    <div className={`  md:grid md:grid-cols-2`}>
-      <div>
-        {projectSection.images && (
-          <div className="flex flex-col justify-center items-start h-[60vh] md:min-h-[100vh] w-[100vw] md:w-[100%]  ">
-            <div className="relative h-[95%] w-[100%] md:w-[90%]">
-              <Image
-                src={urlFor(projectSection.images[0]).url() as string}
-                alt={title}
-                fill
-                className="object-contain"
-              />
-            </div>
-          </div>
-        )}
-        {projectSection.text && (
-          <div className="flex flex-col justify-center py-8 md:py-20  text-right ml-8 mr-8 md:ml-[45%]">
-            <h1 className="">
-              {projectSection.text[0]}
-            </h1>
-            <p className="">{projectSection.text[1]}</p>
-            <p className="py-2">{projectSection.text[2]}</p>
-            {projectSection.text[3] && (
-              <p className="">{projectSection.text[3]}</p>
-            )}
-            {projectSection.text[4] && (
-              <p className=""> {projectSection.text[4]}</p>
-            )}
-            {projectSection.text[5] && (
-              <p className=""> {projectSection.text[5]}</p>
-            )}
-            {projectSection.text[6] && (
-              <p className=""> {projectSection.text[6]}</p>
-            )}
-            {projectSection.text[7] && (
-              <p className=""> {projectSection.text[7]}</p>
-            )}
-            {projectSection.text[8] && (
-              <p className=""> {projectSection.text[8]}</p>
-            )}
-            {projectSection.text[9] && (
-              <p className=""> {projectSection.text[9]}</p>
-            )}
-            {projectSection.text[10] && (
-              <p className=""> {projectSection.text[10]}</p>
-            )}
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
