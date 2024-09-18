@@ -29,7 +29,7 @@ const HalfHalfSection = ({
         )}
         <div>
           {projectSection.images && (
-            <div className="flex flex-col justify-center items-start h-[45vh] md:min-h-[100vh] w-[100vw] md:w-[100%]  ">
+            <div className="flex flex-col justify-center items-start h-[50vh] md:min-h-[100vh] w-[100vw] md:w-[100%]  ">
               <div className="relative h-[95%] w-[100%] md:w-[90%]">
                 <Image
                   src={urlFor(projectSection.images[0]).url() as string}

@@ -16,19 +16,23 @@ const TitleSection = ({
           // Mobile
           <div className="md:hidden text-right ">
             <div className=" pb-12">
-              <h1 className="py-2">{title}</h1>
+              <h1 className="pt-4">{title}</h1>
               {projectSection.images && projectSection.images[0] && (
-                <div className="relative  h-[55vh] w-[100%]">
-                  <Image
-                    src={urlFor(projectSection.images[0]).url() as string}
-                    alt={`${title} - additional`}
-                    fill
-                    className="object-contain z-10"
-                    style={{ objectPosition: "right" }}
-                  />
-                </div>
+               
+                <div className="m-4 break-inside-avoid ">
+                <Image
+                  src={urlFor(projectSection.images[0]).url()}
+                  alt="Gallery Image"
+                  width={500}
+                  height={500} // Placeholder size, maintains aspect ratio
+                  objectFit="cover"
+                  className="w-full h-auto "
+                  loading="lazy"
+                />
+              </div>
               )}
-              <p className="mt-2 py-2">{projectSection.text[0]}</p>
+              <div className="my-2">
+              <p className="py-2">{projectSection.text[0]}</p>
               {projectSection.text[1] && (
                 <p className="py-2">{projectSection.text[1]}</p>
               )}
@@ -40,6 +44,20 @@ const TitleSection = ({
               )}
               {projectSection.text[4] && (
                 <p className="py-2">{projectSection.text[4]}</p>
+              )}</div>
+              {projectSection.images && projectSection.images[1] && (
+               
+                <div className="m-4 break-inside-avoid ">
+                <Image
+                  src={urlFor(projectSection.images[1]).url()}
+                  alt="Gallery Image"
+                  width={500}
+                  height={500} // Placeholder size, maintains aspect ratio
+                  objectFit="cover"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+              </div>
               )}
             </div>
           </div>

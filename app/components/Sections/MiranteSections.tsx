@@ -19,7 +19,7 @@ export const Mirante1 = ({ projectSection }: { projectSection: Mirante }) => {
               src={urlFor(projectSection.image).url() as string}
               alt={projectSection.title}
               fill
-              className="object-contain md:pl-4"
+              className="object-contain px-4 md:pl-4"
               style={{ objectPosition: "left" }}
             />
           </div>
@@ -38,7 +38,7 @@ export const Mirante2 = ({ projectSection }: { projectSection: Mirante }) => {
             src={urlFor(projectSection.image).url() as string}
             alt={projectSection.title}
             fill
-            className="object-contain"
+            className="object-contain px-4"
           />
         )}
       </div>
@@ -68,7 +68,7 @@ export const Mirante3 = ({ projectSection }: { projectSection: Mirante }) => {
             src={urlFor(projectSection.image).url() as string}
             alt={projectSection.title}
             fill
-            className="object-contain"
+            className="object-contain px-4"
             style={{ objectPosition: "left" }}
           />
         </div>
