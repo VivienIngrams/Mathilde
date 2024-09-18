@@ -7,7 +7,7 @@ import NavMenu from "../components/NavMenu";
 async function getImages() {
   const data = await client.fetch(
     `
-    *[_type == 'gallery' && title == 'Voyages'] {
+    *[_type == 'gallery' && title == 'Quotidien'] {
       images[] {
         asset->{
           _id,
@@ -26,7 +26,7 @@ async function getImages() {
   return data;
 }
 
-export default async function Gallery() {
+export default async function Education() {
   const data = await getImages();
   const images = data[0]?.images || [];
 
@@ -34,21 +34,8 @@ export default async function Gallery() {
     <div className="h-full">
       <NavMenu />
       <div className="bg-[rgba(227,224,220,0.85)] min-h-screen p-4">
-        {/* Use CSS columns for masonry effect */}
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4">
-          {images.map((image: any) => (
-            <div key={image.asset._id} className="mb-4 break-inside-avoid">
-              <Image
-                src={urlFor(image.asset).url()}
-                alt="Gallery Image"
-                width={500}
-                height={500} // Placeholder size, maintains aspect ratio
-                objectFit="cover"
-                className="w-full h-auto"
-                loading="lazy"
-              />
-            </div>
-          ))}
+        <div className="">
+
         </div>
       </div>
       <Footer />

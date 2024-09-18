@@ -128,16 +128,16 @@ const NavMenu = () => {
                 quotidien
               </Link>
               <Link
-                href="/info"
-                className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
-              >
-                info
-              </Link>
-              <Link
                 href="/education"
                 className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
               >
                 éducation
+              </Link>
+              <Link
+                href="/info"
+                className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
+              >
+                info
               </Link>
             </div>
           </div>
@@ -262,27 +262,27 @@ const NavMenu = () => {
           </Menu>
           <Link
             href="/voyages"
-            className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-semibold"
+            className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
           >
             Voyages
           </Link>
           <Link
             href="/quotidien"
-            className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-semibold"
+            className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
           >
             Quotidien
           </Link>
           <Link
-            href="/info"
-            className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-semibold"
-          >
-            Info
-          </Link>
-          <Link
             href="/education"
-            className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-semibold"
+            className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
           >
             Education
+          </Link>
+          <Link
+            href="/info"
+            className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
+          >
+            Info
           </Link>
           
         </div>
