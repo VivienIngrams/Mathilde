@@ -28,22 +28,24 @@ async function getImages() {
 
 export default async function Gallery() {
   const data = await getImages();
-  const images = data[0].images;
-  console.log(images);
+  const images = data[0]?.images || [];
 
   return (
     <div className="h-full">
       <NavMenu />
-      <div className="bg-[rgba(227,224,220,0.85)]">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="bg-[rgba(227,224,220,0.85)] p-4">
+        {/* Use CSS columns for masonry effect */}
+        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4">
           {images.map((image: any) => (
-            <div key={image.asset._id} className="w-full h-auto">
+            <div key={image.asset._id} className="mb-4 break-inside-avoid">
               <Image
-                src={urlFor(image.asset).url()} // Generating the image URL from Sanity
+                src={urlFor(image.asset).url()}
                 alt="Gallery Image"
                 width={500}
-                height={500} // These are just placeholders; height will adjust automatically
-                className="w-full h-auto object-cover"
+                height={500} // Placeholder size, maintains aspect ratio
+                objectFit="cover"
+                className="w-full h-auto"
+                loading="lazy"
               />
             </div>
           ))}
