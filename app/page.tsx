@@ -14,7 +14,8 @@ import RandomSection from "@/app/components/Sections/7RandomSection";
 import MapImageSection from "@/app/components/Sections/8MapImageSection";
 import WideImageSection from "@/app/components/Sections/9WideImageSection";
 import TextSection from "@/app/components/Sections/10TextSection";
-import { Mirante1, Mirante2, Mirante3 } from "./components/Sections/MiranteSections";
+
+// Get gallery data, for ordinaire and voyages section, to be included below with MapImageSection
 
 async function getData() {
   const data = await client.fetch(
@@ -80,6 +81,7 @@ export default async function Home() {
     <div className="h-full">
       <NavMenu />
       <div className="bg-[rgba(227,224,220,0.85)]">
+        {/* Mon ordinaire */}
         {transformedData.map((project: Project, index: number) => {
           const SectionComponent = sectionComponents[project.section.layout];
 
@@ -96,6 +98,7 @@ export default async function Home() {
             </Link>
           );
         })}
+        {/* Voyages */}
       </div>
       <Footer />
     </div>
