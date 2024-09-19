@@ -93,7 +93,7 @@ export default async function Home() {
       <NavMenu />
       <div className="bg-[rgba(227,224,220,0.85)]">
         {/* Mon ordinaire */}
-        <div className="">
+        <div className="mb-8 md:mb-24">
         <WideImageSection
           projectSection={gallery[0]}
           title={gallery[0].title}
