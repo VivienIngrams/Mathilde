@@ -122,16 +122,16 @@ const NavMenu = () => {
                 voyages
               </Link>
               <Link
-                href="/quotidien"
+                href="/mon-ordinaire"
                 className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
               >
-                quotidien
+                Mon ordinaire
               </Link>
               <Link
-                href="/education"
+                href="/bio"
                 className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
               >
-                éducation
+                Bio
               </Link>
               <Link
                 href="/info"
@@ -267,16 +267,16 @@ const NavMenu = () => {
             Voyages
           </Link>
           <Link
-            href="/quotidien"
+            href="/mon-ordinaire"
             className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
           >
-            Quotidien
+            Mon ordinaire
           </Link>
           <Link
-            href="/education"
+            href="/bio"
             className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
           >
-            Education
+            Bio
           </Link>
           <Link
             href="/info"

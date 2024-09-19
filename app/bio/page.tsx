@@ -26,7 +26,7 @@ async function getImages() {
   return data;
 }
 
-export default async function Education() {
+export default async function Bio() {
   const data = await getImages();
   const images = data[0]?.images || [];
 
@@ -35,7 +35,7 @@ export default async function Education() {
       <NavMenu />
       <div className="bg-[rgba(227,224,220,0.85)] min-h-screen p-4">
         <div className="">
-
+Bio
         </div>
       </div>
       <Footer />
