@@ -9,6 +9,7 @@ const OnlyH3Section = ({
     projectSection: Section;
     title: string;
   }) => {
+    console.log(projectSection?.text)
     return (
       <div className={` w-full `}>
         <div className={`my-20  md:p-32`}>
