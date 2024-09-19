@@ -13,11 +13,11 @@ const OnlyH3Section = ({
       <div className={` w-full `}>
         <div className={`my-20  md:p-32`}>
           {projectSection.text && (
-            <div className={`text-right md:max-w-[60vw] mx-auto`}>
-              <h3>{projectSection.text[0]}</h3>
-              <h3>{projectSection.text[1]}</h3>
-              {projectSection.text[2] && <p>{projectSection.text[2]}</p>}
-              {projectSection.text[3] && <p>{projectSection.text[3]}</p>}
+            <div className={`text-right md:max-w-[60vw] mx-auto `}>
+              <p className="font-semibold">{projectSection.text[0]}</p>
+              <p className="font-semibold">{projectSection.text[1]}</p>
+              {projectSection.text[2] && <p className="font-semibold">{projectSection.text[2]}</p>}
+              {projectSection.text[3] && <p className="font-semibold">{projectSection.text[3]}</p>}
             </div>
           )}
         </div>
