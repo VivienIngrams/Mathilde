@@ -85,15 +85,16 @@ const TitleSection = ({
         {projectSection.text && (
           <div className="hidden md:flex flex-col justify-center items-start pl-20">
             {projectSection.images && projectSection.images[1] && (
-              <Link href={urlFor(projectSection.images[1]).url()}>
-                <div className="relative h-[40vh] w-[50%] mb-4">
-                  <Image
-                    src={urlFor(projectSection.images[1]).url() as string}
-                    alt={`${title} - additional`}
-                    fill
-                    className="object-contain  z-10"
-                  />
-                </div>
+              <Link
+                href={urlFor(projectSection.images[1]).url()}
+                className="relative h-[40vh] w-[50%] mb-4"
+              >
+                <Image
+                  src={urlFor(projectSection.images[1]).url() as string}
+                  alt={`${title} - additional`}
+                  fill
+                  className="object-contain  z-10"
+                />
               </Link>
             )}
             <div className="w-[50%] pt-2">
