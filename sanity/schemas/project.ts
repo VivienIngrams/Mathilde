@@ -20,8 +20,12 @@ const project = {
     },
     {
       name: "date",
-      type: "date",
-      title: "Date du fin de projet",
+      type: "number",
+      title: "Ordre des sections sur la page d'accueil",
+      options: {
+        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        layout: "radio",
+      },
     },
        {
       name: "mainLayout",

@@ -103,12 +103,12 @@ const NavMenu = () => {
                     <MenuItem>
                       {({ active }) => (
                         <Link
-                          href="/project/joel"
+                          href="/project/reveler"
                           className={`block px-4 py-2 text-md ${
                              active ?  "bg-[#cbc7c2] " : ""
                           }`}
                         >
-                          Joël
+                          Révéler
                         </Link>
                       )}
                     </MenuItem>
@@ -248,12 +248,12 @@ const NavMenu = () => {
                 <MenuItem>
                   {({ active }) => (
                     <Link
-                      href="/project/joel"
+                      href="/project/reveler"
                       className={`block px-4 py-2 text-base ${
                          active ?  "bg-[#cbc7c2] " : ""
                       }`}
                     >
-                      Joël
+                      Révéler
                     </Link>
                   )}
                 </MenuItem>

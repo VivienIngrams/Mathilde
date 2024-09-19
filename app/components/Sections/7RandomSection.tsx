@@ -14,7 +14,7 @@ const RandomSection = ({
       <div className={`  md:grid md:grid-cols-3 h-full `}>
         <div className="h-[100%] flex flex-col items-center justify-center">
           {projectSection.images && projectSection.images[0] && (
-            <div className="relative h-[50vh] w-[70%] ">
+            <div className="relative h-[50vh] w-[70%] m-4">
               <Image
                 src={urlFor(projectSection.images[0]).url() as string}
                 alt={`${title} - additional`}
@@ -38,7 +38,7 @@ const RandomSection = ({
         </div>
         <div className=" md:h-[100%] flex flex-col items-center justify-around">
           {projectSection.images && projectSection.images[2] && (
-            <div className="relative h-[45vh] w-[70%] ">
+            <div className="relative h-[45vh] w-[70%] m-4 ">
               <Image
                 src={urlFor(projectSection.images[2]).url() as string}
                 alt={`${title} - additional`}
