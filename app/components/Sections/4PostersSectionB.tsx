@@ -11,9 +11,9 @@ const PostersSectionB = ({
   }) => {
     console.log(projectSection);
     return (
-      <div className={`  min-h-[70vh] mt-6 md:-mt-12 w-full`}>
+      <div className={`  min-h-[70vh]md:-mt-12 w-full`}>
          {/* Mobile Layout */}
-      <div className="md:hidden columns-1 sm:columns-2 gap-4 m-4">
+      <div className="md:hidden columns-1 sm:columns-2 gap-4 mx-4">
         {projectSection.images?.map((image, index) => (
           <div key={index} className="mb-4 break-inside-avoid">
             <Image

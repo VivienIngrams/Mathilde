@@ -40,7 +40,6 @@ export default async function MonOrdinaire() {
           <div className=" text-right ">
             <div className=" pb-12">
               <h1 className="pt-4">{data.title}</h1>
-
               <div className="my-2">
                 <p className="py-2">{data.text[0]}</p>
                 {data.text[1] && <p className="py-2">{data.text[1]}</p>}

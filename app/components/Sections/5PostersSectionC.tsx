@@ -12,7 +12,7 @@ const PostersSectionC = ({
     return (
       <div className={` min-h-[60vh] md:-mt-12 w-full md:-mb-24`}>
          {/* Mobile Layout */}
-      <div className="md:hidden columns-1 sm:columns-2 gap-4 m-4">
+      <div className="md:hidden columns-1 sm:columns-2 gap-4 mx-4">
         {projectSection.images?.map((image, index) => (
           <div key={index} className="mb-4 break-inside-avoid">
             <Image
