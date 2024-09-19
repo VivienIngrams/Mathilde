@@ -4,6 +4,8 @@ import { client } from "../sanity/lib/client";
 import { Project } from "../app/interface";
 import { Section } from "../app/interface";
 import Link from "next/link";
+import { urlFor } from "@/sanity/lib/image";
+import Image from "next/image";
 import TitleSection from "@/app/components/Sections/1TitleSection";
 import OnlyH3Section from "@/app/components/Sections/2OnlyH3Section";
 import PostersSectionA from "@/app/components/Sections/3PostersSectionA";
@@ -93,13 +95,19 @@ export default async function Home() {
       <NavMenu />
       <div className="bg-[rgba(227,224,220,0.85)]">
         {/* Voyages */}
-        <Link href="/voyages" className="mb-8 md:mb-24">
-          <WideImageSection
-            projectSection={gallery[0]}
-            title={gallery[0].title}
-          />
+        <Link href="/voyages" className="">
+          <div
+            className={` min-h-[95vh] min-w-screen  relative`}
+          >
+            <Image
+              src={urlFor(gallery[0].images[0]).url() as string}
+              alt={gallery[0].title}
+              fill
+              className="object-cover "
+            />
+          </div>
         </Link>
-
+<div className="md:pt-12">
         {/* Projects */}
         {transformedData.map((project: Project, index: number) => {
           const SectionComponent = sectionComponents[project.section.layout];
@@ -116,7 +124,7 @@ export default async function Home() {
             </Link>
           );
         })}
-
+</div>
         {/*Ordinaire */}
         <Link href="/mon-ordinaire">
           <MapImageSection
