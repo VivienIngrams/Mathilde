@@ -10,11 +10,11 @@ const RandomSection = ({
   title: string;
 }) => {
   return (
-    <div className={` min-h-screen w-full `}>
+    <div className={` min-h-screen w-full pt-4 `}>
       <div className={`  md:grid md:grid-cols-3 h-full `}>
         <div className="h-[100%] flex flex-col items-center justify-center">
           {projectSection.images && projectSection.images[0] && (
-            <div className="relative h-[50vh] w-[70%] m-4">
+            <div className="relative h-[55vh] w-[70%] m-4">
               <Image
                 src={urlFor(projectSection.images[0]).url() as string}
                 alt={`${title} - additional`}

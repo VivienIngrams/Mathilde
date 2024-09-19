@@ -19,7 +19,7 @@ const project = {
       },
     },
     {
-      name: "date",
+      name: "order",
       type: "number",
       title: "Ordre des sections sur la page d'accueil",
       options: {
