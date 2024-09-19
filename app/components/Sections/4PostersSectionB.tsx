@@ -9,7 +9,7 @@ const PostersSectionB = ({
     projectSection: Section;
     title: string;
   }) => {
-    console.log(projectSection);
+
     return (
       <div className={`  min-h-[70vh]md:-mt-12 w-full`}>
          {/* Mobile Layout */}

@@ -24,21 +24,20 @@ const MapImageSection = ({
             </div>
           ))}
       </div>
-
       {projectSection.text && (
-        <div className="h-[30vh] flex flex-col items-center justify-center">
-          <div className="px-4 text-center md:max-w-[60vw]">
-            <p className="leading-6">
-              {projectSection.text[0]}
-              <span className="text-2xl lg:text-4xl leading-[1] font-serif tracking-tighter">
-                {projectSection.text[1]}
-              </span>
-              {projectSection.text[2]}
-              <span className="text-2xl lg:text-4xl leading-[1] font-serif tracking-tighter">
-                {projectSection.text[3]}
-              </span>
-              {projectSection.text[4]}
-            </p>
+          <div className="h-[30vh] flex flex-col items-center justify-center  py-8 ">
+            <div className="px-4 md:text-center md:max-w-[60vw]">
+              <p className="leading-6">
+                {projectSection.text[0]}
+                <span className="text-2xl lg:text-4xl leading-[1] font-serif tracking-tighter">
+                  {projectSection.text[1]}
+                </span>
+                {projectSection.text[2]}
+                <span className="text-2xl lg:text-4xl leading-[1] font-serif tracking-tighter">
+                  {projectSection.text[3]}
+                </span>
+                {projectSection.text[4]}
+              </p>
           </div>
         </div>
       )}

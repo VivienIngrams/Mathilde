@@ -16,7 +16,7 @@ const HalfHalfSection = ({
         {projectSection.text && (
           <div className="flex flex-col leading-normal justify-center py-8 md:py-20  text-right  md:mr-8 md:ml-[45%]">
             <p className="">
-              <span className="text-3xl lg:text-4xl leading-[1] font-serif tracking-tighter">
+              <span className="text-2xl lg:text-4xl leading-[1] font-serif tracking-tighter">
                 {projectSection.text[0]}
               </span>
               {projectSection.text[1]}
@@ -24,6 +24,12 @@ const HalfHalfSection = ({
             <p className="py-2">{projectSection.text[2]}</p>
             {projectSection.text[3] && (
               <p className="py-2">{projectSection.text[3]}</p>
+            )}
+            {projectSection.text[4] && (
+              <p className="py-2">{projectSection.text[4]}</p>
+            )}
+            {projectSection.text[5] && (
+              <p className="py-2">{projectSection.text[5]}</p>
             )}
           </div>
         )}

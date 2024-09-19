@@ -10,7 +10,7 @@ const PostersSectionA = ({
     title: string;
   }) => {
     return (
-      <div className={`  min-h-screen  w-full`}>
+      <div className={`  min-h-screen mt-4 w-full`}>
          {/* Mobile Layout */}
       <div className="md:hidden columns-1 sm:columns-2 gap-4 mx-4">
         {projectSection.images?.map((image, index) => (

@@ -19,21 +19,32 @@ import TextSection from "@/app/components/Sections/10TextSection";
 
 async function getData() {
   const data = await client.fetch(
-    `
-    *[_type == 'project'] | order(order asc) {
-    title,
-    order,
-    "slug": slug.current,
-    mainImages[],
-    mainLayout,
-    mainBackground,
-    mainText
-  }
-  `,
+    `{
+        "project": *[_type == 'project'] | order(order asc) {
+          title,
+          order,
+          "slug": slug.current,
+          mainImages[],
+          mainLayout,
+          mainBackground,
+          mainText
+        },
+        "gallery": *[_type == 'gallery'] {
+          images[] {
+            asset->{
+              _id,
+              url
+            }
+          },
+          text,
+          title
+        }
+      }
+    `,
     {},
     {
       next: {
-        revalidate: 60,
+        revalidate: 10,
       },
     }
   );
@@ -74,20 +85,25 @@ const sectionComponents: {
 };
 
 export default async function Home() {
-  const data = await getData();
-  const transformedData = transformData(data);
+  const { project, gallery } = await getData();
+  const transformedData = transformData(project);
 
   return (
     <div className="h-full">
       <NavMenu />
       <div className="bg-[rgba(227,224,220,0.85)]">
         {/* Mon ordinaire */}
+        <div className="">
+        <WideImageSection
+          projectSection={gallery[0]}
+          title={gallery[0].title}
+          
+        /></div>
         {transformedData.map((project: Project, index: number) => {
           const SectionComponent = sectionComponents[project.section.layout];
 
           return (
-            <Link key={project.slug} href={`/project/${project.slug}`}>
-             
+            <Link key={index} href={`/project/${project.slug}`}>
               {SectionComponent ? (
                 <SectionComponent
                   projectSection={project.section}
@@ -98,7 +114,13 @@ export default async function Home() {
             </Link>
           );
         })}
+
         {/* Voyages */}
+        <MapImageSection
+          projectSection={gallery[1]}
+          title={gallery[1].title}
+        />
+
       </div>
       <Footer />
     </div>
