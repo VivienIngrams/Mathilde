@@ -14,7 +14,7 @@ const RandomSection = ({
       <div className={`  md:grid md:grid-cols-3 h-full `}>
         <div className="h-[100%] flex flex-col items-center justify-center">
           {projectSection.images && projectSection.images[0] && (
-            <div className="relative h-[55vh] w-[70%] m-4">
+            <div className="relative h-[50vh] w-[70%] m-4">
               <Image
                 src={urlFor(projectSection.images[0]).url() as string}
                 alt={`${title} - additional`}
@@ -24,7 +24,7 @@ const RandomSection = ({
             </div>
           )}
         </div>
-        <div className="h-[100%] flex flex-col justify-center items-center">
+        <div className="h-[100%] hidden md:flex flex-col justify-center items-center">
           {projectSection.images && projectSection.images[1] && (
             <div className="relative h-[80vh] md:h-[90vh] w-[100%] md:w-[150%] ">
               <Image
@@ -36,9 +36,23 @@ const RandomSection = ({
             </div>
           )}
         </div>
+          {projectSection.images && projectSection.images[1] && (
+            <div className="md:hidden columns-1">
+              <div className=" break-inside-avoid">
+                <Image
+                  src={urlFor(projectSection.images[1]).url() as string}
+                  alt={`${title} - additional`}
+                  width={500}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          )}
         <div className=" md:h-[100%] flex flex-col items-center justify-around">
           {projectSection.images && projectSection.images[2] && (
-            <div className="relative h-[45vh] w-[70%] m-4 ">
+            <div className="relative h-[50vh] w-[70%] m-4 ">
               <Image
                 src={urlFor(projectSection.images[2]).url() as string}
                 alt={`${title} - additional`}

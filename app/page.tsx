@@ -30,7 +30,7 @@ async function getData() {
           mainText
         },
         "gallery": *[_type == 'gallery'] {
-          images[] {
+          images[0..6] {
             asset->{
               _id,
               url
@@ -92,13 +92,15 @@ export default async function Home() {
     <div className="h-full">
       <NavMenu />
       <div className="bg-[rgba(227,224,220,0.85)]">
-        {/* Mon ordinaire */}
-        <div className="mb-8 md:mb-24">
-        <WideImageSection
-          projectSection={gallery[0]}
-          title={gallery[0].title}
-          
-        /></div>
+        {/* Voyages */}
+        <Link href="/voyages" className="mb-8 md:mb-24">
+          <WideImageSection
+            projectSection={gallery[0]}
+            title={gallery[0].title}
+          />
+        </Link>
+
+        {/* Projects */}
         {transformedData.map((project: Project, index: number) => {
           const SectionComponent = sectionComponents[project.section.layout];
 
@@ -115,12 +117,13 @@ export default async function Home() {
           );
         })}
 
-        {/* Voyages */}
-        <MapImageSection
-          projectSection={gallery[1]}
-          title={gallery[1].title}
-        />
-
+        {/*Ordinaire */}
+        <Link href="/mon-ordinaire">
+          <MapImageSection
+            projectSection={gallery[1]}
+            title={gallery[1].title}
+          />
+        </Link>
       </div>
       <Footer />
     </div>
