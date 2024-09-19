@@ -11,12 +11,12 @@ const gallery = defineType ({
             title: 'Title'
           },
           {
-            name: "content",
+            name: "text",
             type: "array",
-            title: "Content",
+            title: "Texte(s)",
             of: [
               {
-                type: "block",
+                type: "string",
               },
             ],
           },

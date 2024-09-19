@@ -14,15 +14,17 @@ export const Mirante1 = ({ projectSection }: { projectSection: Mirante }) => {
         </div>
         <div className="flex flex-col justify-center items-start h-[50vh] md:min-h-[100vh] w-full md:w-full md:pl-12 col-span-2">
           <h1 className="hidden md:block">{projectSection.title}</h1>
-          <div className="relative h-[75%] w-full">
-            <Image
-              src={urlFor(projectSection.image).url() as string}
-              alt={projectSection.title}
-              fill
-              className="object-contain px-4 md:pl-4"
-              style={{ objectPosition: "left" }}
-            />
-          </div>
+          {projectSection.image && (
+            <div className="relative h-[75%] w-full">
+              <Image
+                src={urlFor(projectSection.image).url() as string}
+                alt={projectSection.title}
+                fill
+                className="object-contain px-4 md:pl-4"
+                style={{ objectPosition: "left" }}
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -63,15 +65,17 @@ export const Mirante3 = ({ projectSection }: { projectSection: Mirante }) => {
         <h1>{projectSection.title}</h1>
       </div>
       <div className="flex flex-col justify-center items-start h-[50vh] md:min-h-[100vh] w-full">
-        <div className="relative h-[95%] w-full">
-          <Image
-            src={urlFor(projectSection.image).url() as string}
-            alt={projectSection.title}
-            fill
-            className="object-contain px-4"
-            style={{ objectPosition: "left" }}
-          />
-        </div>
+        {projectSection.image && (
+          <div className="relative h-[95%] w-full">
+            <Image
+              src={urlFor(projectSection.image).url() as string}
+              alt={projectSection.title}
+              fill
+              className="object-contain px-4"
+              style={{ objectPosition: "left" }}
+            />
+          </div>
+        )}
       </div>
       <div className="flex flex-col justify-center pb-20 md:py-20 md:mr-8">
         <PortableText value={projectSection.content} />

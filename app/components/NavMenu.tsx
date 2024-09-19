@@ -125,13 +125,13 @@ const NavMenu = () => {
                 href="/mon-ordinaire"
                 className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
               >
-                Mon ordinaire
+                mon ordinaire
               </Link>
               <Link
                 href="/bio"
                 className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
               >
-                Bio
+                bio
               </Link>
               <Link
                 href="/info"

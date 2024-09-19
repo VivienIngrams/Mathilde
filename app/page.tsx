@@ -19,7 +19,7 @@ import { Mirante1, Mirante2, Mirante3 } from "./components/Sections/MiranteSecti
 async function getData() {
   const data = await client.fetch(
     `
-    *[_type == 'project'] | order(order desc) {
+    *[_type == 'project'] | order(order asc) {
     title,
     order,
     "slug": slug.current,
