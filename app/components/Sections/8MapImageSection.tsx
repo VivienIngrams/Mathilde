@@ -11,10 +11,10 @@ const MapImageSection = ({
 }) => {
   return (
     <div className="md:min-h-[60vh] w-full pt-8">
-      <div className="flex flex-col md:flex-row md:justify-center md:items-end h-[200vh] md:h-[60vh] w-full md:px-[10vw]">
+      <div className="flex flex-col md:flex-row md:justify-center md:items-end px-4 h-[200vh] md:h-[60vh] w-full md:px-[10vw]">
         {projectSection.images &&
           projectSection.images.map((image, index) => (
-            <div className="relative h-[95%] w-full my-2 md:mx-2" key={index}>
+            <div className="relative h-[95%] w-full my-2 md:mx-4" key={index}>
               <Image
                 src={urlFor(image).url() as string}
                 alt={title}

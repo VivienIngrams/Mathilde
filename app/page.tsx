@@ -16,8 +16,8 @@ import RandomSection from "@/app/components/Sections/7RandomSection";
 import MapImageSection from "@/app/components/Sections/8MapImageSection";
 import WideImageSection from "@/app/components/Sections/9WideImageSection";
 import TextSection from "@/app/components/Sections/10TextSection";
+import {MobileMapSection, MobileSection} from "./components/Sections/MobileSection";
 
-// Get gallery data, for ordinaire and voyages section, to be included below with MapImageSection
 
 async function getData() {
   const data = await client.fetch(
@@ -32,7 +32,7 @@ async function getData() {
           mainText
         },
         "gallery": *[_type == 'gallery'] {
-          images[0..6] {
+          images[0..4] {
             asset->{
               _id,
               url
@@ -95,42 +95,72 @@ export default async function Home() {
       <NavMenu />
       <div className="bg-[rgba(227,224,220,0.85)]">
         {/* Voyages */}
-        <Link href="/voyages" className="">
-          <div
-            className={` min-h-[95vh] min-w-screen  relative`}
-          >
+        {/* <Link href="/voyages">
+          <div className="min-h-[95vh] min-w-screen relative mx-4">
             <Image
               src={urlFor(gallery[0].images[0]).url() as string}
               alt={gallery[0].title}
               fill
-              className="object-cover "
+              className="object-cover"
             />
           </div>
-        </Link>
-<div className="md:pt-12">
-        {/* Projects */}
-        {transformedData.map((project: Project, index: number) => {
-          const SectionComponent = sectionComponents[project.section.layout];
+        </Link> */}
 
-          return (
-            <Link key={index} href={`/project/${project.slug}`}>
-              {SectionComponent ? (
-                <SectionComponent
-                  projectSection={project.section}
-                  title={project.title}
-                  slug={project.slug}
-                />
-              ) : null}
-            </Link>
-          );
-        })}
-</div>
-        {/*Ordinaire */}
+        {/* Projects */}
+        <div className="md:pt-12">
+          {/* Mobile View */}
+          <div className="md:hidden">
+            <MobileMapSection project={transformedData[0]} />
+            <MobileSection project={transformedData[1]} />
+            <MobileMapSection project={transformedData[3]} />
+            <MobileSection project={transformedData[2]} />
+            <MobileMapSection project={transformedData[5]} />
+            <MobileSection project={transformedData[4]} />
+            {/* <MobileMapSection project={transformedData[6]} /> */}
+            
+          </div>
+
+          {/* Desktop View */}
+          <div className="hidden md:block">
+            {transformedData.map((project: Project, index: number) => {
+              const SectionComponent =
+                sectionComponents[project.section.layout];
+
+              return (
+                <Link key={index} href={`/project/${project.slug}`}>
+                  {SectionComponent ? (
+                    <SectionComponent
+                      projectSection={project.section}
+                      title={project.title}
+                      slug={project.slug}
+                    />
+                  ) : null}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Ordinaire */}
         <Link href="/mon-ordinaire">
-          <MapImageSection
-            projectSection={gallery[1]}
-            title={gallery[1].title}
-          />
+          <div className="hidden md:block">
+            <MapImageSection
+              projectSection={gallery[1]}
+              title={gallery[1].title}
+            />
+          </div>
+          {/* Mobile -- make like MobileSection component */}
+          <div className=" md:hidden">
+            <div className="min-h-[70vh] min-w-screen relative mx-4">
+              <Image
+                src={urlFor(gallery[1].images[0]).url() as string}
+                alt={gallery[1].title}
+                fill
+                className="object-cover"
+              />
+            </div>
+            <h1 className="">{gallery[1].title}</h1>
+          </div>
         </Link>
       </div>
       <Footer />
