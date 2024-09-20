@@ -16,8 +16,10 @@ import RandomSection from "@/app/components/Sections/7RandomSection";
 import MapImageSection from "@/app/components/Sections/8MapImageSection";
 import WideImageSection from "@/app/components/Sections/9WideImageSection";
 import TextSection from "@/app/components/Sections/10TextSection";
-import {MobileMapSection, MobileSection} from "./components/Sections/MobileSection";
-
+import {
+  MobileMapSection,
+  MobileSection,
+} from "./components/Sections/MobileSection";
 
 async function getData() {
   const data = await client.fetch(
@@ -117,7 +119,6 @@ export default async function Home() {
             <MobileMapSection project={transformedData[5]} />
             <MobileSection project={transformedData[4]} />
             {/* <MobileMapSection project={transformedData[6]} /> */}
-            
           </div>
 
           {/* Desktop View */}
@@ -150,7 +151,7 @@ export default async function Home() {
             />
           </div>
           {/* Mobile -- make like MobileSection component */}
-          <div className=" md:hidden">
+          <div className="md:hidden">
             <div className="min-h-[70vh] min-w-screen relative mx-4">
               <Image
                 src={urlFor(gallery[1].images[0]).url() as string}
@@ -158,8 +159,11 @@ export default async function Home() {
                 fill
                 className="object-cover"
               />
+              {/* Add the overlay here */}
+              <h1 className="absolute bottom-0 right-0 text-white text-2xl ">
+                {gallery[1].title}
+              </h1>
             </div>
-            <h1 className="">{gallery[1].title}</h1>
           </div>
         </Link>
       </div>
