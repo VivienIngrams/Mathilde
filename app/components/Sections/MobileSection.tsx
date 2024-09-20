@@ -12,10 +12,10 @@ export const MobileMapSection: React.FC<MobileProjectViewProps> = ({
 }) => {
   return (
     <Link href={`/project/${project.slug}`}>
-      <div className="flex flex-col h-[100vh] w-full">
+      <div className="flex flex-col h-[90vh] w-full">
         {project.section.images &&
           project.section.images.map((image, index) => (
-            <div className="relative h-[95%] w-full my-2" key={index}>
+            <div className="relative h-[98%] w-full my-[2px]" key={index}>
               <Image
                 src={urlFor(image.asset).url() as string}
                 alt={project.title}

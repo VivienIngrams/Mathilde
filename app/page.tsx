@@ -142,7 +142,7 @@ export default async function Home() {
         </div>
 
         {/* Ordinaire */}
-        <Link href="/mon-ordinaire">
+        <Link href="/ma-vie-ordinaire">
           <div className="hidden md:block">
             <MapImageSection
               projectSection={gallery[1]}
@@ -167,3 +167,5 @@ export default async function Home() {
     </div>
   );
 }
+
+// overlay the h1 on top of image!

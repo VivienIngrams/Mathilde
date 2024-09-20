@@ -12,7 +12,7 @@ const NavMenu = () => {
 
   return (
     <nav className="sticky top-0 w-full z-50 mx-auto px-4 sm:px-6 lg:px-8 bg-[rgba(227,224,220,0.85)] font-serif">
-      <div className="flex items-center justify-between h-16 md:h-18">
+      <div className="flex items-center justify-between h-12 md:h-18">
       <Link
         href="/"
         className="hover:bg-black/10 md:px-3 py-2 rounded-md text-[1.3rem] md:text-[1.8rem] light"
@@ -122,10 +122,10 @@ const NavMenu = () => {
                 voyages
               </Link>
               <Link
-                href="/mon-ordinaire"
+                href="/ma-vie-ordinaire"
                 className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
               >
-                mon ordinaire
+                mavie ordinaire
               </Link>
               <Link
                 href="/bio"
@@ -264,25 +264,25 @@ const NavMenu = () => {
             href="/voyages"
             className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
           >
-            Voyages
+            voyages
           </Link>
           <Link
-            href="/mon-ordinaire"
+            href="/ma-vie-ordinaire"
             className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
           >
-            Mon ordinaire
+            ma vie ordinaire
           </Link>
           <Link
             href="/bio"
             className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
           >
-            Bio
+            bio
           </Link>
           <Link
             href="/info"
             className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
           >
-            Info
+            info
           </Link>
           
         </div>

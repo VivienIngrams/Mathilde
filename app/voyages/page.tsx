@@ -34,6 +34,20 @@ export default async function Gallery() {
     <div className="h-full">
       <NavMenu />
       <div className="bg-[rgba(227,224,220,0.85)] min-h-screen p-4">
+      {data?.text && (
+          <div className=" text-right ">
+            <div className="pb-4 md:pb-12">
+              <h1 className="pt-4 -mb-4">{data.title}</h1>
+              <div className="">
+                <p className="">{data.text[0]}</p>
+                {/* {data.text[1] && <p className="">{data.text[1]}</p>}
+                {data.text[2] && <p className="">{data.text[2]}</p>}
+                {data.text[3] && <p className="">{data.text[3]}</p>}
+                {data.text[4] && <p className="">{data.text[4]}</p>} */}
+              </div>
+            </div>
+          </div>
+        )}
         {/* Use CSS columns for masonry effect */}
         <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4">
           {images.map((image: any) => (
