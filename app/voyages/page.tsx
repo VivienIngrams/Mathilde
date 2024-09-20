@@ -13,7 +13,9 @@ async function getImages() {
           _id,
           url
         }
-      }
+      },
+      title,
+      text,
     }
     `,
     {},
@@ -28,6 +30,7 @@ async function getImages() {
 
 export default async function Gallery() {
   const data = await getImages();
+  console.log(data)
   const images = data[0]?.images || [];
 
   return (

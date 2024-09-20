@@ -26,8 +26,7 @@ const TitleSection = ({
                       alt="Gallery Image"
                       width={500}
                       height={500} // Placeholder size, maintains aspect ratio
-                      objectFit="cover"
-                      className="w-full h-auto "
+                      className="w-full h-auto object-cover"
                       loading="lazy"
                     />
                   </div>
