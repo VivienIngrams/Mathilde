@@ -7,7 +7,7 @@ import NavMenu from "../components/NavMenu";
 async function getImages() {
   const data = await client.fetch(
     `
-    *[_type == 'gallery' && title == 'Ma vie ordinaire'][0] {
+    *[_type == 'gallery' && title == 'Ma Vie Ordinaire'][0] {
       images[] {
         asset->{
           _id,

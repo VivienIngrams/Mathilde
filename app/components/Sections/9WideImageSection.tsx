@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { Section } from "../../interface";
+import { usePathname } from "next/navigation";
 
 const WideImageSection = ({
   projectSection,
@@ -9,6 +12,8 @@ const WideImageSection = ({
   projectSection: Section;
   title: string;
 }) => {
+  const path = usePathname();
+  const isHomePage = path === "/";
   return (
     <div
       className={`h-[45vh] md:min-h-screen min-w-screen md:-pb-[25vh] md:h-[120vh] relative`}
@@ -21,7 +26,11 @@ const WideImageSection = ({
           className="object-cover "
         />
       )}
-      <h1 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-center">{title}</h1>
+      {isHomePage && (
+        <h1 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-center">
+          {title}
+        </h1>
+      )}
     </div>
   );
 };

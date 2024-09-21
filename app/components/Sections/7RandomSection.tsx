@@ -29,7 +29,7 @@ const RandomSection = ({
               />
             </div>
           )}
-          <h1 className="absolute bottom-[7%] ">{title}</h1>
+          {isHomePage && <h1 className="absolute bottom-[7%] ">{title}</h1>}
         </div>
         <div className="h-[100%] hidden md:flex flex-col justify-center items-center">
           {projectSection.images && projectSection.images[1] && (
