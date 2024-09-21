@@ -51,7 +51,7 @@ const RandomSection = ({
                 alt={`${title} - additional`}
                 width={500}
                 height={500}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover px-4"
                 loading="lazy"
               />
             </div>
@@ -69,7 +69,7 @@ const RandomSection = ({
             </div>
           )}{" "}
           {projectSection.images && projectSection.images[3] && (
-            <div className="relative h-[30vh] w-[70%] my-6">
+            <div className="relative h-[30vh] w-[70%] mb-6">
               <Image
                 src={urlFor(projectSection.images[3]).url() as string}
                 alt={`${title} - additional`}

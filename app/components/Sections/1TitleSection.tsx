@@ -13,8 +13,8 @@ const TitleSection = ({
   return (
     <div className={` md:min-h-screen w-full `}>
       <div className={` md:grid md:grid-cols-2 pt-8`}>
-        {projectSection.text && (
-          // Mobile
+        
+          {/* // Mobile */}
           <div className="md:hidden text-right ">
             <div className=" pb-12">
               <h1 className="pt-4">{title}</h1>
@@ -25,13 +25,14 @@ const TitleSection = ({
                       src={urlFor(projectSection.images[0]).url()}
                       alt="Gallery Image"
                       width={500}
-                      height={500} // Placeholder size, maintains aspect ratio
+                      height={500} 
                       className="w-full h-auto object-cover"
                       loading="lazy"
                     />
                   </div>
                 </Link>
               )}
+              {projectSection.text && (
               <div className="my-2">
                 <p className="py-2">{projectSection.text[0]}</p>
                 {projectSection.text[1] && (
@@ -47,6 +48,7 @@ const TitleSection = ({
                   <p className="py-2">{projectSection.text[4]}</p>
                 )}
               </div>
+            )}
               {projectSection.images && projectSection.images[1] && (
                 <Link href={urlFor(projectSection.images[1]).url()}>
                   <div className="m-4 break-inside-avoid ">
@@ -64,7 +66,7 @@ const TitleSection = ({
               )}
             </div>
           </div>
-        )}
+        
         {/* Desktop */}
         <div className="hidden md:flex md:flex-col md:justify-end md:items-end h-[75vh] md:h-[80vh] w-[85vw] md:w-[70vw] lg:w-[50vw]  ">
           <div className="relative h-full w-full md:w-[85%]">

@@ -9,13 +9,13 @@ export default async function Info() {
       <div className="bg-[rgba(227,224,220,0.85)] min-h-screen p-4">
         {/* Contact Section */}
         <div className="my-8">
-          <h1 className="text-2xl font-bold ">Contact</h1>
-          <p className="mt-2 text-lg ">Tel : +33 06 79 76 14 88</p>
+          <h1 className=" ">Contact</h1>
+          <p className="mt-2 text-lg ">+33 06 79 76 14 88</p>
           <p className="text-lg ">
-            Mail : cudevillemathilde@gmail.com
+           cudevillemathilde@gmail.com
           </p>
           <p className="text-lg  mt-2">
-            Visit:{" "}
+            
             <Link
               href="https://2regards.net"
               className=" underline"
@@ -29,10 +29,10 @@ export default async function Info() {
 
         {/* Parcours professionnel Section */}
         <div className="my-8">
-          <h1 className="text-2xl font-bold">
+          <h1 className="">
             Parcours professionnel
           </h1>
-          <ul className="list-disc ml-5 mt-4 space-y-2 text-lg ">
+          <ul className=" ml-5 mt-4 space-y-2 text-lg ">
             <li>Photographe pour 2regards (Porto / 2020)</li>
             <li>
               Exposition «Au café», galeria 2regards atelier, Porto, Portugal,
@@ -82,10 +82,10 @@ export default async function Info() {
 
         {/* Education à l’image Section */}
         <div className="my-8">
-          <h1 className="text-2xl font-bold ">
+          <h1 className=" ">
             Éducation à l’image
           </h1>
-          <ul className="list-disc ml-5 mt-4 space-y-2 text-lg ">
+          <ul className="ml-5 mt-4 space-y-2 text-lg ">
             <li>
               LFIP (Lycée français international de Porto) / Intervenante
               artistique / Depuis 2022
@@ -124,8 +124,8 @@ export default async function Info() {
 
         {/* Formation Section */}
         <div className="my-8">
-          <h1 className="text-2xl font-bold ">Formation</h1>
-          <ul className="list-disc ml-5 mt-4 space-y-2 text-lg ">
+          <h1 className=" ">Formation</h1>
+          <ul className="ml-5 mt-4 space-y-2 text-lg ">
             <li>
               DU «Photographie documentaire et écritures transmédias»
               (Perpignan), 2015
