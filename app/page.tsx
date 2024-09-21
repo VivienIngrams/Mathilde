@@ -109,7 +109,7 @@ export default async function Home() {
         </Link> */}
 
         {/* Projects */}
-        <div className="md:pt-12">
+        <div className="">
           {/* Mobile View */}
           <div className="md:hidden">
             <MobileMapSection project={transformedData[0]} />
@@ -118,7 +118,7 @@ export default async function Home() {
             <MobileSection project={transformedData[2]} />
             <MobileMapSection project={transformedData[5]} />
             <MobileSection project={transformedData[4]} />
-            {/* <MobileMapSection project={transformedData[6]} /> */}
+            <MobileMapSection project={transformedData[6]} />
           </div>
 
           {/* Desktop View */}
@@ -150,8 +150,8 @@ export default async function Home() {
               title={gallery[1].title}
             />
           </div>
-          {/* Mobile -- make like MobileSection component */}
-          <div className="md:hidden">
+          {/* Mobile  */}
+          <div className="md:hidden ">
             <div className="min-h-[70vh] min-w-screen relative mx-4">
               <Image
                 src={urlFor(gallery[1].images[0]).url() as string}
@@ -160,7 +160,7 @@ export default async function Home() {
                 className="object-cover"
               />
               {/* Add the overlay here */}
-              <h1 className="absolute bottom-0 right-0 text-white text-2xl ">
+              <h1 className="absolute -bottom-2 -left-1 text-white text-2xl ">
                 {gallery[1].title}
               </h1>
             </div>
@@ -171,5 +171,3 @@ export default async function Home() {
     </div>
   );
 }
-
-// overlay the h1 on top of image!

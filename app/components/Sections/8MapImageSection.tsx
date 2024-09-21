@@ -27,7 +27,7 @@ const MapImageSection = ({
       {projectSection.text && (
           <div className="h-[30vh] flex flex-col items-center justify-center  py-8 ">
             <div className="px-4 md:text-center md:max-w-[60vw]">
-              <p className="leading-6">
+              <p className="leading-7">
                 {projectSection.text[0]}
                 <span className="text-2xl lg:text-4xl leading-[1] font-serif tracking-tighter">
                   {projectSection.text[1]}

@@ -1,6 +1,9 @@
+'use client'
+
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { Section } from "../../interface";
+import { usePathname } from "next/navigation";
 
 const RandomSection = ({
   projectSection,
@@ -9,8 +12,11 @@ const RandomSection = ({
   projectSection: Section;
   title: string;
 }) => {
+const path = usePathname()
+const isHomePage = path === '/'
+
   return (
-    <div className={` min-h-screen w-full pt-4 `}>
+    <div className={` min-h-[95vh] w-full pt-2 `}>
       <div className={`  md:grid md:grid-cols-3 h-full `}>
         <div className="h-[100%] flex flex-col items-center justify-center">
           {projectSection.images && projectSection.images[0] && (
@@ -23,6 +29,7 @@ const RandomSection = ({
               />
             </div>
           )}
+          <h1>{title}</h1>
         </div>
         <div className="h-[100%] hidden md:flex flex-col justify-center items-center">
           {projectSection.images && projectSection.images[1] && (
