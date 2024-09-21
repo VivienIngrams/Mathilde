@@ -21,6 +21,7 @@ const WideImageSection = ({
           className="object-cover "
         />
       )}
+      <h1 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-center">{title}</h1>
     </div>
   );
 };

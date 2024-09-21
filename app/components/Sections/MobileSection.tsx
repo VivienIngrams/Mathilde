@@ -23,7 +23,6 @@ export const MobileMapSection: React.FC<MobileProjectViewProps> = ({
                 sizes=""
                 className="object-contain"
               />
-              {/* Add the overlay here */}
             </div>
           ))}
         <h1 className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-center text-2xl text-[rgba(227,224,220)]">
@@ -39,7 +38,7 @@ export const MobileSection: React.FC<MobileProjectViewProps> = ({
 }) => {
   return (
     <Link href={`/project/${project.slug}`}>
-      <div className="columns-1 sm:columns-2 gap-4 mt-12 px-4">
+      <div className="columns-1 sm:columns-2 gap-4 my-12 px-4 relative">
         {project.section.images && (
           <Image
             src={urlFor(project.section.images[0].asset).url()}
@@ -50,10 +49,10 @@ export const MobileSection: React.FC<MobileProjectViewProps> = ({
             loading="lazy"
           />
         )}
+      <h1 className="absolute -bottom-2 left-2 text-center text-2xl text-[rgba(227,224,220)]">
+          {project.title}
+        </h1>
       </div>
-      <h1 className="-mt-[60px] ml-2 text-2xl text-[rgba(227,224,220)]">
-        {project.title}
-      </h1>
     </Link>
   );
 };

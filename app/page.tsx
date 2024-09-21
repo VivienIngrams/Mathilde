@@ -151,7 +151,7 @@ export default async function Home() {
             />
           </div>
           {/* Mobile  */}
-          <div className="md:hidden ">
+          <div className="md:hidden mt-12">
             <div className="min-h-[70vh] min-w-screen relative mx-4">
               <Image
                 src={urlFor(gallery[1].images[0]).url() as string}

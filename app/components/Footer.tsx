@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="flex flex-col relative justify-center items-center py-12 bg-[rgba(227,224,220,0.85)] font-serif">
       <div
-        className="rounded-full shadow-sm shadow-[#78350f] p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2"
+        className="rounded-full shadow-sm shadow-[#ad8b77] p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         <HiOutlineChevronDoubleUp />
@@ -18,7 +18,7 @@ const Footer = () => {
       <Link
         href="https://vivieningrams.com"
         target="_blank"
-        className="my-6 text-[10px]  tracking-tight xs:tracking-normal  z-50 leading-loose"
+        className="my-4 text-[10px]  tracking-tight xs:tracking-normal  z-50 leading-loose"
       >
         <p className="hidden md:flex absolute text-[12px] tracking-tight xs:tracking-normal font-serif z-50 leading-loose bottom-5 left-12 ">
           Website by Vivien Ingrams
