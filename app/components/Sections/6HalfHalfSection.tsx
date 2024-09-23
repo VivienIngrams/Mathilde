@@ -37,7 +37,7 @@ const HalfHalfSection = ({
                   src={urlFor(projectSection.images[0]).url() as string}
                   alt={title}
                   fill
-                  className="object-contain"
+                  className="object-contain px-4"
                 />
               </div>
             </div>

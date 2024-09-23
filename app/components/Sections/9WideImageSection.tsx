@@ -16,14 +16,14 @@ const WideImageSection = ({
   const isHomePage = path === "/";
   return (
     <div
-      className={`h-[45vh] md:min-h-screen min-w-screen md:-pb-[20vh] md:h-[120vh] md:mb-12 relative`}
+      className={`h-[40vh] md:min-h-screen min-w-screen  md:-pb-[20vh] md:h-[120vh] md:mb-12 relative`}
     >
       {projectSection.images && (
         <Image
           src={urlFor(projectSection.images[0]).url() as string}
           alt={title}
           fill
-          className="object-cover "
+          className="object-cover px-4"
         />
       )}
       {isHomePage && (
