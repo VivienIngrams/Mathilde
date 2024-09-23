@@ -26,7 +26,7 @@ export default async function Info() {
                     />
                   </div>
                 </div>
-                <div className="col-span-5 flex items-center md:text-base md:text-lg">
+                <div className="col-span-5 flex items-center  md:text-lg">
                   <div className=" my-4">
                     <p className=" ">+33 06 79 76 14 88</p>
                     <p className="">cudevillemathilde@gmail.com</p>
@@ -213,8 +213,8 @@ export default async function Info() {
               <ul className="mx-4 space-y-2">
                 <li>
                   <span className="text-base md:text-lg">
-                    <span className="font-medium">LFIP</span> (Lycée français
-                    international de Porto) / Intervenante artistique / Depuis
+                    <span className="font-medium">LFIP (Lycée français
+                    international de Porto)</span> / Intervenante artistique / Depuis
                     2022
                   </span>
                 </li>
@@ -223,19 +223,19 @@ export default async function Info() {
                     <span className="font-medium">
                       Workshops photographiques
                     </span>{" "}
-                    / 2regards atelier / Depuis 2022
+                    , 2regards atelier, Depuis 2022
                   </span>
                 </li>
                 <li>
                   <span className="text-base md:text-lg">
                     <span className="font-medium">Parole de photographes</span>{" "}
-                    / Coordinatrice pédagogique / Paris, 2016-2018
+                    / Coordinatrice pédagogique, Paris, 2016-2018
                   </span>
                 </li>
                 <li>
                   <span className="text-base md:text-lg">
                     <span className="font-medium">Atelier photo</span> au
-                    collège Saint-Georges / Paris 2017-2018
+                    collège Saint-Georges, Paris 2017-2018
                   </span>
                 </li>
                 <li>
@@ -247,15 +247,14 @@ export default async function Info() {
                 <li>
                   <span className="text-base md:text-lg">
                     <span className="font-medium">Atelier photo</span> /
-                    Objectif photo / Fraternité / Atelier en centre de loisirs
-                    primaire / maternelle, Paris, 2018
+                    Objectif photo / Fraternité, Atelier en centre de loisirs
+                    primaire/maternelle, Paris, 2018
                   </span>
                 </li>
                 <li>
                   <span className="text-base md:text-lg">
                     <span className="font-medium">Atelier photo</span> /
-                    Objectif photo / Paris secret / Centre de loisirs primaire /
-                    maternelle / Paris, 2017
+                    Objectif photo / Paris secret, Centre de loisirs primaire/maternelle, Paris, 2017
                   </span>
                 </li>
                 <li>
@@ -269,7 +268,7 @@ export default async function Info() {
                     <span className="font-medium">
                       Résidence Ecole du Feu rouge
                     </span>{" "}
-                    / Atelier photo avec les classes de CP / CE1 et CE2 /
+                    , Atelier photo avec les classes de CP, CE1 et CE2,
                     Saint-Pierre et Miquelon, 2015
                   </span>
                 </li>
@@ -297,7 +296,7 @@ export default async function Info() {
                 <li>
                   <span className="text-base md:text-lg">
                     <span className="font-medium">
-                      DU «Photographie documentaire et écritures transmédias»
+                      DU <span className="italic">«Photographie documentaire et écritures transmédias»</span>
                     </span>{" "}
                     (Perpignan), 2015
                   </span>

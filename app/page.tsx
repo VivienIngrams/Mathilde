@@ -7,7 +7,6 @@ import Link from "next/link";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import TitleSection from "@/app/components/Sections/1TitleSection";
-import OnlyH3Section from "@/app/components/Sections/2OnlyH3Section";
 import PostersSectionA from "@/app/components/Sections/3PostersSectionA";
 import PostersSectionB from "@/app/components/Sections/4PostersSectionB";
 import PostersSectionC from "@/app/components/Sections/5PostersSectionC";
@@ -15,7 +14,6 @@ import HalfHalfSection from "@/app/components/Sections/6HalfHalfSection";
 import RandomSection from "@/app/components/Sections/7RandomSection";
 import MapImageSection from "@/app/components/Sections/8MapImageSection";
 import WideImageSection from "@/app/components/Sections/9WideImageSection";
-import TextSection from "@/app/components/Sections/10TextSection";
 import {
   MobileMapSection,
   MobileSection,
@@ -77,7 +75,6 @@ const sectionComponents: {
   }>;
 } = {
   1: TitleSection,
-  2: OnlyH3Section,
   3: PostersSectionA,
   4: PostersSectionB,
   5: PostersSectionC,
@@ -85,7 +82,6 @@ const sectionComponents: {
   7: RandomSection,
   8: MapImageSection,
   9: WideImageSection,
-  10: TextSection,
 };
 
 export default async function Home() {
@@ -113,10 +109,10 @@ export default async function Home() {
           {/* Mobile View */}
           <div className="md:hidden">
             <MobileMapSection project={transformedData[0]} />
-            <MobileSection project={transformedData[1]} />
-            <MobileMapSection project={transformedData[3]} />
             <MobileSection project={transformedData[2]} />
+            <MobileSection project={transformedData[3]} />
             <MobileMapSection project={transformedData[5]} />
+            <MobileSection project={transformedData[1]} />
             <MobileSection project={transformedData[4]} />
             <MobileMapSection project={transformedData[6]} />
           </div>

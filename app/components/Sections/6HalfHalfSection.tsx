@@ -25,12 +25,8 @@ const HalfHalfSection = ({
             {projectSection.text[3] && (
               <p className="py-2">{projectSection.text[3]}</p>
             )}
-            {projectSection.text[4] && (
-              <p className="py-2">{projectSection.text[4]}</p>
-            )}
-            {projectSection.text[5] && (
-              <p className="py-2">{projectSection.text[5]}</p>
-            )}
+            
+            
           </div>
         )}
         <div>
@@ -48,7 +44,7 @@ const HalfHalfSection = ({
           )}
           {!projectSection.images &&
             projectSection.text &&
-            projectSection.text[4] && (
+            projectSection.text[5] && (
               <div className="flex flex-col justify-center items-start md:min-h-[80vh] w-[100vw] md:w-[100%]  ">
                 <div className="flex flex-col justify-center py-8 md:py-20   md:mr-[45%]">
                   {projectSection.text[4] && (
