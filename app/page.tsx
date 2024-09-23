@@ -168,7 +168,7 @@ export default async function Home() {
         </Link>
 
         {/* Voyages */}
-        <Link href="/ma-vie-ordinaire">
+        <Link href="/voyages">
           <div className="hidden md:block">
             <RandomSection
               projectSection={gallery[0]}

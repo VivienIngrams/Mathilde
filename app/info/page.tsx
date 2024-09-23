@@ -183,7 +183,7 @@ export default async function Info() {
                   <span className="font-medium">Stagiaire photographe</span>
                   <span className="italic"> «Objectif Une» </span>
                 </span>
-                pour l'Express et Figaro Rhône Alpes, 2013
+                pour l&apos;Express et Figaro Rhône Alpes, 2013
               </li>
               <li>
                 <span className="text-base md:text-lg">
