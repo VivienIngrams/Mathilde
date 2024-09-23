@@ -31,13 +31,13 @@ export default async function Bio() {
 
           {/* Center Column: Image */}
           <div className="relative w-full min-h-[40vh] lg:min-h-[70vh] lg:max-h-[vh] 
-          my-4 mw-auto col-span-2">
+          my-4 md:col-span-2">
             <Image
               src="/portrait.jpg"
               alt="Portrait of Mathilde"
               height={500}
               width={300}
-              className="h-full object-cover mx-auto"
+              className="h-full w-full object-cover px-4 md:mx-auto"
               loading="lazy"
             />
           </div>

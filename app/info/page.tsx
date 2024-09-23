@@ -208,7 +208,7 @@ export default async function Info() {
         <div className="min-h-[80vh] flex flex-col items-center md:mx-8 md:grid md:grid-cols-2 gap-8">
           {/* Education à l’image Section */}
           <div className="flex flex-col justify-center">
-            <div className="my-8">
+            <div className="pt-8 md:my-8">
               <h1 className="">Éducation à l’image</h1>
               <ul className="mx-4 space-y-2">
                 <li>
