@@ -166,6 +166,31 @@ export default async function Home() {
             </div>
           </div>
         </Link>
+
+        {/* Voyages */}
+        <Link href="/ma-vie-ordinaire">
+          <div className="hidden md:block">
+            <RandomSection
+              projectSection={gallery[0]}
+              title={gallery[0].title}
+            />
+          </div>
+          {/* Mobile  */}
+          <div className="md:hidden mt-12">
+            <div className="min-h-[70vh] min-w-screen relative mx-4">
+              <Image
+                src={urlFor(gallery[0].images[0]).url() as string}
+                alt={gallery[0].title}
+                fill
+                className="object-cover"
+              />
+              {/* Add the overlay here */}
+              <h1 className="absolute -bottom-2 -left-1 text-white text-2xl ">
+                {gallery[0].title}
+              </h1>
+            </div>
+          </div>
+        </Link>
       </div>
       <Footer />
     </div>

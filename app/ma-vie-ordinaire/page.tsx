@@ -40,7 +40,7 @@ export default async function MaVieOrdinaire() {
           <div className=" text-right ">
             <div className="pb-4 md:pb-12">
               <h1 className="pt-4 -mb-4">{data.title}</h1>
-              <div className="flex justify-end">
+              <div className="flex flex-col items-end">
                 <p className="md:max-w-[50vw]">
                   {data.text[0]}
                   {data.text[1]}

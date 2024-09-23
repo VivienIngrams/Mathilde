@@ -1,6 +1,7 @@
 import NavMenu from "../components/NavMenu";
 import Footer from "../components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default async function Info() {
   return (
@@ -11,11 +12,8 @@ export default async function Info() {
         <div className="my-8">
           <h1 className=" ">Contact</h1>
           <p className="mt-2 text-lg ">+33 06 79 76 14 88</p>
-          <p className="text-lg ">
-           cudevillemathilde@gmail.com
-          </p>
+          <p className="text-lg ">cudevillemathilde@gmail.com</p>
           <p className="text-lg  mt-2">
-            
             <Link
               href="https://2regards.net"
               className=" underline"
@@ -27,11 +25,17 @@ export default async function Info() {
           </p>
         </div>
 
+        <div className="min-h-[70vh] min-w-screen relative mx-4">
+          <Image
+            src="/portrait_Mathilde.jpg"
+            alt="Portrait Mathilde"
+            fill
+            className="object-contain"
+          />
+        </div>
         {/* Parcours professionnel Section */}
         <div className="my-8">
-          <h1 className="">
-            Parcours professionnel
-          </h1>
+          <h1 className="">Parcours professionnel</h1>
           <ul className=" ml-5 mt-4 space-y-2 text-lg ">
             <li>Photographe pour 2regards (Porto / 2020)</li>
             <li>
@@ -80,11 +84,17 @@ export default async function Info() {
           </ul>
         </div>
 
+        <div className="min-h-[70vh] min-w-screen relative mx-4">
+          <Image
+            src="/education1.jpg"
+            alt="Education à l'image"
+            fill
+            className="object-cover"
+          />
+        </div>
         {/* Education à l’image Section */}
         <div className="my-8">
-          <h1 className=" ">
-            Éducation à l’image
-          </h1>
+          <h1 className=" ">Éducation à l’image</h1>
           <ul className="ml-5 mt-4 space-y-2 text-lg ">
             <li>
               LFIP (Lycée français international de Porto) / Intervenante
@@ -122,6 +132,14 @@ export default async function Info() {
           </ul>
         </div>
 
+        <div className="min-h-[70vh] min-w-screen relative mx-4">
+          <Image
+            src="/education.jpg"
+            alt="Education à l'image"
+            fill
+            className="object-cover"
+          />
+        </div>
         {/* Formation Section */}
         <div className="my-8">
           <h1 className=" ">Formation</h1>
