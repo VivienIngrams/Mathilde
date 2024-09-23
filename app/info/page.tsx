@@ -8,13 +8,13 @@ export default async function Info() {
     <div className="h-full">
       <NavMenu />
       <div className="bg-[rgba(227,224,220,0.85)]">
-        <div className="min-h-[80vh] flex items-center md:mx-8 md:grid grid-cols-2">
+        <div className="min-h-[80vh] flex flex-col md:items-center md:mx-8 md:grid md:grid-cols-2">
           {/* Contact Section */}
-          <div className="flex items-center  max-h-[80vh] ">
+          <div className="flex md:items-center  md:max-h-[80vh] ">
             <div>
               <h1 className="md:-mt-24 ">Contact</h1>
-              <div className="grid grid-cols-8">
-                <div className="col-span-3 flex items-center justify-center">
+              <div className="md:grid md:grid-cols-8">
+                <div className="max-w-[45vw] col-span-3 flex md:items-center md:justify-center">
                   <div className="relative pl-4">
                     <Image
                       src="/portrait_Mathilde.jpg"
@@ -26,7 +26,7 @@ export default async function Info() {
                     />
                   </div>
                 </div>
-                <div className="col-span-5 flex items-center md:text-lg">
+                <div className="col-span-5 flex items-center md:text-base md:text-lg">
                   <div className=" my-4">
                     <p className=" ">+33 06 79 76 14 88</p>
                     <p className="">cudevillemathilde@gmail.com</p>
@@ -37,7 +37,7 @@ export default async function Info() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        2regards.net
+                        www.2regards.net
                       </Link>
                     </p>
                   </div>
@@ -47,11 +47,12 @@ export default async function Info() {
           </div>
 
           {/* Parcours professionnel Section */}
-          <div className="py-8">
+
+          <div className="py-8 text-[0.9rem] tracking-tight">
             <h1 className="">Parcours professionnel</h1>
             <ul className="space-y-2 mx-4">
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">
                     Photographe pour 2regards{" "}
                   </span>
@@ -59,7 +60,7 @@ export default async function Info() {
                 (Porto / depuis 2020)
               </li>
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">
                     Exposition<span className="italic"> «Au café», </span>
                   </span>
@@ -68,7 +69,7 @@ export default async function Info() {
                 Porto, Portugal, 2024
               </li>
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">
                     Exposition<span className="italic"> «La Passagère», </span>
                   </span>
@@ -77,7 +78,7 @@ export default async function Info() {
                 Porto, Portugal, 2023
               </li>
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">
                     Exposition
                     <span className="italic"> «Sentimento Oceânico», </span>
@@ -87,7 +88,7 @@ export default async function Info() {
                 Porto, Portugal, 2022
               </li>
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">
                     Exposition
                     <span className="italic"> «En Suspension(S)», </span>
@@ -97,7 +98,7 @@ export default async function Info() {
                 Porto, Portugal, 2021
               </li>
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">
                     Exposition
                     <span className="italic"> «Rêverie Odisseia», </span>
@@ -107,7 +108,7 @@ export default async function Info() {
                 Porto, Portugal, 2020
               </li>
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">
                     Exposition<span className="italic"> «Isolé(S)», </span>
                   </span>
@@ -116,7 +117,7 @@ export default async function Info() {
                 Paris, 2019
               </li>
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">
                     Exposition
                     <span className="italic"> «Mélancolie heureuse», </span>
@@ -125,7 +126,7 @@ export default async function Info() {
                 Paris, 2018
               </li>
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">
                     Exposition<span className="italic"> «Immortalem», </span>
                   </span>
@@ -134,7 +135,7 @@ export default async function Info() {
                 Rênne le château, 2018
               </li>
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">
                     Documentaire photographique
                     <span className="italic">
@@ -147,14 +148,14 @@ export default async function Info() {
                 (septembre/octobre 2017)
               </li>
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">Photographe indépendant</span>
                 </span>{" "}
                 depuis 2015 : commandes pour Géo magazine / La Cie du Veilleur /
                 BNP Paribas / ONG «Union Romani»
               </li>
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">
                     Photographe de mariage
                     <span className="italic">
@@ -166,34 +167,35 @@ export default async function Info() {
                 2015
               </li>
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">Photographe de Presse</span>
                 </span>{" "}
                 2014
               </li>
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">Stagiaire JRI</span>
                 </span>{" "}
-                pour le Parisien
+                pour le Parisien, 2014
               </li>
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">Stagiaire photographe</span>
                   <span className="italic"> «Objectif Une» </span>
                 </span>
-                pour l'Express et Figaro Rhône Alpes
+                pour l'Express et Figaro Rhône Alpes, 2013
               </li>
               <li>
-                <span className="text-lg">
+                <span className="text-base md:text-lg">
                   <span className="font-medium">Stagiaire photographe</span>
                   <span className="italic"> «La Tribune de Lyon» </span>
-                </span>
+                </span>, 2013
               </li>
             </ul>
           </div>
         </div>
 
+        {/* image 2 */}
         <div className="min-h-[40vh] min-w-screen relative mx-4">
           <Image
             src="/education1.jpg"
@@ -202,47 +204,132 @@ export default async function Info() {
             className="object-cover"
           />
         </div>
-        {/* Education à l’image Section */}
-        <div className="my-8">
-          <h1 className=" ">Éducation à l’image</h1>
-          <ul className="mx-4 space-y-2 ">
-            <li>
-              LFIP (Lycée français international de Porto) / Intervenante
-              artistique / Depuis 2022
-            </li>
-            <li>Workshops photographiques / 2regards atelier / Depuis 2022</li>
-            <li>
-              Parole de photographes / Coordinatrice pédagogique / Paris,
-              2016-2018
-            </li>
-            <li>Atelier photo au collège Saint-Georges / Paris 2017-2018</li>
-            <li>
-              Atelier photo en école primaire (atelier bleu) Paris, 2017-2018
-            </li>
-            <li>
-              Atelier photo / Objectif photo / Fraternité / Atelier en centre de
-              loisirs primaire / maternelle, Paris, 2018
-            </li>
-            <li>
-              Atelier photo / Objectif photo / Paris secret / Centre de loisirs
-              primaire / maternelle / Paris, 2017
-            </li>
-            <li>
-              Atelier photo en école primaire (atelier TAP), Paris 2016 – 2017
-            </li>
-            <li>
-              Résidence Ecole du Feu rouge / Atelier photo avec les classes de
-              CP / CE1 et CE2 / Saint-Pierre et Miquelon, 2015
-            </li>
-            <li>
-              Workshops pour le centre culturel de Saint-Pierre et Miquelon,
-              2015
-            </li>
-            <li>Workshops pour la maison des loisirs de Miquelon, 2015</li>
-          </ul>
-        </div>
+        {/* Second Section */}
+        <div className="min-h-[80vh] flex flex-col items-center md:mx-8 md:grid md:grid-cols-2 gap-8">
+          {/* Education à l’image Section */}
+          <div className="flex flex-col justify-center">
+            <div className="my-8">
+              <h1 className="">Éducation à l’image</h1>
+              <ul className="mx-4 space-y-2">
+                <li>
+                  <span className="text-base md:text-lg">
+                    <span className="font-medium">LFIP</span> (Lycée français
+                    international de Porto) / Intervenante artistique / Depuis
+                    2022
+                  </span>
+                </li>
+                <li>
+                  <span className="text-base md:text-lg">
+                    <span className="font-medium">
+                      Workshops photographiques
+                    </span>{" "}
+                    / 2regards atelier / Depuis 2022
+                  </span>
+                </li>
+                <li>
+                  <span className="text-base md:text-lg">
+                    <span className="font-medium">Parole de photographes</span>{" "}
+                    / Coordinatrice pédagogique / Paris, 2016-2018
+                  </span>
+                </li>
+                <li>
+                  <span className="text-base md:text-lg">
+                    <span className="font-medium">Atelier photo</span> au
+                    collège Saint-Georges / Paris 2017-2018
+                  </span>
+                </li>
+                <li>
+                  <span className="text-base md:text-lg">
+                    <span className="font-medium">Atelier photo</span> en école
+                    primaire (atelier bleu), Paris, 2017-2018
+                  </span>
+                </li>
+                <li>
+                  <span className="text-base md:text-lg">
+                    <span className="font-medium">Atelier photo</span> /
+                    Objectif photo / Fraternité / Atelier en centre de loisirs
+                    primaire / maternelle, Paris, 2018
+                  </span>
+                </li>
+                <li>
+                  <span className="text-base md:text-lg">
+                    <span className="font-medium">Atelier photo</span> /
+                    Objectif photo / Paris secret / Centre de loisirs primaire /
+                    maternelle / Paris, 2017
+                  </span>
+                </li>
+                <li>
+                  <span className="text-base md:text-lg">
+                    <span className="font-medium">Atelier photo</span> en école
+                    primaire (atelier TAP), Paris 2016 – 2017
+                  </span>
+                </li>
+                <li>
+                  <span className="text-base md:text-lg">
+                    <span className="font-medium">
+                      Résidence Ecole du Feu rouge
+                    </span>{" "}
+                    / Atelier photo avec les classes de CP / CE1 et CE2 /
+                    Saint-Pierre et Miquelon, 2015
+                  </span>
+                </li>
+                <li>
+                  <span className="text-base md:text-lg">
+                    <span className="font-medium">Workshops</span> pour le
+                    centre culturel de Saint-Pierre et Miquelon, 2015
+                  </span>
+                </li>
+                <li>
+                  <span className="text-base md:text-lg">
+                    <span className="font-medium">Workshops</span> pour la
+                    maison des loisirs de Miquelon, 2015
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-        <div className="min-h-[40vh] min-w-screen relative mx-4">
+          {/* Formation Section */}
+          <div className="flex flex-col items-start">
+            <div className="my-8">
+              <h1 className="">Formation</h1>
+              <ul className="mx-4 space-y-2">
+                <li>
+                  <span className="text-base md:text-lg">
+                    <span className="font-medium">
+                      DU «Photographie documentaire et écritures transmédias»
+                    </span>{" "}
+                    (Perpignan), 2015
+                  </span>
+                </li>
+                <li>
+                  <span className="text-base md:text-lg">
+                    <span className="font-medium">
+                      Diplômé d’un Européan Bachelor en Photographie
+                    </span>
+                    , École de Condé, 2014
+                  </span>
+                </li>
+                <li>
+                  <span className="text-base md:text-lg">
+                    <span className="font-medium">Icart Photo</span> première
+                    année, 2011
+                  </span>
+                </li>
+                <li>
+                  <span className="text-base md:text-lg">
+                    <span className="font-medium">
+                      Licence Histoire de l’art
+                    </span>{" "}
+                    (Paris-Sorbonne), 2010
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        {/* Image below both columns */}
+        <div className="min-h-[40vh] min-w-screen relative mx-4 mt-8">
           <Image
             src="/education.jpg"
             alt="Education à l'image"
@@ -250,23 +337,8 @@ export default async function Info() {
             className="object-cover"
           />
         </div>
-        {/* Formation Section */}
-        <div className="py-8">
-          <h1 className=" ">Formation</h1>
-          <ul className="mx-4 space-y-2 ">
-            <li>
-              DU «Photographie documentaire et écritures transmédias»
-              (Perpignan), 2015
-            </li>
-            <li>
-              Diplômé d’un Européan Bachelor en Photographie, École de Condé,
-              2014
-            </li>
-            <li>Icart Photo première année, 2011</li>
-            <li>Licence Histoire de l’art (Paris-Sorbonne), 2010</li>
-          </ul>
-        </div>
       </div>
+
       <Footer />
     </div>
   );
