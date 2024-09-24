@@ -15,7 +15,7 @@ const NavMenu = () => {
       <div className="flex items-center justify-between h-12 md:h-16">
       <Link
         href="/"
-        className="hover:bg-black/10 md:px-3 py-2 rounded-md text-[1.3rem] md:text-[1.8rem] light"
+        className="hover:bg-black/10 md:px-3 py-2 rounded-md text-[22px] md:text-[32px] light"
       >
         Mathilde Cudeville
       </Link>
@@ -23,8 +23,8 @@ const NavMenu = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <Menu as="div" className="relative">
-                <MenuButton className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold">
-                  projects
+                <MenuButton className="hover:bg-black/10 px-3 py-2 rounded-md text-[16px] font-semibold">
+                  Projects
                 </MenuButton>
                 <MenuItems className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-[rgba(227,224,220)] ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <div className="py-1">
@@ -119,25 +119,25 @@ const NavMenu = () => {
                 href="/voyages"
                 className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
               >
-                voyages
+                Voyages
               </Link>
               <Link
                 href="/ma-vie-ordinaire"
                 className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
               >
-                ma vie ordinaire
+                Ma vie ordinaire
               </Link>
               <Link
                 href="/bio"
                 className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
               >
-                bio
+                Bio
               </Link>
               <Link
                 href="/info"
                 className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
               >
-                info
+                Info
               </Link>
             </div>
           </div>
@@ -169,7 +169,7 @@ const NavMenu = () => {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         <Menu as="div" className="relative">
             <MenuButton className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold">
-              projects
+              Projects
             </MenuButton>
             <MenuItems className="origin-top-right absolute right-0 mt-2 bg-[rgba(227,224,220)] w-full rounded-md shadow-lg  ring-1 ring-black ring-opacity-5 focus:outline-none">
               <div className="py-1">
@@ -264,25 +264,25 @@ const NavMenu = () => {
             href="/voyages"
             className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
           >
-            voyages
+            Voyages
           </Link>
           <Link
             href="/ma-vie-ordinaire"
             className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
           >
-            ma vie ordinaire
+            Ma vie ordinaire
           </Link>
           <Link
             href="/bio"
             className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
           >
-            bio
+            Bio
           </Link>
           <Link
             href="/info"
             className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
           >
-            info
+            Info
           </Link>
           
         </div>
