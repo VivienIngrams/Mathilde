@@ -36,7 +36,7 @@ export default async function Gallery() {
   return (
     <div className="h-full">
       <NavMenu />
-      <div className="bg-[rgba(227,224,220,0.85)] min-h-screen ">
+      <div className="bg-[rgba(227,224,220,0.85)] min-h-screen p-4">
         {data?.text && (
           <div className=" text-right ">
             <div className="pb-4 md:pb-12">

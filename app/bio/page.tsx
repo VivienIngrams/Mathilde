@@ -10,8 +10,21 @@ export default async function Bio() {
         
         {/* Layout Section */}
         <div className="grid grid-cols-1 lg:grid-cols-10 md:mx-12">
+          {/* Center Column: Image */}
+          <div className="relative w-full min-h-[40vh] lg:min-h-[70vh] lg:max-h-[vh] 
+          my-4 md:col-span-3">
+            <Image
+              src="/portrait.jpg"
+              alt="Portrait of Mathilde"
+              height={500}
+              width={300}
+              className="h-full w-full object-cover px-4 md:mx-auto"
+              loading="lazy"
+            />
+          </div>
+          <div className="col-span-1"></div>
           {/* Left Column: First half of the text */}
-          <div className="leading-relaxed text-lg lg:pr-4 col-span-4">
+          <div className="leading-relaxed text-lg lg:pr-4 col-span-3">
             <p>
               <span className="font-semibold italic">J’ai rencontré Mathilde</span> peu de temps après son arrivée au Portugal, elle venait à peine de poser ses valises qu’elle ouvrait déjà grands les yeux pour capter la magie ambiante de Porto et de la nature environnante.
             </p>
@@ -29,21 +42,10 @@ export default async function Bio() {
             </p>
           </div>
 
-          {/* Center Column: Image */}
-          <div className="relative w-full min-h-[40vh] lg:min-h-[70vh] lg:max-h-[vh] 
-          my-4 md:col-span-2">
-            <Image
-              src="/portrait.jpg"
-              alt="Portrait of Mathilde"
-              height={500}
-              width={300}
-              className="h-full w-full object-cover px-4 md:mx-auto"
-              loading="lazy"
-            />
-          </div>
+          
 
           {/* Right Column: Second half of the text */}
-          <div className=" leading-relaxed text-lg lg:pl-4 col-span-4">
+          <div className=" leading-relaxed text-lg lg:pl-4 col-span-3">
            
             <p>
               La découverte de ses travaux antérieurs et en cours m’ont conforté dans ce sentiment. Elle s’est dans un premier temps intéressée à l’insularité et aux territoires isolés, notamment à travers un documentaire sur l’archipel de Saint-pierre-et-Miquelon (« Les onze mille vierges »).

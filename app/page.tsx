@@ -91,19 +91,8 @@ export default async function Home() {
   return (
     <div className="h-full">
       <NavMenu />
-      <div className="bg-[rgba(227,224,220,0.85)]">
-        {/* Voyages */}
-        {/* <Link href="/voyages">
-          <div className="min-h-[95vh] min-w-screen relative mx-4">
-            <Image
-              src={urlFor(gallery[0].images[0]).url() as string}
-              alt={gallery[0].title}
-              fill
-              className="object-cover"
-            />
-          </div>
-        </Link> */}
-
+      <div className="bg-[rgba(227,224,220,0.70)] p-4">
+       
         {/* Projects */}
         <div className="">
           {/* Mobile View */}
