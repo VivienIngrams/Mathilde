@@ -35,11 +35,11 @@ export default async function MaVieOrdinaire() {
   return (
     <div className="h-full">
       <NavMenu />
-      <div className="bg-[rgba(227,224,220,0.70)] min-h-screen ">
+      <div className="bg-[rgba(227,224,220,0.70)] min-h-screen p-4">
         {data?.text && (
           <div className=" text-right ">
             <div className="pb-4 md:pb-12">
-              <h1 className="pt-4 -mb-4">{data.title}</h1>
+              <h1 className="pt-4 ">{data.title}</h1>
               <div className="flex flex-col items-end">
                 <p className="md:max-w-[50vw]">
                   {data.text[0]}
@@ -50,7 +50,7 @@ export default async function MaVieOrdinaire() {
             </div>
           </div>
         )}
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 px-4">
+        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4">
           {images.map((image: any) => (
             <div key={image.asset._id} className="mb-4 break-inside-avoid">
               <Image

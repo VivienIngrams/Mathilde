@@ -25,7 +25,7 @@ export const MobileMapSection: React.FC<MobileProjectViewProps> = ({
               />
             </div>
           ))}
-        <h1 className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-center text-2xl text-[rgba(227,224,220)]">
+        <h1 className="absolute bottom-1 left-1/2 transform -translate-x-1/2 text-center text-2xl text-[rgba(227,224,220)]">
           {project.title}
         </h1>
       </div>
@@ -38,7 +38,7 @@ export const MobileSection: React.FC<MobileProjectViewProps> = ({
 }) => {
   return (
     <Link href={`/project/${project.slug}`}>
-      <div className="columns-1 sm:columns-2 gap-4 my-12 px-4 relative">
+      <div className="columns-1 sm:columns-2 gap-4 my-12 relative">
         {project.section.images && (
           <Image
             src={urlFor(project.section.images[0].asset).url()}
@@ -49,7 +49,7 @@ export const MobileSection: React.FC<MobileProjectViewProps> = ({
             loading="lazy"
           />
         )}
-      <h1 className="absolute -bottom-2 left-2 text-center text-2xl text-[rgba(227,224,220)]">
+      <h1 className="absolute bottom-1 left-2 text-center text-2xl text-[rgba(227,224,220)]">
           {project.title}
         </h1>
       </div>

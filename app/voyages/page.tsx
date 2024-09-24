@@ -40,7 +40,7 @@ export default async function Gallery() {
         {data?.text && (
           <div className=" text-right ">
             <div className="pb-4 md:pb-12">
-              <h1 className="pt-4 -mb-4">{data.title}</h1>
+              <h1 className="pt-4 ">{data.title}</h1>
               <div className="flex flex-col items-end">
                 <p className="md:max-w-[50vw]">{data.text[0]}</p>
                 <p className="md:max-w-[50vw]">{data.text[1]}</p>
@@ -49,7 +49,7 @@ export default async function Gallery() {
           </div>
         )}
         {/* Use CSS columns for masonry effect */}
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 p-4">
+        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4">
           {images.map((image: any) => (
             <div key={image.asset._id} className="mb-4 break-inside-avoid">
               <Image

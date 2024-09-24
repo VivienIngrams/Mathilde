@@ -96,7 +96,7 @@ export default async function Home() {
         {/* Projects */}
         <div className="">
           {/* Mobile View */}
-          <div className="md:hidden">
+          <div className="md:hidden -mt-5">
             <MobileMapSection project={transformedData[0]} />
             <MobileSection project={transformedData[2]} />
             <MobileSection project={transformedData[3]} />
@@ -137,7 +137,7 @@ export default async function Home() {
           </div>
           {/* Mobile  */}
           <div className="md:hidden mt-12">
-            <div className="min-h-[70vh] min-w-screen relative mx-4">
+            <div className="min-h-[70vh] min-w-screen relative">
               <Image
                 src={urlFor(gallery[1].images[0]).url() as string}
                 alt={gallery[1].title}
@@ -145,7 +145,7 @@ export default async function Home() {
                 className="object-cover"
               />
               {/* Add the overlay here */}
-              <h1 className="absolute -bottom-2 -left-1 text-white text-2xl ">
+              <h1 className="absolute bottom-2 left-2 text-white text-2xl ">
                 {gallery[1].title}
               </h1>
             </div>
@@ -162,7 +162,7 @@ export default async function Home() {
           </div>
           {/* Mobile  */}
           <div className="md:hidden mt-12">
-            <div className="min-h-[70vh] min-w-screen relative mx-4">
+            <div className="min-h-[70vh] min-w-screen relative">
               <Image
                 src={urlFor(gallery[0].images[0]).url() as string}
                 alt={gallery[0].title}
@@ -170,7 +170,7 @@ export default async function Home() {
                 className="object-cover"
               />
               {/* Add the overlay here */}
-              <h1 className="absolute -bottom-2 -left-1 text-white text-2xl ">
+              <h1 className="absolute bottom-2 left-2 text-white text-2xl ">
                 {gallery[0].title}
               </h1>
             </div>
