@@ -20,7 +20,7 @@ const TitleSection = ({
               <h1 className="pt-4">{title}</h1>
               {projectSection.images && projectSection.images[0] && (
                 <Link href={urlFor(projectSection.images[0]).url()}>
-                  <div className="m-4 break-inside-avoid ">
+                  <div className=" break-inside-avoid ">
                     <Image
                       src={urlFor(projectSection.images[0]).url()}
                       alt="Gallery Image"

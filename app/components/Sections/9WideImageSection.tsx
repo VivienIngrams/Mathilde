@@ -23,7 +23,7 @@ const WideImageSection = ({
           src={urlFor(projectSection.images[0]).url() as string}
           alt={title}
           fill
-          className="object-cover px-4"
+          className="object-cover"
         />
       )}
       {isHomePage && (

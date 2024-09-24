@@ -59,7 +59,7 @@ const RandomSection = ({
         )}
         <div className=" md:h-[100%] flex flex-col items-center justify-around">
           {projectSection.images && projectSection.images[2] && (
-            <div className="relative h-[50vh] w-[70%] m-4 ">
+            <div className="relative h-[50vh] w-[70%] ">
               <Image
                 src={urlFor(projectSection.images[2]).url() as string}
                 alt={`${title} - additional`}

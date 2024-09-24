@@ -6,7 +6,7 @@ export default async function Bio() {
   return (
     <div className="h-full">
       <NavMenu />
-      <div className="bg-[rgba(227,224,220,0.85)] md:pt-20 min-h-screen">
+      <div className="bg-[rgba(227,224,220,0.70)] md:pt-20 min-h-screen">
         
         {/* Layout Section */}
         <div className="grid grid-cols-1 lg:grid-cols-10 md:mx-12">

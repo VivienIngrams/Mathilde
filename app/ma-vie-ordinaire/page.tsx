@@ -35,7 +35,7 @@ export default async function MaVieOrdinaire() {
   return (
     <div className="h-full">
       <NavMenu />
-      <div className="bg-[rgba(227,224,220,0.85)] min-h-screen ">
+      <div className="bg-[rgba(227,224,220,0.70)] min-h-screen ">
         {data?.text && (
           <div className=" text-right ">
             <div className="pb-4 md:pb-12">

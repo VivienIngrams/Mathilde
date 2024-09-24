@@ -17,7 +17,7 @@ h1 {
   letter-spacing: -0.04em;
   font-variant-caps: small-caps;
   font-family: var(--font-cormorant);
-  padding: 16px;
+
   
   @screen md {
     font-size: 2.5rem; /* Medium screens */
@@ -36,8 +36,12 @@ p {
   font-family: var(--font-raleway);
 
    
+  @screen lg {
+    font-size: 14px; /* Large screens */
+  }
+
   @screen 2xl {
-    font-size: 1rem; /* Large screens */
+    font-size: 16px; /* Large screens */
   }
 }
 
