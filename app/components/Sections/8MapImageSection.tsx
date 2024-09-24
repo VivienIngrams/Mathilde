@@ -19,7 +19,7 @@ const MapImageSection = ({
                 src={urlFor(image).url() as string}
                 alt={title}
                 fill
-                className="object-contain"
+                className="object-contain p-2"
               />
             </div>
           ))}

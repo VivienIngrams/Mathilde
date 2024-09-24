@@ -33,7 +33,7 @@ const TitleSection = ({
                 </Link>
               )}
               {projectSection.text && (
-              <div className="my-2">
+              <div className="">
                 <p className="py-2">{projectSection.text[0]}</p>
                 {projectSection.text[1] && (
                   <p className="py-2">{projectSection.text[1]}</p>
