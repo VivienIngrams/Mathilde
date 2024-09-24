@@ -7,9 +7,7 @@ import Link from "next/link";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import TitleSection from "@/app/components/Sections/1TitleSection";
-import PostersSectionA from "@/app/components/Sections/3PostersSectionA";
-import PostersSectionB from "@/app/components/Sections/4PostersSectionB";
-import PostersSectionC from "@/app/components/Sections/5PostersSectionC";
+import PosterSection from "@/app/components/Sections/2PosterSection";
 import HalfHalfSection from "@/app/components/Sections/6HalfHalfSection";
 import RandomSection from "@/app/components/Sections/7RandomSection";
 import MapImageSection from "@/app/components/Sections/8MapImageSection";
@@ -75,9 +73,7 @@ const sectionComponents: {
   }>;
 } = {
   1: TitleSection,
-  3: PostersSectionA,
-  4: PostersSectionB,
-  5: PostersSectionC,
+  2: PosterSection,
   6: HalfHalfSection,
   7: RandomSection,
   8: MapImageSection,
