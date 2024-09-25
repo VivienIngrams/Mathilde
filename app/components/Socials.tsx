@@ -8,9 +8,9 @@ interface Social {
 }
   
 const socialLinks: Social[] = [
-    {label: 'Instagram', Icon: FaInstagram, href: 'https://instagram.com/2regards'},
-    {label: 'Facebook', Icon: FaFacebook, href: 'https://facebook.com/2regards'},
-    {label: 'YouTube', Icon: FaYoutube, href: 'https://youtube.com/2regards'},
+    {label: 'Instagram', Icon: FaInstagram, href: 'https://instagram.com/mathildecudeville'},
+    // {label: 'Facebook', Icon: FaFacebook, href: 'https://facebook.com/2regards'},
+    {label: 'YouTube', Icon: FaYoutube, href: 'https://youtube.com/@2regards'},
 ];
 
 export default function Socials () {

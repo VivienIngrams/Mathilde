@@ -12,7 +12,7 @@ export default async function Info() {
           {/* Contact Section */}
           <div className="flex md:items-center  md:max-h-[80vh] ">
             <div>
-              <h1 className="-mt-6">Contact</h1>
+              <h1 className="md:-mt-6">Contact</h1>
               <div className="md:grid md:grid-cols-8">
                 <div className="col-span-5 flex items-center  md:text-lg">
                   <div className="  mb-6">

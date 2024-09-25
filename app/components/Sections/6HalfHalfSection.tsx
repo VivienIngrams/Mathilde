@@ -2,7 +2,6 @@ import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { Section } from "../../interface";
 
-
 const HalfHalfSection = ({
   projectSection,
   title,
@@ -12,9 +11,9 @@ const HalfHalfSection = ({
 }) => {
   return (
     <div className={` w-full`}>
-      <div className={`  md:grid md:grid-cols-2`}>
+      <div className={`py-6 md:grid md:grid-cols-2`}>
         {projectSection.text && (
-          <div className="flex flex-col leading-normal justify-center py-8 md:py-20  text-right  md:mr-8 md:ml-[45%]">
+          <div className="flex flex-col leading-normal justify-center md:py-20  md:text-right md:min-h-[80vh] md:mr-8 md:ml-[45%]">
             <p className="">
               <span className="text-2xl lg:text-4xl leading-[1] font-serif tracking-tighter">
                 {projectSection.text[0]}
@@ -23,21 +22,21 @@ const HalfHalfSection = ({
             </p>
             <p className="py-2">{projectSection.text[2]}</p>
             {projectSection.text[3] && (
-              <p className="py-2">{projectSection.text[3]}</p>
+              <p className="">{projectSection.text[3]}</p>
             )}
-            
-            
           </div>
         )}
         <div>
           {projectSection.images && (
-            <div className="flex flex-col justify-center items-start h-[50vh] md:min-h-[90vh] w-[100%] md:w-[100%]  ">
-              <div className="relative h-[95%] w-[100%] md:w-[85%]">
+            <div className="my-4 flex flex-col justify-center items-start md:min-h-[90vh] w-[100%]  ">
+              <div className="relative">
                 <Image
                   src={urlFor(projectSection.images[0]).url() as string}
                   alt={title}
-                  fill
-                  className="object-contain "
+                  width={700}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -45,8 +44,8 @@ const HalfHalfSection = ({
           {!projectSection.images &&
             projectSection.text &&
             projectSection.text[4] && (
-              <div className="flex flex-col justify-center items-start md:min-h-[80vh] w-[100vw] md:w-[100%]  ">
-                <div className="flex flex-col justify-center py-8 md:py-20   md:mr-[45%]">
+              <div className="flex flex-col justify-center items-start  md:w-[100%]  ">
+                <div className="flex flex-col justify-center md:py-20   md:mr-[45%]">
                   {projectSection.text[4] && (
                     <p className="py-2"> {projectSection.text[4]}</p>
                   )}

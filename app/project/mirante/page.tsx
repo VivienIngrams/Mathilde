@@ -44,7 +44,7 @@ export default async function MirantePage() {
   return (
     <div className="min-h-full">
       <NavMenu />
-      <div className="bg-[rgba(227,224,220,0.75)]">
+      <div className="bg-[rgba(227,224,220,0.75)] px-4">
         <HalfHalfSection
           projectSection={project.sections[0]}
           title={project.title}

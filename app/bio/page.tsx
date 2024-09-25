@@ -119,7 +119,7 @@ export default async function Bio() {
                 J’invite les amoureux de la poésie, de l’intimisme et de la
                 singularité à y croiser le regard de Mathilde.
               </p>
-              <p className="font-bold font-serif text-xl">
+              <p className="font-bold font-serif text-xl pt-1">
                 Michel Le Roux, poète et ami
               </p>
             </div>
