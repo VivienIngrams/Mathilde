@@ -116,16 +116,16 @@ const NavMenu = () => {
                 </MenuItems>
               </Menu>
               <Link
-                href="/voyages"
-                className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
-              >
-                Voyages
-              </Link>
-              <Link
                 href="/ma-vie-ordinaire"
                 className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
               >
                 Ma vie ordinaire
+              </Link>
+              <Link
+                href="/voyages"
+                className="hover:bg-black/10 px-3 py-2 rounded-md text-md font-semibold"
+              >
+                Voyages
               </Link>
               <Link
                 href="/bio"
@@ -261,16 +261,16 @@ const NavMenu = () => {
             </MenuItems>
           </Menu>
           <Link
-            href="/voyages"
-            className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
-          >
-            Voyages
-          </Link>
-          <Link
             href="/ma-vie-ordinaire"
             className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
           >
             Ma vie ordinaire
+          </Link>
+          <Link
+            href="/voyages"
+            className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold"
+          >
+            Voyages
           </Link>
           <Link
             href="/bio"
