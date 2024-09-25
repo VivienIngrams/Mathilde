@@ -10,8 +10,25 @@ const MapImageSection = ({
   title: string;
 }) => {
   return (
-    <div className="md:min-h-[60vh] w-full pt-8">
-      <div className="flex flex-col md:flex-row md:justify-center md:items-end  h-[200vh] md:h-[60vh] w-full md:px-[10vw]">
+    <div className="md:min-h-[60vh] w-full md:pt-8">
+       {/* Mobile */}
+       <div className="-mt-12 columns-1 sm:columns-2 md:hidden">
+          {projectSection.images?.map((image: any) => (
+            <div key={image.asset._id} className="m-12 break-inside-avoid">
+              <Image
+                src={urlFor(image.asset).url()}
+                alt="Gallery Image"
+                width={500}
+                height={500}
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop */}
+      <div className="hidden md:flex flex-col md:flex-row md:justify-center md:items-end  h-[200vh] md:h-[60vh] w-full md:px-[10vw] ">
         {projectSection.images &&
           projectSection.images.map((image, index) => (
             <div className="relative h-[95%] w-full my-2 " key={index}>
@@ -24,7 +41,7 @@ const MapImageSection = ({
             </div>
           ))}
       </div>
-      {projectSection.text && (
+      {projectSection.text ? (
           <div className="h-[30vh] flex flex-col items-center justify-center  py-8 ">
             <div className="px-4 md:text-center md:max-w-[60vw]">
               <p className="leading-7">
@@ -40,7 +57,7 @@ const MapImageSection = ({
               </p>
           </div>
         </div>
-      )}
+      ) : <div className="md:h-24"/>}
     </div>
   );
 };

@@ -8,10 +8,10 @@ export default async function Bio() {
       <NavMenu />
       <div className="bg-[rgba(227,224,220,0.70)] min-h-screen">
         {/* Layout Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-10 md:mr-12">
-          {/* Center Column: Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-10 p-4 md:p-0 md:mr-12">
+          {/* Image */}
           <div
-            className="relative w-full min-h-[40vh] md:max-h-[92vh] my-4 md:my-0 md:col-span-4"
+            className="hidden md:block relative w-full min-h-[40vh] md:max-h-[92vh] my-4 md:my-0 md:col-span-4"
           >
             <Image
               src="/portrait.jpg"
@@ -24,7 +24,7 @@ export default async function Bio() {
           </div>
 
           {/* Left Column: First half of the text */}
-          <div className="flex items-end lg:pr-4 col-span-3 space-y-1">
+          <div className="flex md:items-end lg:pr-4 col-span-3 space-y-1">
             <div>
               <p>
                 <span className="font-semibold italic">
@@ -34,6 +34,19 @@ export default async function Bio() {
                 de poser ses valises qu’elle ouvrait déjà grands les yeux pour
                 capter la magie ambiante de Porto et de la nature environnante.
               </p>
+               {/* Image */}
+          <div
+            className="md:hidden relative w-full py-4 "
+          >
+            <Image
+              src="/portrait.jpg"
+              alt="Portrait of Mathilde"
+              height={500}
+              width={300}
+              className="h-full w-full object-cover md:px-24 md:mx-auto"
+              loading="lazy"
+            />
+          </div>
               <p>
                 C’est en la voyant prendre des photos artistiques de notre
                 quinta, située dans la vallée du Douro, que j’ai réalisé quel

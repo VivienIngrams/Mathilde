@@ -12,10 +12,10 @@ const TitleSection = ({
 }) => {
   return (
     <div className={` md:min-h-screen w-full `}>
-      <div className={` md:grid md:grid-cols-2 pt-8`}>
+      <div className={` md:grid md:grid-cols-2 md:pt-8`}>
         {/* // Mobile */}
         <div className="md:hidden text-right ">
-          <div className=" pb-12">
+          <div className=" md:pb-12">
             <h1 className="pt-4">{title}</h1>
             {projectSection.images && projectSection.images[0] && (
               <Link href={urlFor(projectSection.images[0]).url()}>
@@ -50,7 +50,7 @@ const TitleSection = ({
             )}
             {projectSection.images && projectSection.images[1] && (
               <Link href={urlFor(projectSection.images[1]).url()}>
-                <div className="m-4 break-inside-avoid ">
+                <div className="my-4 break-inside-avoid ">
                   <Image
                     src={urlFor(projectSection.images[1]).url()}
                     alt="Gallery Image"
@@ -97,9 +97,9 @@ const TitleSection = ({
             </Link>
           )}
           {projectSection.text && (
-            <div className=" pt-2">
+            <div className="w-[60%] pt-2">
               <h1 className="">{title}</h1>
-              <div className="w-[50%]">
+              <div className="mr-[5vw]">
                 <p className="py-2">{projectSection.text[0]}</p>
                 {projectSection.text[1] && (
                   <p className="py-2">{projectSection.text[1]}</p>

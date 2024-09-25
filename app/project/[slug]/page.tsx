@@ -85,7 +85,6 @@ const sectionComponents: {
   7: RandomSection,
   8: MapImageSection,
   9: WideImageSection,
-
 };
 
 type Props = {
@@ -108,7 +107,12 @@ export default async function ProjectPage({ params }: Props) {
       <div className=" bg-[rgba(227,224,220,0.70)] p-4">
         {project.sections.map((section: Section, index: number) => {
           const SectionComponent = sectionComponents[section.layout];
-          return SectionComponent ? (
+          // Check if the section has either text or images
+          const hasContent =
+            section.text || (section.images && section.images.length > 0);
+
+          // Only render the section if it has content
+          return SectionComponent && hasContent ? (
             <SectionComponent
               key={index}
               projectSection={section}
