@@ -43,7 +43,7 @@ const MapImageSection = ({
       </div>
       {projectSection.text ? (
   <div className="h-[30vh] flex flex-col items-center justify-center py-8">
-    <div className="px-4 md:text-center md:max-w-[60vw]">
+    <div className="px-4 md:text-center md:max-w-[55vw]">
       <p className="leading-[18px]">
         {projectSection.text[0]}
         <span className="text-2xl lg:text-4xl leading-[18px] font-serif tracking-tighter"> {/* Also set the same tight line-height for the span */}
