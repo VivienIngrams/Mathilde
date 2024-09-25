@@ -42,22 +42,25 @@ const MapImageSection = ({
           ))}
       </div>
       {projectSection.text ? (
-          <div className="h-[30vh] flex flex-col items-center justify-center  py-8 ">
-            <div className="px-4 md:text-center md:max-w-[60vw]">
-              <p className="leading-7">
-                {projectSection.text[0]}
-                <span className="text-2xl lg:text-4xl leading-[1] font-serif tracking-tighter">
-                  {projectSection.text[1]}
-                </span>
-                {projectSection.text[2]}
-                <span className="text-2xl lg:text-4xl leading-[1] font-serif tracking-tighter">
-                  {projectSection.text[3]}
-                </span>
-                {projectSection.text[4]}
-              </p>
-          </div>
-        </div>
-      ) : <div className="md:h-24"/>}
+  <div className="h-[30vh] flex flex-col items-center justify-center py-8">
+    <div className="px-4 md:text-center md:max-w-[60vw]">
+      <p className="leading-[18px]">
+        {projectSection.text[0]}
+        <span className="text-2xl lg:text-4xl leading-[18px] font-serif tracking-tighter"> {/* Also set the same tight line-height for the span */}
+          {projectSection.text[1]}
+        </span>
+        {projectSection.text[2]}
+        <span className="text-2xl lg:text-4xl leading-[18px] font-serif tracking-tighter">
+          {projectSection.text[3]}
+        </span>
+        {projectSection.text[4]}
+      </p>
+    </div>
+  </div>
+) : (
+  <div className="md:h-24" />
+)}
+
     </div>
   );
 };

@@ -19,8 +19,8 @@ const RandomSection = ({
     <div className={` min-h-[95vh] w-full pt-2 `}>
       {/* Mobile */}
       <div className="columns-1 sm:columns-2 md:hidden">
-          {projectSection.images?.map((image: any) => (
-            <div key={image.asset._id} className="m-12 break-inside-avoid">
+          {projectSection.images?.map((image: any, index: number) => (
+            <div key={index} className="m-12 break-inside-avoid">
               <Image
                 src={urlFor(image.asset).url()}
                 alt="Gallery Image"

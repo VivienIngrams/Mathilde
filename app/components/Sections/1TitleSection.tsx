@@ -55,9 +55,8 @@ const TitleSection = ({
                     src={urlFor(projectSection.images[1]).url()}
                     alt="Gallery Image"
                     width={500}
-                    height={500} // Placeholder size, maintains aspect ratio
-                    objectFit="cover"
-                    className="w-full h-auto"
+                    height={500} 
+                    className="w-full h-auto object-cover"
                     loading="lazy"
                   />
                 </div>
