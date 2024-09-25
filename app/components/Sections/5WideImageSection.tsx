@@ -4,6 +4,7 @@ import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { Section } from "../../interface";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const WideImageSection = ({
   projectSection,
@@ -19,12 +20,14 @@ const WideImageSection = ({
       className={`h-[40vh] md:min-h-screen min-w-screen  md:-pb-[20vh] md:h-[120vh] md:mb-12 relative`}
     >
       {projectSection.images && (
-        <Image
-          src={urlFor(projectSection.images[0]).url() as string}
-          alt={title}
-          fill
-          className="object-cover"
-        />
+        <Link href={urlFor(projectSection.images[0]).url() as string}>
+          <Image
+            src={urlFor(projectSection.images[0]).url() as string}
+            alt={title}
+            fill
+            className="object-cover"
+          />
+        </Link>
       )}
       {isHomePage && (
         <h1 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-center">

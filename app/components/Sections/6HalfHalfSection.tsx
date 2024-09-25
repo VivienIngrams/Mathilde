@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { Section } from "../../interface";
+import Link from "next/link";
 
 const HalfHalfSection = ({
   projectSection,
@@ -30,14 +31,16 @@ const HalfHalfSection = ({
           {projectSection.images && (
             <div className="my-4 flex flex-col justify-center items-start md:min-h-[90vh] w-[100%]  ">
               <div className="relative">
-                <Image
-                  src={urlFor(projectSection.images[0]).url() as string}
-                  alt={title}
-                  width={700}
-                  height={500}
-                  className="w-full h-auto object-cover"
-                  loading="lazy"
-                />
+                <Link href={urlFor(projectSection.images[0]).url() as string}>
+                  <Image
+                    src={urlFor(projectSection.images[0]).url() as string}
+                    alt={title}
+                    width={700}
+                    height={500}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </Link>
               </div>
             </div>
           )}
