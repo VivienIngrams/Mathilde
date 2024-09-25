@@ -5,9 +5,9 @@ import { notFound } from "next/navigation";
 import TitleSection from "@/app/components/Sections/1TitleSection";
 import PosterSection from "@/app/components/Sections/2PosterSection";
 import HalfHalfSection from "@/app/components/Sections/6HalfHalfSection";
-import RandomSection from "@/app/components/Sections/7RandomSection";
-import MapImageSection from "@/app/components/Sections/8MapImageSection";
-import WideImageSection from "@/app/components/Sections/9WideImageSection";
+import RandomSection from "@/app/components/Sections/3RandomSection";
+import MapImageSection from "@/app/components/Sections/4MapImageSection";
+import WideImageSection from "@/app/components/Sections/5WideImageSection";
 import { Section } from "@/app/interface";
 
 async function getProjectData(slug: string) {
@@ -81,10 +81,10 @@ const sectionComponents: {
 } = {
   1: TitleSection,
   2: PosterSection,
+  3: RandomSection,
+  4: MapImageSection,
+  5: WideImageSection,
   6: HalfHalfSection,
-  7: RandomSection,
-  8: MapImageSection,
-  9: WideImageSection,
 };
 
 type Props = {
@@ -104,7 +104,7 @@ export default async function ProjectPage({ params }: Props) {
   return (
     <div className="min-h-full">
       <NavMenu />
-      <div className=" bg-[rgba(227,224,220,0.70)] p-4">
+      <div className=" bg-[rgba(227,224,220,0.75)] p-4">
         {project.sections.map((section: Section, index: number) => {
           const SectionComponent = sectionComponents[section.layout];
           // Check if the section has either text or images

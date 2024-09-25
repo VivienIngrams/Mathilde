@@ -31,8 +31,8 @@ const HalfHalfSection = ({
         )}
         <div>
           {projectSection.images && (
-            <div className="flex flex-col justify-center items-start h-[50vh] md:min-h-[100vh] w-[100%] md:w-[100%]  ">
-              <div className="relative h-[95%] w-[100%] md:w-[90%]">
+            <div className="flex flex-col justify-center items-start h-[50vh] md:min-h-[90vh] w-[100%] md:w-[100%]  ">
+              <div className="relative h-[95%] w-[100%] md:w-[85%]">
                 <Image
                   src={urlFor(projectSection.images[0]).url() as string}
                   alt={title}
@@ -44,7 +44,7 @@ const HalfHalfSection = ({
           )}
           {!projectSection.images &&
             projectSection.text &&
-            projectSection.text[5] && (
+            projectSection.text[4] && (
               <div className="flex flex-col justify-center items-start md:min-h-[80vh] w-[100vw] md:w-[100%]  ">
                 <div className="flex flex-col justify-center py-8 md:py-20   md:mr-[45%]">
                   {projectSection.text[4] && (

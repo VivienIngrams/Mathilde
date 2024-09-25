@@ -9,9 +9,9 @@ import Image from "next/image";
 import TitleSection from "@/app/components/Sections/1TitleSection";
 import PosterSection from "@/app/components/Sections/2PosterSection";
 import HalfHalfSection from "@/app/components/Sections/6HalfHalfSection";
-import RandomSection from "@/app/components/Sections/7RandomSection";
-import MapImageSection from "@/app/components/Sections/8MapImageSection";
-import WideImageSection from "@/app/components/Sections/9WideImageSection";
+import RandomSection from "@/app/components/Sections/3RandomSection";
+import MapImageSection from "@/app/components/Sections/4MapImageSection";
+import WideImageSection from "@/app/components/Sections/5WideImageSection";
 import {
   MobileMapSection,
   MobileSection,
@@ -74,10 +74,10 @@ const sectionComponents: {
 } = {
   1: TitleSection,
   2: PosterSection,
+  3: RandomSection,
+  4: MapImageSection,
+  5: WideImageSection,
   6: HalfHalfSection,
-  7: RandomSection,
-  8: MapImageSection,
-  9: WideImageSection,
 };
 
 export default async function Home() {
@@ -87,8 +87,7 @@ export default async function Home() {
   return (
     <div className="h-full">
       <NavMenu />
-      <div className="bg-[rgba(227,224,220,0.70)] p-4">
-       
+      <div className="bg-[rgba(227,224,220,0.75)] p-4">
         {/* Projects */}
         <div className="">
           {/* Mobile View */}

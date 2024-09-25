@@ -7,7 +7,7 @@ export default async function Info() {
   return (
     <div className="h-full">
       <NavMenu />
-      <div className="bg-[rgba(227,224,220,0.70)] p-4 md:px-12">
+      <div className="bg-[rgba(227,224,220,0.75)] p-4 md:px-12">
         <div className="min-h-[80vh] flex flex-col md:items-center   md:grid md:grid-cols-2">
           {/* Contact Section */}
           <div className="flex md:items-center  md:max-h-[80vh] ">
