@@ -50,11 +50,13 @@ export default async function MirantePage() {
         <HalfHalfSection
           projectSection={project.sections[0]}
           title={project.title}
+          slug={project.slug}
         />
 
         <HalfHalfSection
           projectSection={project.sections[1]}
           title={project.title}
+          slug={project.slug}
         />
         
         {/* Saline */}
