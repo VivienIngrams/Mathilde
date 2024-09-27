@@ -129,7 +129,7 @@ export default async function Home() {
           />
         </div>
         {/* Mobile  */}
-        <Link href="/ma-vie-ordinaire">
+        <Link href="/project/ma-vie-ordinaire">
           <div className="md:hidden mt-12">
             <div className="min-h-[70vh] min-w-screen relative">
               <Image
@@ -153,7 +153,7 @@ export default async function Home() {
           <RandomSection projectSection={gallery[0]} title={gallery[0].title} slug="voyages"/>
         </div>
         {/* Mobile  */}
-        <Link href="/voyages">
+        <Link href="/project/voyages">
           <div className="md:hidden mt-12">
             <div className="min-h-[70vh] min-w-screen relative">
               <Image
