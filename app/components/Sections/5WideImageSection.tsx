@@ -21,12 +21,15 @@ const WideImageSection = ({
     >
       {projectSection.images && (
         <Link href={urlFor(projectSection.images[0]).url() as string}>
-          <Image
-            src={urlFor(projectSection.images[0]).url() as string}
-            alt={title}
-            fill
-            className="object-cover"
-          />
+          <div className="relative h-full w-full">
+            <Image
+              src={urlFor(projectSection.images[0]).url() as string}
+              alt={title}
+              fill
+              sizes=" 100vw"
+              className="object-cover"
+            />
+          </div>
         </Link>
       )}
       {isHomePage && (

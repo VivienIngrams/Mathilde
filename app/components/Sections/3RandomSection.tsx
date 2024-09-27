@@ -48,6 +48,7 @@ const RandomSection = ({
                 src={urlFor(projectSection.images[0]).url() as string}
                 alt={`${title} - additional`}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
                 className="object-contain"
               />
             </Link>
@@ -64,6 +65,7 @@ const RandomSection = ({
                 src={urlFor(projectSection.images[1]).url() as string}
                 alt={`${title} - additional`}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
                 className="object-contain"
               />
             </Link>
@@ -95,6 +97,7 @@ const RandomSection = ({
                 src={urlFor(projectSection.images[2]).url() as string}
                 alt={`${title} - additional`}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
                 className="object-contain"
               />
             </Link>
@@ -108,6 +111,7 @@ const RandomSection = ({
                 src={urlFor(projectSection.images[3]).url() as string}
                 alt={`${title} - additional`}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
                 className="object-contain"
               />
             </Link>

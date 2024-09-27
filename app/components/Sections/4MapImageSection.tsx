@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import { Section } from "@/app/interface";
@@ -15,9 +15,8 @@ const MapImageSection = ({
   title: string;
   slug: string;
 }) => {
-
-  const path = usePathname()
-  const isHomePage = path === '/'
+  const path = usePathname();
+  const isHomePage = path === "/";
 
   return (
     <div className="md:min-h-[60vh] w-full md:pt-8">
@@ -27,28 +26,27 @@ const MapImageSection = ({
           <div key={index} className="m-12 break-inside-avoid">
             {isHomePage ? (
               <Link href={`/project/${slug}`}>
-              <Image
-                src={urlFor(image.asset).url()}
-                alt="Gallery Image"
-                width={500}
-                height={500}
-                className="w-full h-auto object-cover"
-                loading="lazy"
-              />
-            </Link>
-            ) : (
-
-              <Link href={urlFor(image).url() as string}>
-              <Image
-                src={urlFor(image.asset).url()}
-                alt="Gallery Image"
-                width={500}
-                height={500}
-                className="w-full h-auto object-cover"
-                loading="lazy"
+                <Image
+                  src={urlFor(image.asset).url()}
+                  alt="Gallery Image"
+                  width={500}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
                 />
-            </Link>
-              )}
+              </Link>
+            ) : (
+              <Link href={urlFor(image).url() as string}>
+                <Image
+                  src={urlFor(image.asset).url()}
+                  alt="Gallery Image"
+                  width={500}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
+              </Link>
+            )}
           </div>
         ))}
       </div>
@@ -59,24 +57,29 @@ const MapImageSection = ({
           projectSection.images.map((image, index) => (
             <div className="relative h-[95%] w-full my-2 " key={index}>
               {isHomePage ? (
-              <Link href={`/project/${slug}`} >
-                <Image
-                  src={urlFor(image).url() as string}
-                  alt={title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-contain p-2"
-                />
-              </Link> ) : (
+                <Link href={`/project/${slug}`}>
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={urlFor(image).url() as string}
+                      alt={title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-contain p-2"
+                    />
+                  </div>
+                </Link>
+              ) : (
                 <Link href={urlFor(image).url() as string}>
-                <Image
-                  src={urlFor(image).url() as string}
-                  alt={title}
-                  fill
-                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-contain p-2"
-                />
-              </Link>
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={urlFor(image).url() as string}
+                      alt={title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-contain p-2"
+                    />
+                  </div>
+                </Link>
               )}
             </div>
           ))}
