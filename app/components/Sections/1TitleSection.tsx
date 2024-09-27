@@ -5,7 +5,7 @@ import { urlFor } from "@/sanity/lib/image";
 import { Section } from "../../interface";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import ImageOverlay from "../ImageOverlay";
+
 
 const TitleSection = ({
   projectSection,
