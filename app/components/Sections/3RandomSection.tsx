@@ -40,31 +40,33 @@ const RandomSection = ({
       <div className={`hidden  md:grid md:grid-cols-3 h-full `}>
         <div className="h-[100%] flex flex-col items-center justify-center relative">
           {projectSection.images && projectSection.images[0] && (
-            <div className="relative h-[50vh] w-[70%] m-4">
-              <Link href={urlFor(projectSection.images[0]).url()}>
-                <Image
-                  src={urlFor(projectSection.images[0]).url() as string}
-                  alt={`${title} - additional`}
-                  fill
-                  className="object-contain"
-                />
-              </Link>
-            </div>
+            <Link
+              href={urlFor(projectSection.images[0]).url()}
+              className="relative h-[50vh] w-[70%] m-4"
+            >
+              <Image
+                src={urlFor(projectSection.images[0]).url() as string}
+                alt={`${title} - additional`}
+                fill
+                className="object-contain"
+              />
+            </Link>
           )}
           {isHomePage && <h1 className="absolute bottom-[7%] ">{title}</h1>}
         </div>
         <div className="h-[100%] hidden md:flex flex-col justify-center items-center">
           {projectSection.images && projectSection.images[1] && (
-            <div className="relative h-[80vh] md:h-[90vh] w-[100%] md:w-[150%] ">
-              <Link href={urlFor(projectSection.images[1]).url()}>
-                <Image
-                  src={urlFor(projectSection.images[1]).url() as string}
-                  alt={`${title} - additional`}
-                  fill
-                  className="object-contain"
-                />
-              </Link>
-            </div>
+            <Link
+              href={urlFor(projectSection.images[1]).url()}
+              className="relative h-[80vh] md:h-[90vh] w-[100%] md:w-[150%] "
+            >
+              <Image
+                src={urlFor(projectSection.images[1]).url() as string}
+                alt={`${title} - additional`}
+                fill
+                className="object-contain"
+              />
+            </Link>
           )}
         </div>
         {projectSection.images && projectSection.images[1] && (
@@ -85,28 +87,30 @@ const RandomSection = ({
         )}
         <div className=" md:h-[100%] flex flex-col items-center justify-around">
           {projectSection.images && projectSection.images[2] && (
-            <div className="relative h-[50vh] w-[70%] ">
-              <Link href={urlFor(projectSection.images[2]).url()}>
-                <Image
-                  src={urlFor(projectSection.images[2]).url() as string}
-                  alt={`${title} - additional`}
-                  fill
-                  className="object-contain"
-                />
-              </Link>
-            </div>
+            <Link
+              href={urlFor(projectSection.images[2]).url()}
+              className="relative h-[50vh] w-[70%] "
+            >
+              <Image
+                src={urlFor(projectSection.images[2]).url() as string}
+                alt={`${title} - additional`}
+                fill
+                className="object-contain"
+              />
+            </Link>
           )}{" "}
           {projectSection.images && projectSection.images[3] && (
-            <div className="relative h-[30vh] w-[70%] mb-6">
-              <Link href={urlFor(projectSection.images[3]).url()}>
-                <Image
-                  src={urlFor(projectSection.images[3]).url() as string}
-                  alt={`${title} - additional`}
-                  fill
-                  className="object-contain"
-                />
-              </Link>
-            </div>
+            <Link
+              href={urlFor(projectSection.images[3]).url()}
+              className="relative h-[30vh] w-[70%] mb-6"
+            >
+              <Image
+                src={urlFor(projectSection.images[3]).url() as string}
+                alt={`${title} - additional`}
+                fill
+                className="object-contain"
+              />
+            </Link>
           )}
         </div>
       </div>

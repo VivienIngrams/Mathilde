@@ -1,22 +1,32 @@
+'use client'
+
 import Image from "next/image";
 import { Section } from "@/app/interface";
 import { urlFor } from "@/sanity/lib/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const MapImageSection = ({
   projectSection,
   title,
+  slug,
 }: {
   projectSection: Section;
   title: string;
+  slug: string;
 }) => {
+
+  const path = usePathname()
+  const isHomePage = path === '/'
+
   return (
     <div className="md:min-h-[60vh] w-full md:pt-8">
       {/* Mobile */}
       <div className="-mt-12 columns-1 sm:columns-2 md:hidden">
-        {projectSection.images?.map((image: any) => (
-          <div key={image.asset._id} className="m-12 break-inside-avoid">
-            <Link href={urlFor(image).url() as string}>
+        {projectSection.images?.map((image: any, index: number) => (
+          <div key={index} className="m-12 break-inside-avoid">
+            {isHomePage ? (
+              <Link href={`/project/${slug}`}>
               <Image
                 src={urlFor(image.asset).url()}
                 alt="Gallery Image"
@@ -26,23 +36,48 @@ const MapImageSection = ({
                 loading="lazy"
               />
             </Link>
+            ) : (
+
+              <Link href={urlFor(image).url() as string}>
+              <Image
+                src={urlFor(image.asset).url()}
+                alt="Gallery Image"
+                width={500}
+                height={500}
+                className="w-full h-auto object-cover"
+                loading="lazy"
+                />
+            </Link>
+              )}
           </div>
         ))}
       </div>
 
       {/* Desktop */}
-      <div className="hidden md:flex flex-col md:flex-row md:justify-center md:items-end  h-[200vh] md:h-[60vh] w-full md:px-[10vw] ">
+      <div className="hidden md:flex md:flex-row md:justify-center md:items-end  md:h-[60vh] w-full md:px-[10vw] ">
         {projectSection.images &&
           projectSection.images.map((image, index) => (
             <div className="relative h-[95%] w-full my-2 " key={index}>
-              <Link href={urlFor(image).url() as string}>
+              {isHomePage ? (
+              <Link href={`/project/${slug}`} >
                 <Image
                   src={urlFor(image).url() as string}
                   alt={title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-contain p-2"
+                />
+              </Link> ) : (
+                <Link href={urlFor(image).url() as string}>
+                <Image
+                  src={urlFor(image).url() as string}
+                  alt={title}
+                  fill
+                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-contain p-2"
                 />
               </Link>
+              )}
             </div>
           ))}
       </div>
@@ -51,13 +86,13 @@ const MapImageSection = ({
           <div className="px-4 md:text-center md:max-w-[55vw]">
             <p className="leading-[18px]">
               {projectSection.text[0]}
-              <span className="text-2xl lg:text-4xl leading-[18px] font-serif tracking-tighter">
+              <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px] font-serif tracking-tighter">
                 {" "}
                 {/* Also set the same tight line-height for the span */}
                 {projectSection.text[1]}
               </span>
               {projectSection.text[2]}
-              <span className="text-2xl lg:text-4xl leading-[18px] font-serif tracking-tighter">
+              <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px] font-serif tracking-tighter">
                 {projectSection.text[3]}
               </span>
               {projectSection.text[4]}

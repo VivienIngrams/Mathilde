@@ -14,9 +14,9 @@ const HalfHalfSection = ({
     <div className={` w-full`}>
       <div className={`py-6 md:grid md:grid-cols-2`}>
         {projectSection.text && (
-          <div className="flex flex-col leading-normal justify-center md:py-20  md:text-right md:min-h-[80vh] md:mr-8 md:ml-[45%]">
+          <div className="flex flex-col justify-center md:py-20  md:text-right md:min-h-[80vh] md:mr-8 md:ml-[45%]">
             <p className="">
-              <span className="text-2xl lg:text-4xl leading-[1] font-serif tracking-tighter">
+              <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px] font-serif tracking-tighter">
                 {projectSection.text[0]}
               </span>
               {projectSection.text[1]}

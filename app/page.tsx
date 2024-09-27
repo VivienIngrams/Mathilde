@@ -87,7 +87,7 @@ export default async function Home() {
   return (
     <div className="h-full">
       <NavMenu />
-      <div className="bg-[rgba(227,224,220,0.75)] p-4">
+      <div className="bg-[rgba(227,224,220,0.75)] px-4">
         {/* Projects */}
         <div className="">
           {/* Mobile View */}
@@ -108,29 +108,27 @@ export default async function Home() {
                 sectionComponents[project.section.layout];
 
               return (
-                <Link key={index} href={`/project/${project.slug}`}>
-                  {SectionComponent ? (
-                    <SectionComponent
-                      projectSection={project.section}
-                      title={project.title}
-                      slug={project.slug}
-                    />
-                  ) : null}
-                </Link>
+                <SectionComponent
+                  projectSection={project.section}
+                  title={project.title}
+                  slug={project.slug}
+                  key={index}
+                />
               );
             })}
           </div>
         </div>
 
         {/* Ordinaire */}
+
+        <div className="hidden md:block">
+          <MapImageSection
+            projectSection={gallery[1]}
+            title={gallery[1].title}
+          />
+        </div>
+        {/* Mobile  */}
         <Link href="/ma-vie-ordinaire">
-          <div className="hidden md:block">
-            <MapImageSection
-              projectSection={gallery[1]}
-              title={gallery[1].title}
-            />
-          </div>
-          {/* Mobile  */}
           <div className="md:hidden mt-12">
             <div className="min-h-[70vh] min-w-screen relative">
               <Image
@@ -148,14 +146,12 @@ export default async function Home() {
         </Link>
 
         {/* Voyages */}
+
+        <div className="hidden md:block">
+          <RandomSection projectSection={gallery[0]} title={gallery[0].title} />
+        </div>
+        {/* Mobile  */}
         <Link href="/voyages">
-          <div className="hidden md:block">
-            <RandomSection
-              projectSection={gallery[0]}
-              title={gallery[0].title}
-            />
-          </div>
-          {/* Mobile  */}
           <div className="md:hidden mt-12">
             <div className="min-h-[70vh] min-w-screen relative">
               <Image
