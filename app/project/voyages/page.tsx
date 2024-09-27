@@ -52,13 +52,13 @@ export default async function Gallery() {
         {/* Use CSS columns for masonry effect */}
         <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4">
           {images.map((image: any) => (
-            <Link href={urlFor(image.asset).url()} key={image.asset._id} className="mb-4 break-inside-avoid">
+            <Link href={urlFor(image.asset).url()} key={image.asset._id} className=" break-inside-avoid">
               <Image
                 src={urlFor(image.asset).url()}
                 alt="Gallery Image"
                 width={500}
                 height={500} // Placeholder size, maintains aspect ratio
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover mb-4"
                 loading="lazy"
               />
             </Link>

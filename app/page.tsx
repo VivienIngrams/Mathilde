@@ -91,7 +91,7 @@ export default async function Home() {
         {/* Projects */}
         <div className="">
           {/* Mobile View */}
-          <div className="md:hidden -mt-5">
+          <div className="md:hidden ">
             <MobileMapSection project={transformedData[0]} />
             <MobileSection project={transformedData[2]} />
             <MobileSection project={transformedData[3]} />
@@ -136,6 +136,7 @@ export default async function Home() {
                 src={urlFor(gallery[1].images[0]).url() as string}
                 alt={gallery[1].title}
                 fill
+                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 30vw"
                 className="object-cover"
               />
               {/* Add the overlay here */}
@@ -159,6 +160,7 @@ export default async function Home() {
                 src={urlFor(gallery[0].images[0]).url() as string}
                 alt={gallery[0].title}
                 fill
+                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 30vw"
                 className="object-cover"
               />
               {/* Add the overlay here */}

@@ -64,7 +64,7 @@ const MapImageSection = ({
                     src={urlFor(image).url() as string}
                     alt={title}
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 30vw"
                     className="object-contain p-2"
                   />
                 </div>

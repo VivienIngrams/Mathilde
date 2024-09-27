@@ -121,7 +121,7 @@ const TitleSection = ({
                 src={urlFor(projectSection.images[1]).url() as string}
                 alt={`${title} - additional`}
                 fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw,"
+                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw"
                 className="object-contain z-10"
               />
             </Link>

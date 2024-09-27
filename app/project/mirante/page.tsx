@@ -2,7 +2,9 @@ import { client } from "../../../sanity/lib/client";
 import NavMenu from "@/app/components/NavMenu";
 import Footer from "@/app/components/Footer";
 import HalfHalfSection from "@/app/components/Sections/6HalfHalfSection";
-import { Mirante1, Mirante2, Mirante3 } from "@/app/components/Sections/MiranteSections";
+import  Mirante1 from "@/app/components/Sections/1MiranteSection";
+import  Mirante2 from "@/app/components/Sections/2MiranteSection";
+import  Mirante3 from "@/app/components/Sections/3MiranteSection";
 
 async function getProjectData() {
   const data = await client.fetch(
