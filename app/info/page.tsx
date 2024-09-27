@@ -17,7 +17,7 @@ export default async function Info() {
                 <div className="col-span-5 flex items-center  md:text-lg">
                   <div className="  mb-6">
                     <p className="pb-2 ">+33 06 79 76 14 88</p>
-                    <p className="pb-2 ">cudevillemathilde@gmail.com</p>
+                    <a href="mailto:cudevillemathilde@gmail.com" className="pb-2 ">cudevillemathilde@gmail.com</a>
                     <p className="">
                       Rua do Duque da Terceira 358
                     </p>

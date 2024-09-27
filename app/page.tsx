@@ -125,6 +125,7 @@ export default async function Home() {
           <MapImageSection
             projectSection={gallery[1]}
             title={gallery[1].title}
+            slug="ma-vie-ordinaire"
           />
         </div>
         {/* Mobile  */}
@@ -148,7 +149,7 @@ export default async function Home() {
         {/* Voyages */}
 
         <div className="hidden md:block">
-          <RandomSection projectSection={gallery[0]} title={gallery[0].title} />
+          <RandomSection projectSection={gallery[0]} title={gallery[0].title} slug="voyages"/>
         </div>
         {/* Mobile  */}
         <Link href="/voyages">

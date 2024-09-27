@@ -56,55 +56,63 @@ const MapImageSection = ({
         {projectSection.images &&
           projectSection.images.map((image, index) => (
             <div className="relative h-[95%] w-full my-2 " key={index}>
-              {isHomePage ? (
-                <Link href={`/project/${slug}`}>
-                  <div className="relative w-full h-full">
-                    <Image
-                      src={urlFor(image).url() as string}
-                      alt={title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-contain p-2"
-                    />
-                  </div>
-                </Link>
-              ) : (
-                <Link href={urlFor(image).url() as string}>
-                  <div className="relative w-full h-full">
-                    <Image
-                      src={urlFor(image).url() as string}
-                      alt={title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-contain p-2"
-                    />
-                  </div>
-                </Link>
-              )}
+              <Link
+                href={isHomePage ? `/project/${slug}` : urlFor(image).url()}
+              >
+                <div className="relative w-full h-full">
+                  <Image
+                    src={urlFor(image).url() as string}
+                    alt={title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-contain p-2"
+                  />
+                </div>
+              </Link>
             </div>
           ))}
       </div>
       {projectSection.text ? (
-        <div className="h-[30vh] flex flex-col items-center justify-center py-8">
-          <div className="px-4 md:text-center md:max-w-[55vw]">
-            <p className="leading-[18px]">
-              {projectSection.text[0]}
-              <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px] font-serif tracking-tighter">
-                {" "}
-                {/* Also set the same tight line-height for the span */}
-                {projectSection.text[1]}
-              </span>
-              {projectSection.text[2]}
-              <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px] font-serif tracking-tighter">
-                {projectSection.text[3]}
-              </span>
-              {projectSection.text[4]}
-            </p>
-          </div>
-        </div>
-      ) : (
-        <div className="md:h-24" />
-      )}
+  isHomePage ? (
+    <Link
+      href={`/project/${slug}`}
+      className="h-[30vh] flex flex-col items-center justify-center py-8"
+    >
+      <div className="px-4 md:text-center md:max-w-[55vw]">
+        <p className="leading-[18px]">
+          {projectSection.text[0]}
+          <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px] font-serif tracking-tighter">
+            {projectSection.text[1]}
+          </span>
+          {projectSection.text[2]}
+          <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px] font-serif tracking-tighter">
+            {projectSection.text[3]}
+          </span>
+          {projectSection.text[4]}
+        </p>
+      </div>
+    </Link>
+  ) : (
+    <div className="h-[30vh] flex flex-col items-center justify-center py-8">
+      <div className="px-4 md:text-center md:max-w-[55vw]">
+        <p className="leading-[18px]">
+          {projectSection.text[0]}
+          <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px] font-serif tracking-tighter">
+            {projectSection.text[1]}
+          </span>
+          {projectSection.text[2]}
+          <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px] font-serif tracking-tighter">
+            {projectSection.text[3]}
+          </span>
+          {projectSection.text[4]}
+        </p>
+      </div>
+    </div>
+  )
+) : (
+  <div className="md:h-24" />
+)}
+
     </div>
   );
 };

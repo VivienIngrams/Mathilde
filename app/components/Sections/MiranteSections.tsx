@@ -23,7 +23,7 @@ export const Mirante1 = ({ projectSection }: { projectSection: Mirante }) => {
                   height={300}
                   className="w-full h-auto object-contain"
                   loading="lazy"
-                                  />
+                />
               </div>
             </div>
           )}
@@ -31,26 +31,26 @@ export const Mirante1 = ({ projectSection }: { projectSection: Mirante }) => {
         <div className="flex flex-col justify-center pt-6 pb-20">
           <PortableText value={projectSection.content} />
         </div>
+      </div>
 
-        {/* Desktop */}
-        <div className="hidden pb-24 md:grid md:grid-cols-3">
-          <div className="flex flex-col justify-center pt-8 md:pt-32 md:pb-8 text-right  md:ml-8 col-span-1">
-                        <PortableText value={projectSection.content} />
-          </div>
-          <div className="hidden md:flex flex-col justify-center items-start  md:min-h-[100vh] md:w-full md:pl-12 col-span-2">
-            <h1 className="md:pl-4">{projectSection.title}</h1>
-            {projectSection.image && (
-              <div className="relative md:h-[75%] w-full">
-                <Image
-                  src={urlFor(projectSection.image).url() as string}
-                  alt={projectSection.title}
-                  fill
-                  className="object-containmd:pl-4"
-                  style={{ objectPosition: "left" }}
-                />
-              </div>
-            )}
-          </div>
+      {/* Desktop */}
+      <div className="hidden pb-24 md:grid md:grid-cols-3">
+        <div className="flex flex-col justify-center pt-8 md:pt-32 md:pb-8 text-right  md:ml-8 col-span-1">
+          <PortableText value={projectSection.content} />
+        </div>
+        <div className="hidden md:flex flex-col justify-center items-start  md:min-h-[100vh] md:w-full md:pl-12 col-span-2">
+          <h1 className="md:pl-4">{projectSection.title}</h1>
+          {projectSection.image && (
+            <div className="relative md:h-[75%] w-full">
+              <Image
+                src={urlFor(projectSection.image).url() as string}
+                alt={projectSection.title}
+                fill
+                className="object-containmd:pl-4"
+                style={{ objectPosition: "left" }}
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>

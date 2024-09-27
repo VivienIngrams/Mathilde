@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { client } from "../../sanity/lib/client";
+import { client } from "../../../sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
-import Footer from "../components/Footer";
-import NavMenu from "../components/NavMenu";
+import Footer from "../../components/Footer";
+import NavMenu from "../../components/NavMenu";
+import Link from "next/link";
 
 async function getImages() {
   const data = await client.fetch(
@@ -21,7 +22,7 @@ async function getImages() {
     {},
     {
       next: {
-        revalidate: 10,
+        revalidate: 60,
       },
     }
   );
@@ -53,6 +54,7 @@ export default async function MaVieOrdinaire() {
         <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4">
           {images.map((image: any) => (
             <div key={image.asset._id} className="mb-4 break-inside-avoid">
+              <Link href={urlFor(image.asset).url()}>
               <Image
                 src={urlFor(image.asset).url()}
                 alt="Gallery Image"
@@ -60,7 +62,7 @@ export default async function MaVieOrdinaire() {
                 height={500}
                 className="w-full h-auto object-cover"
                 loading="lazy"
-              />
+              /></Link>
             </div>
           ))}
         </div>

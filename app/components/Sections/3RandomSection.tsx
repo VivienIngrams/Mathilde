@@ -9,20 +9,24 @@ import Link from "next/link";
 const RandomSection = ({
   projectSection,
   title,
+  slug,
 }: {
   projectSection: Section;
   title: string;
+  slug: string;
 }) => {
   const path = usePathname();
   const isHomePage = path === "/";
 
   return (
-    <div className={` min-h-[95vh] w-full pt-2 `}>
+    <div className={`min-h-[95vh] w-full pt-2`}>
       {/* Mobile */}
       <div className="columns-1 sm:columns-2 md:hidden">
         {projectSection.images?.map((image: any, index: number) => (
           <div key={index} className="m-12 break-inside-avoid">
-            <Link href={urlFor(image).url()}>
+            <Link
+              href={isHomePage ? `/project/${slug}` : urlFor(image.asset).url()}
+            >
               <Image
                 src={urlFor(image.asset).url()}
                 alt="Gallery Image"
@@ -37,11 +41,15 @@ const RandomSection = ({
       </div>
 
       {/* Desktop */}
-      <div className={`hidden  md:grid md:grid-cols-3 h-full `}>
+      <div className={`hidden md:grid md:grid-cols-3 h-full`}>
         <div className="h-[100%] flex flex-col items-center justify-center relative">
           {projectSection.images && projectSection.images[0] && (
             <Link
-              href={urlFor(projectSection.images[0]).url()}
+              href={
+                isHomePage
+                  ? `/project/${slug}`
+                  : urlFor(projectSection.images[0]).url()
+              }
               className="relative h-[50vh] w-[70%] m-4"
             >
               <Image
@@ -53,13 +61,22 @@ const RandomSection = ({
               />
             </Link>
           )}
-          {isHomePage && <h1 className="absolute bottom-[7%] ">{title}</h1>}
+          {isHomePage && (
+            <Link href={`/project/${slug}`} className="absolute bottom-[7%] ">
+              <h1>{title}</h1>
+            </Link>
+          )}
         </div>
+
         <div className="h-[100%] hidden md:flex flex-col justify-center items-center">
           {projectSection.images && projectSection.images[1] && (
             <Link
-              href={urlFor(projectSection.images[1]).url()}
-              className="relative h-[80vh] md:h-[90vh] w-[100%] md:w-[150%] "
+              href={
+                isHomePage
+                  ? `/project/${slug}`
+                  : urlFor(projectSection.images[1]).url()
+              }
+              className="relative h-[80vh] md:h-[90vh] w-[100%] md:w-[150%]"
             >
               <Image
                 src={urlFor(projectSection.images[1]).url() as string}
@@ -71,10 +88,15 @@ const RandomSection = ({
             </Link>
           )}
         </div>
+
         {projectSection.images && projectSection.images[1] && (
           <div className="md:hidden columns-1">
-            <div className=" break-inside-avoid">
-              <Link href={urlFor(projectSection.images[1]).url()}>
+            <div className="break-inside-avoid">
+              <Link href={
+                isHomePage
+                  ? `/project/${slug}`
+                  : urlFor(projectSection.images[1]).url()
+              }>
                 <Image
                   src={urlFor(projectSection.images[1]).url() as string}
                   alt={`${title} - additional`}
@@ -87,11 +109,16 @@ const RandomSection = ({
             </div>
           </div>
         )}
-        <div className=" md:h-[100%] flex flex-col items-center justify-around">
+
+        <div className="md:h-[100%] flex flex-col items-center justify-around">
           {projectSection.images && projectSection.images[2] && (
             <Link
-              href={urlFor(projectSection.images[2]).url()}
-              className="relative h-[50vh] w-[70%] "
+              href={
+                isHomePage
+                  ? `/project/${slug}`
+                  : urlFor(projectSection.images[2]).url()
+              }
+              className="relative h-[50vh] w-[70%]"
             >
               <Image
                 src={urlFor(projectSection.images[2]).url() as string}
@@ -101,10 +128,14 @@ const RandomSection = ({
                 className="object-contain"
               />
             </Link>
-          )}{" "}
+          )}
           {projectSection.images && projectSection.images[3] && (
             <Link
-              href={urlFor(projectSection.images[3]).url()}
+              href={
+                isHomePage
+                  ? `/project/${slug}`
+                  : urlFor(projectSection.images[3]).url()
+              }
               className="relative h-[30vh] w-[70%] mb-6"
             >
               <Image
