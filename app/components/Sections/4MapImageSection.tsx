@@ -81,13 +81,13 @@ const MapImageSection = ({
       <div className="px-4 md:text-center md:max-w-[55vw]">
         <p className="leading-[18px] lg:leading-[20px] ">
           {projectSection.text[0]}
-          <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px] font-serif tracking-tighter">
+          <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px]  font-serif tracking-tighter">
             {projectSection.text[1]}
           </span>
           {projectSection.text[2]}
-          <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px] font-serif tracking-tighter">
+         
             {projectSection.text[3]}
-          </span>
+        
           {projectSection.text[4]}
         </p>
       </div>
@@ -97,13 +97,13 @@ const MapImageSection = ({
       <div className="px-4 md:text-center md:max-w-[55vw]">
         <p className="leading-[18px] lg:leading-[20px] ">
           {projectSection.text[0]}
-          <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px] font-serif tracking-tighter">
+          <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px]  font-serif tracking-tighter">
             {projectSection.text[1]}
           </span>
           {projectSection.text[2]}
-          <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px] font-serif tracking-tighter">
+         
             {projectSection.text[3]}
-          </span>
+        
           {projectSection.text[4]}
         </p>
       </div>
