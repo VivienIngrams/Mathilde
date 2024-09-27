@@ -5,6 +5,7 @@ import { urlFor } from "@/sanity/lib/image";
 import { Section } from "../../interface";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ImageOverlay from "../ImageOverlay";
 
 const TitleSection = ({
   projectSection,
@@ -32,7 +33,7 @@ const TitleSection = ({
                     isHomePage
                       ? `/project/${slug}`
                       : urlFor(projectSection.images[0]).url()
-                  }
+                  } className="cursor-pointer"
                 >
                   <Image
                     src={urlFor(projectSection.images[0]).url()}
