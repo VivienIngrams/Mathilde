@@ -79,7 +79,7 @@ const MapImageSection = ({
       className="h-[30vh] flex flex-col items-center justify-center py-8"
     >
       <div className="px-4 md:text-center md:max-w-[55vw]">
-        <p className="leading-[18px]">
+        <p className="leading-[18px] lg:leading-[20px] ">
           {projectSection.text[0]}
           <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px] font-serif tracking-tighter">
             {projectSection.text[1]}
@@ -95,7 +95,7 @@ const MapImageSection = ({
   ) : (
     <div className="h-[30vh] flex flex-col items-center justify-center py-8">
       <div className="px-4 md:text-center md:max-w-[55vw]">
-        <p className="leading-[18px]">
+        <p className="leading-[18px] lg:leading-[20px] ">
           {projectSection.text[0]}
           <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px] font-serif tracking-tighter">
             {projectSection.text[1]}
