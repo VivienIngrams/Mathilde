@@ -76,7 +76,7 @@ const MapImageSection = ({
   isHomePage ? (
     <Link
       href={`/project/${slug}`}
-      className="h-[30vh] flex flex-col items-center justify-center py-8"
+      className="h-[15vh] flex flex-col items-center justify-center mb-32"
     >
       <div className="px-4 md:text-center md:max-w-[55vw]">
         <p className="leading-[18px] lg:leading-[20px] ">

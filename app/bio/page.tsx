@@ -24,9 +24,9 @@ export default async function Bio() {
           </div>
 
           {/* Left Column: First half of the text */}
-          <div className="flex md:items-end lg:pr-4 col-span-3 space-y-1">
+          <div className="flex md:items-end lg:pr-4 col-span-3 space-y-2">
             <div>
-              <p>
+              <p >
                 <span className="font-semibold italic">
                   J’ai rencontré Mathilde
                 </span>{" "}
@@ -47,7 +47,7 @@ export default async function Bio() {
               loading="lazy"
             />
           </div>
-              <p>
+              <p className="pb-2">
                 C’est en la voyant prendre des photos artistiques de notre
                 quinta, située dans la vallée du Douro, que j’ai réalisé quel
                 type de photographe elle était.{" "}
@@ -58,12 +58,12 @@ export default async function Bio() {
                 personnelle. Elle se dilue dans le décor avant d’en livrer les
                 éléments les plus insolites qui sont souvent les plus parlants.
               </p>
-              <p>
+              <p className="pb-2">
                 Sa relation à la nature est très forte, elle la défend en en
                 révélant la grandeur absolue, capturée dans les détails les plus
                 ténus.
               </p>
-              <p>
+              <p className="pb-2">
                 Il en va de même de son rapport à l’humain. C’est en amorçant
                 une collaboration photo-poésie sur{" "}
                 <span className="font-semibold italic">
@@ -79,33 +79,33 @@ export default async function Bio() {
           </div>
 
           {/* Right Column: Second half of the text */}
-          <div className="flex items-end lg:pl-4 col-span-3 space-y-1">
+          <div className="flex items-end lg:pl-4 col-span-3 space-y-2">
             <div>
-            <p>
+            <p className="pb-2">
                 Et pourtant, le fil conducteur, aussi peu visible soit-il, se
                 déroule tout naturellement sous l’œil du spectateur. C’est dans
                 cette création et cette recréation débridées que réside le
                 talent unique de Mathilde.
               </p>
-              <p>
+              <p className="pb-2">
                 La découverte de ses travaux antérieurs et en cours m’ont
                 conforté dans ce sentiment. Elle s’est dans un premier temps
                 intéressée à l’insularité et aux territoires isolés, notamment à
                 travers un documentaire sur l’archipel de
                 Saint-pierre-et-Miquelon (« Les onze mille vierges »).
               </p>
-              <p>
+              <p className="pb-2">
                 Elle a ensuite réalisé un livre par correspondance en se prêtant
                 au jeu du cadavre exquis avec une écrivaine restée à Paris. Cet
                 ouvrage est un dialogue fugace photo/écriture qui questionne la
                 notion de solitude.
               </p>
-              <p>
+              <p className="pb-2">
                 Ses travaux incluent également « En Suspension (S) », qui
                 s’inscrit dans une démarche duale tout aussi libérée, et «
                 Sentiment océanique » qui nous rappelle l’urgence climatique.
               </p>
-              <p>
+              <p className="pb-2">
                 Pour parler de la forme,{" "}
                 <span className="font-semibold italic">
                   la pratique artistique de Mathilde s’articule autour de la
