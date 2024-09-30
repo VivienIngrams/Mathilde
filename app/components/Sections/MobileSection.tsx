@@ -29,7 +29,7 @@ export const MobileMapSection: React.FC<MobileProjectViewProps> = ({
             </Link>
           </div>
         ))}
-      <h1 className="absolute bottom-1 left-1/2 transform -translate-x-1/2 text-center text-2xl text-[rgba(227,224,220)]">
+      <h1 className="absolute bottom-1 left-1/2 transform -translate-x-1/2 text-center text-4xl text-[rgba(227,224,220)]">
         {project.title}
       </h1>
     </div>
@@ -55,7 +55,7 @@ export const MobileSection: React.FC<MobileProjectViewProps> = ({
           </Link>
         </>
       )}
-      <h1 className="absolute bottom-1 left-2 text-center text-2xl text-[rgba(227,224,220)]">
+      <h1 className="absolute bottom-1 left-2 text-center text-4xl text-[rgba(227,224,220)]">
         {project.title}
       </h1>
     </div>

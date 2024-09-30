@@ -24,7 +24,7 @@ const NavMenu = () => {
             <div className="ml-10 flex items-baseline space-x-4">
               <Menu as="div" className="relative">
                 <MenuButton className="hover:bg-black/10 px-3 py-2 rounded-md text-[16px] font-semibold">
-                  Projects
+                  Projets
                 </MenuButton>
                 <MenuItems className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-[rgba(227,224,220)] ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <div className="py-1">
@@ -169,7 +169,7 @@ const NavMenu = () => {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         <Menu as="div" className="relative">
             <MenuButton className="hover:bg-black/10 block px-3 py-2 rounded-md text-base font-semibold">
-              Projects
+              Projets
             </MenuButton>
             <MenuItems className="origin-top-right absolute right-0 mt-2 bg-[rgba(227,224,220)] w-full rounded-md shadow-lg  ring-1 ring-black ring-opacity-5 focus:outline-none">
               <div className="py-1">

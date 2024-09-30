@@ -11,7 +11,7 @@ const Mirante2 = ({ projectSection }: { projectSection: Mirante }) => {
     return (
       <div>
         {/* Mobile */}
-        <div className="md:hidden min-h-screen  pt-12 flex flex-col">
+        <div className="md:hidden min-h-[80vh]  pt-12 flex flex-col">
           <div className="flex flex-col justify-center  w-full">
             <h1 className="pb-2">{projectSection.title}</h1>
           </div>

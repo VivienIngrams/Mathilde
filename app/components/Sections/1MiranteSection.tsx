@@ -10,7 +10,7 @@ const Mirante1 = ({ projectSection }: { projectSection: Mirante }) => {
     return (
       <div className="min-h-screen pt-12 ">
         {/* Mobile */}
-        <div className="md:hidden min-h-screen text-right pt-12 flex flex-col">
+        <div className="md:hidden min-h-[80vh] text-right pt-12 flex flex-col">
           <div className="flex flex-col justify-center  w-full">
             <h1 className="pb-2 ">{projectSection.title}</h1>
           </div>
@@ -22,7 +22,7 @@ const Mirante1 = ({ projectSection }: { projectSection: Mirante }) => {
                     src={urlFor(projectSection.image.asset).url()}
                     alt={projectSection.title}
                     width={700}
-                    height={300}
+                    height={500}
                     className="w-full h-auto object-contain"
                     loading="lazy"
                   />
@@ -40,7 +40,7 @@ const Mirante1 = ({ projectSection }: { projectSection: Mirante }) => {
           <div className="flex flex-col justify-center pt-8 md:pt-32 md:pb-8 text-right  md:ml-8 col-span-1">
             <PortableText value={projectSection.content} />
           </div>
-          <div className="hidden md:flex flex-col justify-center items-start  md:min-h-[100vh] md:w-full md:pl-12 col-span-2">
+          <div className="hidden md:flex flex-col justify-center items-start  md:min-h-[90vh] md:w-full md:pl-12 col-span-2">
             <h1 className="md:pl-4">{projectSection.title}</h1>
             {projectSection.image && (
               <div className="relative md:h-[75%] w-full">
@@ -48,7 +48,7 @@ const Mirante1 = ({ projectSection }: { projectSection: Mirante }) => {
                   src={urlFor(projectSection.image).url() as string}
                   alt={projectSection.title}
                   fill
-                  className="object-containmd:pl-4"
+                  className="object-contain md:pl-4"
                   style={{ objectPosition: "left" }}
                 />
               </div>

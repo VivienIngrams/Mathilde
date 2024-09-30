@@ -7,7 +7,7 @@ import Socials from "./Socials";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col relative justify-center items-center py-12 bg-[rgba(227,224,220,0.75)] font-serif">
+    <div className="flex flex-col relative justify-center items-center pt-4 pb-12 bg-[rgba(227,224,220,0.75)] font-serif">
       <div
         className="rounded-full shadow-sm shadow-[#ad8b77] p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

@@ -140,7 +140,7 @@ export default async function Home() {
                 className="object-cover"
               />
               {/* Add the overlay here */}
-              <h1 className="absolute bottom-2 left-2 text-white text-2xl ">
+              <h1 className="absolute bottom-2 left-2 text-white text-4xl ">
                 {gallery[1].title}
               </h1>
             </div>
@@ -164,7 +164,7 @@ export default async function Home() {
                 className="object-cover"
               />
               {/* Add the overlay here */}
-              <h1 className="absolute bottom-2 left-2 text-white text-2xl ">
+              <h1 className="absolute bottom-2 left-2 text-white text-4xl ">
                 {gallery[0].title}
               </h1>
             </div>

@@ -20,7 +20,7 @@ const TitleSection = ({
   const isHomePage = path === "/";
 
   return (
-    <div className={`md:min-h-screen w-full pb-4`}>
+    <div className={`md:min-h-screen w-full pb-6`}>
       <div className={`md:grid md:grid-cols-2 md:pt-8`}>
         {/* Mobile */}
         <div className="md:hidden text-right">

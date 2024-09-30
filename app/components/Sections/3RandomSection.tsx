@@ -19,11 +19,11 @@ const RandomSection = ({
   const isHomePage = path === "/";
 
   return (
-    <div className={`min-h-[95vh] w-full pt-2`}>
+    <div className={`min-h-[95vh] w-full`}>
       {/* Mobile */}
       <div className="columns-1 sm:columns-2 md:hidden">
         {projectSection.images?.map((image: any, index: number) => (
-          <div key={index} className="m-12 break-inside-avoid">
+          <div key={index} className="mx-12 break-inside-avoid">
             <Link
               href={isHomePage ? `/project/${slug}` : urlFor(image.asset).url()}
             >
@@ -32,7 +32,7 @@ const RandomSection = ({
                 alt="Gallery Image"
                 width={500}
                 height={500}
-                className="w-full h-auto object-cover"
+                className="mb-12 w-full h-auto object-cover"
                 loading="lazy"
               />
             </Link>

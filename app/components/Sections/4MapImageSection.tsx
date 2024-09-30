@@ -23,30 +23,23 @@ const MapImageSection = ({
       {/* Mobile */}
       <div className="-mt-12 columns-1 sm:columns-2 md:hidden">
         {projectSection.images?.map((image: any, index: number) => (
-          <div key={index} className="m-12 break-inside-avoid">
-            {isHomePage ? (
-              <Link href={`/project/${slug}`}>
-                <Image
-                  src={urlFor(image.asset).url()}
-                  alt="Gallery Image"
-                  width={500}
-                  height={500}
-                  className="w-full h-auto object-cover"
-                  loading="lazy"
-                />
-              </Link>
-            ) : (
-              <Link href={urlFor(image).url() as string}>
-                <Image
-                  src={urlFor(image.asset).url()}
-                  alt="Gallery Image"
-                  width={500}
-                  height={500}
-                  className="w-full h-auto object-cover"
-                  loading="lazy"
-                />
-              </Link>
-            )}
+          <div key={index} className="mx-12 break-inside-avoid">
+            <Link
+              href={
+                isHomePage
+                  ? `/project/${slug}`
+                  : `${urlFor(image).url() as string}`
+              }
+            >
+              <Image
+                src={urlFor(image.asset).url()}
+                alt="Gallery Image"
+                width={500}
+                height={500}
+                className="mt-12 w-full h-auto object-cover"
+                loading="lazy"
+              />
+            </Link>
           </div>
         ))}
       </div>
@@ -72,47 +65,47 @@ const MapImageSection = ({
             </div>
           ))}
       </div>
-      {projectSection.text ? (
-  isHomePage ? (
-    <Link
-      href={`/project/${slug}`}
-      className="h-[15vh] flex flex-col items-center justify-center mb-32"
-    >
-      <div className="px-4 md:text-center md:max-w-[55vw]">
-        <p className="leading-[18px] lg:leading-[20px] ">
-          {projectSection.text[0]}
-          <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px]  font-serif tracking-tighter">
-            {projectSection.text[1]}
-          </span>
-          {projectSection.text[2]}
-         
-            {projectSection.text[3]}
-        
-          {projectSection.text[4]}
-        </p>
-      </div>
-    </Link>
-  ) : (
-    <div className="h-[30vh] flex flex-col items-center justify-center py-8">
-      <div className="px-4 md:text-center md:max-w-[55vw]">
-        <p className="leading-[18px] lg:leading-[20px] ">
-          {projectSection.text[0]}
-          <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px]  font-serif tracking-tighter">
-            {projectSection.text[1]}
-          </span>
-          {projectSection.text[2]}
-         
-            {projectSection.text[3]}
-        
-          {projectSection.text[4]}
-        </p>
-      </div>
-    </div>
-  )
-) : (
-  <div className="md:h-24" />
-)}
 
+      {projectSection.text ? (
+        isHomePage ? (
+          <Link
+            href={`/project/${slug}`}
+            className="md:h-[15vh] flex flex-col items-center justify-center md:mb-32"
+          >
+            <div className="px-4 md:text-center md:max-w-[55vw]">
+              <p className="leading-[18px] lg:leading-[20px] ">
+                {projectSection.text[0]}
+                <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px]  font-serif tracking-tighter">
+                  {projectSection.text[1]}
+                </span>
+                {projectSection.text[2]}
+
+                {projectSection.text[3]}
+
+                {projectSection.text[4]}
+              </p>
+            </div>
+          </Link>
+        ) : (
+          <div className="md:h-[30vh] flex flex-col items-center justify-center py-8">
+            <div className="px-4 md:text-center md:max-w-[55vw]">
+              <p className="leading-[18px] lg:leading-[20px] ">
+                {projectSection.text[0]}
+                <span className="text-2xl lg:text-4xl leading-[18px] lg:leading-[20px]  font-serif tracking-tighter">
+                  {projectSection.text[1]}
+                </span>
+                {projectSection.text[2]}
+
+                {projectSection.text[3]}
+
+                {projectSection.text[4]}
+              </p>
+            </div>
+          </div>
+        )
+      ) : (
+        <div className="md:h-24" />
+      )}
     </div>
   );
 };
