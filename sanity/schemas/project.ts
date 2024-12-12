@@ -32,7 +32,14 @@ const project = {
       type: "number",
       title: "Section Home page - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, ],
+        list: [
+          { title: "Grande image à gauche, option petite image et/ou texte(s) à gauche", value: 1 },
+          { title: "Plein d'images en colonnes (comme dans Café)", value: 2 },
+          { title: "3 ou 4 photos de tailles différentes (une petite à gauche, une grande au milieu et une ou deux à droite) ", value: 3 },
+          { title: "Plusieurs images alignées à l'horizontal, option texte(s) centré(s) en dessous ", value: 4 },
+          { title: "Une grande image plein écran", value: 5 },
+          { title: "Texte(s) à gauche, puis texte(s) ou grande image à droite", value: 6 },
+        ],
         layout: "radio",
       },
       initialValue: 1,
@@ -66,7 +73,14 @@ const project = {
       type: "number",
       title: "Section 1 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, ],
+        list: [
+          { title: "Grande image à gauche, option petite image et/ou texte(s) à gauche", value: 1 },
+          { title: "Plein d'images en colonnes (comme dans Café)", value: 2 },
+          { title: "3 ou 4 photos de tailles différentes (une petite à gauche, une grande au milieu et une ou deux à droite) ", value: 3 },
+          { title: "Plusieurs images alignées à l'horizontal, option texte(s) centré(s) en dessous ", value: 4 },
+          { title: "Une grande image plein écran", value: 5 },
+          { title: "Texte(s) à gauche, puis texte(s) ou grande image à droite", value: 6 },
+        ],
         layout: "radio",
       },
       initialValue: 1,
@@ -100,7 +114,14 @@ const project = {
       type: "number",
       title: "Section 2 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, ],
+        list: [
+          { title: "Grande image à gauche, option petite image et/ou texte(s) à gauche", value: 1 },
+          { title: "Plein d'images en colonnes (comme dans Café)", value: 2 },
+          { title: "3 ou 4 photos de tailles différentes (une petite à gauche, une grande au milieu et une ou deux à droite) ", value: 3 },
+          { title: "Plusieurs images alignées à l'horizontal, option texte(s) centré(s) en dessous ", value: 4 },
+          { title: "Une grande image plein écran", value: 5 },
+          { title: "Texte(s) à gauche, puis texte(s) ou grande image à droite", value: 6 },
+        ],
         layout: "radio",
       },
       initialValue: 1,
@@ -134,7 +155,14 @@ const project = {
       type: "number",
       title: "Section 3 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, ],
+        list: [
+          { title: "Grande image à gauche, option petite image et/ou texte(s) à gauche", value: 1 },
+          { title: "Plein d'images en colonnes (comme dans Café)", value: 2 },
+          { title: "3 ou 4 photos de tailles différentes (une petite à gauche, une grande au milieu et une ou deux à droite) ", value: 3 },
+          { title: "Plusieurs images alignées à l'horizontal, option texte(s) centré(s) en dessous ", value: 4 },
+          { title: "Une grande image plein écran", value: 5 },
+          { title: "Texte(s) à gauche, puis texte(s) ou grande image à droite", value: 6 },
+        ],
         layout: "radio",
       },
       initialValue: 1,
@@ -169,7 +197,14 @@ const project = {
       type: "number",
       title: "Section 4 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, ],
+        list: [
+          { title: "Grande image à gauche, option petite image et/ou texte(s) à gauche", value: 1 },
+          { title: "Plein d'images en colonnes (comme dans Café)", value: 2 },
+          { title: "3 ou 4 photos de tailles différentes (une petite à gauche, une grande au milieu et une ou deux à droite) ", value: 3 },
+          { title: "Plusieurs images alignées à l'horizontal, option texte(s) centré(s) en dessous ", value: 4 },
+          { title: "Une grande image plein écran", value: 5 },
+          { title: "Texte(s) à gauche, puis texte(s) ou grande image à droite", value: 6 },
+        ],
         layout: "radio",
       },
       initialValue: 1,
@@ -203,7 +238,14 @@ const project = {
       type: "number",
       title: "Section 5 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, ],
+        list: [
+          { title: "Grande image à gauche, option petite image et/ou texte(s) à gauche", value: 1 },
+          { title: "Plein d'images en colonnes (comme dans Café)", value: 2 },
+          { title: "3 ou 4 photos de tailles différentes (une petite à gauche, une grande au milieu et une ou deux à droite) ", value: 3 },
+          { title: "Plusieurs images alignées à l'horizontal, option texte(s) centré(s) en dessous ", value: 4 },
+          { title: "Une grande image plein écran", value: 5 },
+          { title: "Texte(s) à gauche, puis texte(s) ou grande image à droite", value: 6 },
+        ],
         layout: "radio",
       },
       initialValue: 1,
@@ -237,7 +279,14 @@ const project = {
       type: "number",
       title: "Section 6 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, ],
+        list: [
+          { title: "Grande image à gauche, option petite image et/ou texte(s) à gauche", value: 1 },
+          { title: "Plein d'images en colonnes (comme dans Café)", value: 2 },
+          { title: "3 ou 4 photos de tailles différentes (une petite à gauche, une grande au milieu et une ou deux à droite) ", value: 3 },
+          { title: "Plusieurs images alignées à l'horizontal, option texte(s) centré(s) en dessous ", value: 4 },
+          { title: "Une grande image plein écran", value: 5 },
+          { title: "Texte(s) à gauche, puis texte(s) ou grande image à droite", value: 6 },
+        ],
         layout: "radio",
       },
       initialValue: 1,
@@ -271,7 +320,14 @@ const project = {
       type: "number",
       title: "Section 7 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, ],
+        list: [
+          { title: "Grande image à gauche, option petite image et/ou texte(s) à gauche", value: 1 },
+          { title: "Plein d'images en colonnes (comme dans Café)", value: 2 },
+          { title: "3 ou 4 photos de tailles différentes (une petite à gauche, une grande au milieu et une ou deux à droite) ", value: 3 },
+          { title: "Plusieurs images alignées à l'horizontal, option texte(s) centré(s) en dessous ", value: 4 },
+          { title: "Une grande image plein écran", value: 5 },
+          { title: "Texte(s) à gauche, puis texte(s) ou grande image à droite", value: 6 },
+        ],
         layout: "radio",
       },
    
@@ -305,7 +361,14 @@ const project = {
       type: "number",
       title: "Section 8 - mise en page",
       options: {
-        list: [1, 2, 3, 4, 5, 6, ],
+        list: [
+          { title: "Grande image à gauche, option petite image et/ou texte(s) à gauche", value: 1 },
+          { title: "Plein d'images en colonnes (comme dans Café)", value: 2 },
+          { title: "3 ou 4 photos de tailles différentes (une petite à gauche, une grande au milieu et une ou deux à droite) ", value: 3 },
+          { title: "Plusieurs images alignées à l'horizontal, option texte(s) centré(s) en dessous ", value: 4 },
+          { title: "Une grande image plein écran", value: 5 },
+          { title: "Texte(s) à gauche, puis texte(s) ou grande image à droite", value: 6 },
+        ],
         layout: "radio",
       },
      
