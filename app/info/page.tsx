@@ -18,12 +18,7 @@ export default async function Info() {
                   <div className="  mb-6">
                     <p className="pb-2 ">+33 06 79 76 14 88</p>
                     <a href="mailto:cudevillemathilde@gmail.com">cudevillemathilde@gmail.com</a>
-                    <p className="pt-2">
-                      Rua do Duque da Terceira 358
-                    </p>
-                    <p className="">
-                       4300-096 Porto
-                    </p>
+                    
                   </div>
                 </div>
               </div>
