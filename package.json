@@ -13,7 +13,7 @@
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.51.0",
     "masonry-layout": "^4.2.2",
-    "next": "^14.2.12",
+    "next": "14.2.35",
     "next-sanity": "^9.4.2",
     "react": "^18",
     "react-dom": "^18",
